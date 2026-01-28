@@ -62,6 +62,7 @@ export default defineConfig({
       sidebar: [
         {
           label: 'Getting Started',
+          collapsed: false,
           items: [
             { label: 'Introduction', slug: 'introduction' },
           ],
