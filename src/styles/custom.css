@@ -295,3 +295,68 @@ nav[aria-label="Main"] a:hover {
     transition-duration: 0.01ms !important;
   }
 }
+
+/* ===================
+   📌 Sidebar Toggle
+   =================== */
+.sidebar-toggle {
+  position: fixed;
+  left: var(--sl-sidebar-width);
+  top: 50%;
+  transform: translateY(-50%);
+  z-index: 100;
+  background: var(--sl-color-bg-nav);
+  border: 1px solid var(--sl-color-hairline);
+  border-left: none;
+  border-radius: 0 0.5rem 0.5rem 0;
+  padding: 1rem 0.35rem;
+  cursor: pointer;
+  transition: left 0.3s ease, background 0.2s ease;
+  display: none;
+}
+
+@media (min-width: 72rem) {
+  .sidebar-toggle {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+  }
+}
+
+.sidebar-toggle:hover {
+  background: var(--sl-color-accent-low);
+}
+
+.sidebar-toggle svg {
+  width: 1.25rem;
+  height: 1.25rem;
+  color: var(--sl-color-text);
+  transition: transform 0.3s ease;
+}
+
+/* Sidebar collapsed state */
+body.sidebar-collapsed .sidebar-toggle {
+  left: 0;
+}
+
+body.sidebar-collapsed .sidebar-toggle svg {
+  transform: rotate(180deg);
+}
+
+@media (min-width: 72rem) {
+  #starlight__sidebar {
+    transition: transform 0.3s ease;
+  }
+
+  body.sidebar-collapsed #starlight__sidebar {
+    transform: translateX(-100%);
+  }
+
+  body.sidebar-collapsed .right-sidebar-container {
+    --sl-sidebar-width: 0rem;
+  }
+
+  body.sidebar-collapsed .content-panel {
+    --sl-content-margin-inline: auto;
+  }
+}

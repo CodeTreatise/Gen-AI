@@ -1,0 +1,27 @@
+---
+// Sidebar Toggle Component
+---
+
+<button class="sidebar-toggle" aria-label="Toggle sidebar" title="Toggle sidebar">
+  <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round">
+    <polyline points="15 18 9 12 15 6"></polyline>
+  </svg>
+</button>
+
+<script>
+  document.addEventListener('DOMContentLoaded', () => {
+    const toggle = document.querySelector('.sidebar-toggle');
+    
+    // Restore state from localStorage
+    const isCollapsed = localStorage.getItem('sidebar-collapsed') === 'true';
+    if (isCollapsed) {
+      document.body.classList.add('sidebar-collapsed');
+    }
+    
+    toggle?.addEventListener('click', () => {
+      document.body.classList.toggle('sidebar-collapsed');
+      const collapsed = document.body.classList.contains('sidebar-collapsed');
+      localStorage.setItem('sidebar-collapsed', collapsed.toString());
+    });
+  });
+</script>

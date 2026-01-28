@@ -22,6 +22,9 @@ export default defineConfig({
         { icon: 'github', label: 'GitHub', href: 'https://github.com/CodeTreatise/Gen-AI' },
       ],
       customCss: ['./src/styles/custom.css'],
+      components: {
+        Head: './src/components/CustomHead.astro',
+      },
       head: [
         {
           tag: 'link',
