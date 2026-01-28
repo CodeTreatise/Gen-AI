@@ -296,6 +296,7 @@ nav[aria-label="Main"] a:hover {
   }
 }
 
+
 /* ===================
    📌 Sidebar Toggle
    =================== */
@@ -335,72 +336,98 @@ nav[aria-label="Main"] a:hover {
   color: var(--sl-color-text);
   transition: transform 0.3s ease;
 }
-/* 
- * COLLAPSED STATE
- * Override layout when left sidebar is collapsed
- * Key: Keep right sidebar fixed, only expand main content
- */
+
+/* ===================
+   📌 Sidebar Collapsed State
+   =================== */
+
 @media (min-width: 50rem) {
-  /* Smooth transition for sidebar panel */
-  .sidebar-pane {
-    transition: transform 0.3s ease, visibility 0.3s ease;
+  /* Smooth transitions */
+  .sidebar-pane,
+  .main-frame,
+  .right-sidebar-container,
+  .main-pane,
+  .sl-container {
+    transition: all 0.3s ease;
   }
 
-  /* Hide left sidebar when collapsed */
+  /* Hide left sidebar */
   html.sidebar-collapsed .sidebar-pane {
     transform: translateX(-100%);
     visibility: hidden;
   }
 
-  /* Move toggle button to left edge when collapsed */
+  /* Toggle button moves to left edge */
   html.sidebar-collapsed .sidebar-toggle {
     left: 0;
   }
 
-  /* Rotate arrow icon */
+  /* Rotate arrow */
   html.sidebar-collapsed .sidebar-toggle svg {
     transform: rotate(180deg);
   }
 
-  /* Adjust main-frame padding - remove left sidebar space */
+  /* Main frame starts from left edge */
   html.sidebar-collapsed .main-frame {
     padding-inline-start: 0 !important;
   }
 
-  /* Fix header - remove left sidebar offset */
+  /* Header adjustment */
   html.sidebar-collapsed .header {
     --sl-content-inline-start: 0px;
   }
 }
 
-/* Desktop-specific fixes (when right sidebar is visible) */
+/* Desktop layout when collapsed (72rem+ with right sidebar visible) */
 @media (min-width: 72rem) {
   /* 
-   * Keep right sidebar in fixed position on the right edge
-   * Don't let it move when left sidebar collapses
+   * CRITICAL: Increase content width when sidebar is collapsed
+   * This is the whole point of collapsing the sidebar!
    */
+  html.sidebar-collapsed {
+    --sl-content-width: 65rem;
+  }
+
+  /* Right sidebar container - keep it absolutely positioned on right */
   html.sidebar-collapsed .right-sidebar-container {
-    /* Keep the same width as before - use the original sidebar width value */
-    width: var(--sl-sidebar-width) !important;
-    position: fixed !important;
+    position: absolute !important;
     right: 0 !important;
-    top: 0 !important;
-    height: 100vh !important;
+    width: var(--sl-sidebar-width) !important;
+    flex-shrink: 0 !important;
   }
 
-  html.sidebar-collapsed .right-sidebar {
-    width: 100% !important;
-    position: relative !important;
+  /* Main pane takes remaining width */
+  html.sidebar-collapsed .lg\:sl-flex {
+    position: relative;
   }
 
-  /* Main content should fill available space but leave room for right sidebar */
   html.sidebar-collapsed[data-has-toc] .main-pane {
     width: calc(100% - var(--sl-sidebar-width)) !important;
-    margin-inline-end: 0 !important;
+    max-width: none !important;
   }
 
-  /* When no TOC, content can use full width */
-  html.sidebar-collapsed:not([data-has-toc]) .main-pane {
+  /* Content container expands */
+  html.sidebar-collapsed .sl-container {
+    max-width: var(--sl-content-width) !important;
+  }
+
+  /* ContentPanel gets more padding for breathing room */
+  html.sidebar-collapsed .content-panel {
+    padding-inline: 2rem;
+  }
+}
+
+/* Tablet/smaller desktop (50rem to 72rem) - no right sidebar visible */
+@media (min-width: 50rem) and (max-width: 71.99rem) {
+  html.sidebar-collapsed {
+    --sl-content-width: 55rem;
+  }
+
+  html.sidebar-collapsed .main-pane {
     width: 100% !important;
+  }
+
+  html.sidebar-collapsed .sl-container {
+    max-width: var(--sl-content-width) !important;
   }
 }
