@@ -6,8 +6,8 @@ import AstroPWA from '@vite-pwa/astro';
 
 // https://astro.build/config
 export default defineConfig({
-  site: 'https://yourusername.github.io',
-  base: '/ai-course-site',
+  site: 'https://codetreatise.github.io',
+  base: '/Gen-AI',
   integrations: [
     mermaid(),
     starlight({
@@ -27,7 +27,7 @@ export default defineConfig({
           tag: 'link',
           attrs: {
             rel: 'manifest',
-            href: '/ai-course-site/manifest.json',
+            href: '/Gen-AI/manifest.json',
           },
         },
         {
@@ -55,7 +55,7 @@ export default defineConfig({
           tag: 'link',
           attrs: {
             rel: 'apple-touch-icon',
-            href: '/ai-course-site/icons/icon-192x192.png',
+            href: '/Gen-AI/icons/icon-192x192.png',
           },
         },
       ],
@@ -195,13 +195,13 @@ export default defineConfig({
     }),
     AstroPWA({
       mode: 'production',
-      base: '/ai-course-site/',
-      scope: '/ai-course-site/',
+      base: '/Gen-AI/',
+      scope: '/Gen-AI/',
       includeAssets: ['favicon.svg', 'icons/*.png'],
       registerType: 'autoUpdate',
       manifest: false, // Using external manifest.json
       workbox: {
-        navigateFallback: '/ai-course-site/',
+        navigateFallback: '/Gen-AI/',
         globPatterns: ['**/*.{css,js,html,svg,png,ico,txt,woff,woff2}'],
         runtimeCaching: [
           {
