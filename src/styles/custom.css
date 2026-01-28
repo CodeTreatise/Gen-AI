@@ -299,12 +299,14 @@ nav[aria-label="Main"] a:hover {
 /* ===================
    📌 Sidebar Toggle
    =================== */
+
+/* Toggle button styles */
 .sidebar-toggle {
   position: fixed;
   left: var(--sl-sidebar-width);
   top: 50%;
   transform: translateY(-50%);
-  z-index: 100;
+  z-index: 50;
   background: var(--sl-color-bg-nav);
   border: 1px solid var(--sl-color-hairline);
   border-left: none;
@@ -315,7 +317,7 @@ nav[aria-label="Main"] a:hover {
   display: none;
 }
 
-@media (min-width: 72rem) {
+@media (min-width: 50rem) {
   .sidebar-toggle {
     display: flex;
     align-items: center;
@@ -334,29 +336,44 @@ nav[aria-label="Main"] a:hover {
   transition: transform 0.3s ease;
 }
 
-/* Sidebar collapsed state */
-body.sidebar-collapsed .sidebar-toggle {
-  left: 0;
-}
-
-body.sidebar-collapsed .sidebar-toggle svg {
-  transform: rotate(180deg);
-}
-
-@media (min-width: 72rem) {
-  #starlight__sidebar {
-    transition: transform 0.3s ease;
+/* 
+ * COLLAPSED STATE
+ * Override root-level CSS variables that Starlight uses for layout calculations
+ */
+@media (min-width: 50rem) {
+  /* When collapsed: override the CSS variables at root level */
+  html.sidebar-collapsed[data-has-sidebar] {
+    --sl-content-inline-start: 0px !important;
+  }
+  
+  /* Smooth transition for sidebar panel */
+  .sidebar-pane {
+    transition: transform 0.3s ease, visibility 0.3s ease;
   }
 
-  body.sidebar-collapsed #starlight__sidebar {
+  /* Hide sidebar when collapsed */
+  html.sidebar-collapsed .sidebar-pane {
     transform: translateX(-100%);
+    visibility: hidden;
   }
 
-  body.sidebar-collapsed .right-sidebar-container {
-    --sl-sidebar-width: 0rem;
+  /* Move toggle button to left edge when collapsed */
+  html.sidebar-collapsed .sidebar-toggle {
+    left: 0;
   }
 
-  body.sidebar-collapsed .content-panel {
-    --sl-content-margin-inline: auto;
+  /* Rotate arrow icon */
+  html.sidebar-collapsed .sidebar-toggle svg {
+    transform: rotate(180deg);
+  }
+
+  /* Adjust main-frame padding */
+  html.sidebar-collapsed .main-frame {
+    padding-inline-start: 0 !important;
+  }
+
+  /* Fix header width calculation when sidebar is collapsed */
+  html.sidebar-collapsed .header {
+    --sl-content-inline-start: 0px;
   }
 }

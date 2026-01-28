@@ -8,8 +8,20 @@ import Default from '@astrojs/starlight/components/Head.astro';
 
 <!-- Sidebar Toggle Button -->
 <script is:inline>
+  // Immediately restore state to prevent flash
+  (function() {
+    const isCollapsed = localStorage.getItem('sidebar-collapsed') === 'true';
+    if (isCollapsed) {
+      document.documentElement.classList.add('sidebar-collapsed');
+    }
+  })();
+</script>
+
+<script is:inline>
   // Add sidebar toggle button after page loads
   document.addEventListener('DOMContentLoaded', () => {
+    const html = document.documentElement;
+    
     // Create toggle button
     const toggle = document.createElement('button');
     toggle.className = 'sidebar-toggle';
@@ -19,16 +31,10 @@ import Default from '@astrojs/starlight/components/Head.astro';
     
     document.body.appendChild(toggle);
     
-    // Restore state from localStorage
-    const isCollapsed = localStorage.getItem('sidebar-collapsed') === 'true';
-    if (isCollapsed) {
-      document.body.classList.add('sidebar-collapsed');
-    }
-    
     // Toggle on click
     toggle.addEventListener('click', () => {
-      document.body.classList.toggle('sidebar-collapsed');
-      const collapsed = document.body.classList.contains('sidebar-collapsed');
+      html.classList.toggle('sidebar-collapsed');
+      const collapsed = html.classList.contains('sidebar-collapsed');
       localStorage.setItem('sidebar-collapsed', collapsed.toString());
     });
     
