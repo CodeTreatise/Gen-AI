@@ -1,0 +1,41 @@
+---
+title: "SDKs vs Raw HTTP"
+---
+
+# SDKs vs Raw HTTP
+
+- Official SDK advantages and limitations
+  - Type safety and autocomplete
+  - Automatic retries built-in
+  - Streaming helpers
+  - Version management
+  - Dependency on SDK updates
+- When to use raw HTTP requests
+  - Maximum control needed
+  - Minimal dependencies
+  - Edge runtime compatibility
+  - Custom retry logic
+  - Learning purposes
+- SDK abstraction layers
+  - Wrapping SDKs for flexibility
+  - Adding custom functionality
+  - Logging and monitoring
+  - Testing and mocking
+- Vendor lock-in considerations
+  - SDK-specific patterns
+  - Migration difficulty
+  - Multi-provider support
+  - Future flexibility
+- Custom wrapper patterns
+  - Unified API wrapper
+  - Middleware patterns
+  - Decorator patterns
+  - Factory patterns for providers
+- Modern SDK features (2024-2025)
+  - `parse()` methods for structured outputs
+  - Pydantic/Zod schema integration
+  - `output_text` and `output_parsed` helpers
+  - Typed streaming event handlers
+  - TypeScript Agents SDK
+  - Python Agents SDK
+  - SDK support for Responses API

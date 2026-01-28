@@ -1,0 +1,69 @@
+---
+title: "Agent Evaluation Patterns (2025-2026)"
+---
+
+# Agent Evaluation Patterns (2025-2026)
+
+- Understanding AI Agent Architecture
+  - Reasoning layer: LLM for planning and decision-making
+  - Action layer: Tools for executing decisions
+  - Agentic loop: Reason → Act → Observe → Adapt
+  - Component isolation for targeted evaluation
+- Common Agent Failure Modes
+  - Reasoning layer failures
+    - Poor plan quality (illogical, incomplete, inefficient)
+    - Plan too granular or too high-level
+    - Missing dependency consideration
+    - Plan deviation during execution
+  - Action layer failures
+    - Wrong tool selection
+    - Incorrect tool arguments
+    - Wrong tool call ordering
+    - Missed tool calls
+  - Overall execution failures
+    - Task incomplete
+    - Inefficient execution (redundant steps)
+    - Going off-task/tangents
+    - Poor error recovery
+- Evaluating the Reasoning Layer
+  - PlanQualityMetric
+    - Is the plan logical and complete?
+    - Is the plan appropriately scoped?
+    - Does plan account for dependencies?
+  - PlanAdherenceMetric
+    - Does agent follow its own plan?
+    - Deviation detection and scoring
+    - Plan-to-execution alignment
+- Evaluating the Action Layer
+  - ToolCorrectnessMetric
+    - Correct tool selection verification
+    - Expected vs actual tools comparison
+    - evaluation_params for strictness levels
+  - ArgumentCorrectnessMetric
+    - Valid argument generation
+    - Context extraction accuracy
+    - Schema compliance
+  - Tool call ordering verification
+- Evaluating Overall Execution
+  - TaskCompletionMetric
+    - Binary: Did agent complete the task?
+    - Full trace analysis
+    - Outcome verification
+  - StepEfficiencyMetric
+    - Minimal steps without redundancy
+    - Wasted token detection
+    - Optimal path comparison
+- End-to-End vs Component-Level Evals
+  - End-to-end: Full agent trace analysis
+    - Reasoning and execution metrics
+    - Passed to evals_iterator(metrics=[...])
+  - Component-level: Specific component isolation
+    - Action layer metrics on LLM component
+    - @observe(metrics=[...]) decorator pattern
+  - When to use each approach
+  - Combining for comprehensive coverage
+- Agent Dataset Patterns
+  - Golden datasets for agent evaluation
+  - Expected tool sequences in test cases
+  - Multi-step scenario coverage
+  - Edge case agent scenarios

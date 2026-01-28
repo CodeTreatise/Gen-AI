@@ -1,0 +1,63 @@
+---
+title: "Transparency & Explainability"
+---
+
+# Transparency & Explainability
+
+- AI Disclosure Requirements
+  - Disclosure regulations (EU AI Act Article 50)
+  - Chatbot disclosure (AI interaction notice)
+  - Emotion recognition disclosure
+  - Biometric categorization notice
+  - Deepfake/synthetic content labeling
+- C2PA Content Credentials (NEW 2025)
+  - Coalition for Content Provenance and Authenticity
+  - Steering: Adobe, Microsoft, Google, OpenAI, BBC
+  - Digital watermarking standard
+  - Manifest: creation metadata, editing history
+  - Synthetic content provenance
+  - Cross-platform verification
+  - Content Credentials Verify tool
+- Synthetic Content Labeling (NEW 2025)
+  - EU AI Act deepfake requirements
+  - OpenAI image metadata (C2PA, IPTC)
+  - Google SynthID watermarking
+  - Meta AI-generated labels
+  - Platform-specific requirements
+- Deepfake Detection (NEW 2025)
+  - Deepfake detection APIs
+  - Synthetic voice detection
+  - Face manipulation detection
+  - Audio cloning detection
+  - Real-time detection challenges
+  - Detection vs generation arms race
+- Explaining AI Decisions to Users
+  - Decision reasoning chains
+  - Factor explanation (attribution)
+  - User-friendly explanations (layered)
+  - Technical details (optional depth)
+  - Counterfactual explanations
+- Confidence Communication
+  - Confidence levels (high/medium/low)
+  - Uncertainty quantification
+  - Hedging language ("likely", "may")
+  - Reliability indicators
+  - Calibration of confidence
+- Source Attribution
+  - Citation generation (URL, title, snippet)
+  - Reference linking and verification
+  - Source reliability scoring
+  - Grounded vs ungrounded content
+  - Protected material citations
+- Limitations Disclosure
+  - Known limitations (knowledge cutoff)
+  - Accuracy disclaimers
+  - Use case boundaries
+  - User guidance and warnings
+  - Hallucination risk notices
+- User Control Over AI Features
+  - Opt-out options (AI responses)
+  - Preference settings (AI behavior)
+  - Manual alternatives (human support)
+  - Transparency controls (explain mode)
+  - Data usage preferences

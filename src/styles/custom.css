@@ -1,0 +1,297 @@
+/* ============================================
+   🌌 COSMOS - AI/ML Course Universe Theme
+   Inspired by the infinite beauty of space
+   ============================================ */
+
+/* ===================
+   🎨 Cosmic Color Palette - Accent Only
+   Let Starlight handle gray/white/black for proper theme support
+   =================== */
+:root {
+  /* Purple accent colors */
+  --sl-color-accent-low: #ede9fe;
+  --sl-color-accent: #7c3aed;
+  --sl-color-accent-high: #4c1d95;
+  --sl-color-text-accent: #5b21b6;
+}
+
+:root[data-theme='dark'] {
+  /* Brighter purple for dark mode visibility */
+  --sl-color-accent-low: #2e1065;
+  --sl-color-accent: #a78bfa;
+  --sl-color-accent-high: #e9d5ff;
+  --sl-color-text-accent: #c4b5fd;
+}
+
+/* ===================
+   ✨ Background
+   =================== */
+body {
+  background-color: var(--sl-color-bg);
+}
+
+/* ===================
+   🚀 Smooth Navigation
+   =================== */
+html {
+  scroll-behavior: smooth;
+}
+
+/* ===================
+   📖 Content Typography
+   =================== */
+.sl-markdown-content {
+  line-height: 1.8;
+  font-size: 1.0625rem;
+}
+
+/* Headings */
+.sl-markdown-content h1 {
+  margin-bottom: 1.5rem;
+  padding-bottom: 0.75rem;
+  border-bottom: 2px solid var(--sl-color-accent);
+}
+
+.sl-markdown-content h2 {
+  margin-top: 2.5rem;
+  margin-bottom: 1rem;
+  color: var(--sl-color-text-accent);
+}
+
+.sl-markdown-content h3 {
+  margin-top: 2rem;
+  margin-bottom: 0.75rem;
+}
+
+/* Paragraphs with breathing room */
+.sl-markdown-content p {
+  margin-bottom: 1.5rem;
+}
+
+/* ===================
+   📋 Lists
+   =================== */
+.sl-markdown-content ul,
+.sl-markdown-content ol {
+  margin-bottom: 1.75rem;
+  padding-left: 1.75rem;
+}
+
+.sl-markdown-content li {
+  margin-bottom: 0.5rem;
+}
+
+.sl-markdown-content li::marker {
+  color: var(--sl-color-accent);
+}
+
+/* ===================
+   💻 Code Blocks
+   =================== */
+.expressive-code {
+  margin: 1.5rem 0;
+}
+
+/* Inline code */
+.sl-markdown-content :not(pre) > code {
+  background-color: var(--sl-color-bg-inline-code);
+  padding: 0.2em 0.4em;
+  border-radius: 0.25rem;
+  font-size: 0.875em;
+}
+
+/* ===================
+   📊 Tables - Star Charts
+   =================== */
+.sl-markdown-content table {
+  width: 100%;
+  margin: 1.5rem 0;
+  border-collapse: collapse;
+}
+
+.sl-markdown-content th {
+  background-color: var(--sl-color-accent);
+  color: var(--sl-color-text-invert);
+  font-weight: 600;
+  padding: 0.75rem 1rem;
+  text-align: left;
+}
+
+.sl-markdown-content td {
+  padding: 0.75rem 1rem;
+  border-bottom: 1px solid var(--sl-color-hairline);
+}
+
+.sl-markdown-content tbody tr {
+  transition: all 0.3s ease;
+}
+
+.sl-markdown-content tbody tr:nth-child(even) {
+  background-color: var(--sl-color-bg-nav);
+}
+
+.sl-markdown-content tbody tr:hover {
+  background-color: var(--sl-color-hairline-light);
+}
+
+/* ===================
+   💬 Blockquotes
+   =================== */
+.sl-markdown-content blockquote {
+  border-left: 4px solid var(--sl-color-accent);
+  background-color: var(--sl-color-bg-nav);
+  margin: 1.5rem 0;
+  padding: 1rem 1.5rem;
+  border-radius: 0 0.5rem 0.5rem 0;
+}
+
+.sl-markdown-content blockquote p:last-child {
+  margin-bottom: 0;
+}
+
+/* ===================
+   🔗 Links - Wormholes
+   =================== */
+.sl-markdown-content a {
+  color: var(--sl-color-accent);
+  text-decoration: underline;
+  text-underline-offset: 2px;
+  transition: all 0.2s ease;
+}
+
+.sl-markdown-content a:hover {
+  color: var(--sl-color-accent-high);
+  text-decoration-thickness: 2px;
+}
+
+/* ===================
+   🛸 Cards - Space Stations
+   =================== */
+.sl-link-card,
+.card {
+  transition: all 0.2s ease;
+}
+
+.sl-link-card:hover,
+.card:hover {
+  transform: translateY(-2px);
+  box-shadow: var(--sl-shadow-md);
+}
+
+/* ===================
+   🧭 Sidebar - Navigation Constellation
+   =================== */
+nav[aria-label="Main"] a {
+  transition: all 0.2s ease;
+  border-radius: 0.5rem;
+}
+
+nav[aria-label="Main"] a:hover {
+  background-color: var(--sl-color-hairline-light);
+}
+
+[aria-current="page"] {
+  background-color: var(--sl-color-accent-low) !important;
+  color: var(--sl-color-accent-high) !important;
+  font-weight: 600;
+  border-left: 3px solid var(--sl-color-accent);
+}
+
+/* ===================
+   📍 Horizontal Rules
+   =================== */
+.sl-markdown-content hr {
+  border: none;
+  height: 1px;
+  background-color: var(--sl-color-hairline);
+  margin: 2.5rem 0;
+}
+
+/* ===================
+   🎯 Focus States
+   =================== */
+*:focus-visible {
+  outline: 2px solid var(--sl-color-accent);
+  outline-offset: 2px;
+}
+
+/* ===================
+   🌠 Selection
+   =================== */
+::selection {
+  background-color: var(--sl-color-accent-low);
+}
+
+/* ===================
+   📱 Scrollbar
+   =================== */
+::-webkit-scrollbar {
+  width: 8px;
+  height: 8px;
+}
+
+::-webkit-scrollbar-track {
+  background-color: var(--sl-color-bg);
+}
+
+::-webkit-scrollbar-thumb {
+  background-color: var(--sl-color-hairline-light);
+  border-radius: 4px;
+}
+
+::-webkit-scrollbar-thumb:hover {
+  background-color: var(--sl-color-accent);
+}
+
+/* ===================
+   🌙 Reduced Motion - Quiet Space
+   =================== */
+@media (prefers-reduced-motion: reduce) {
+  html {
+    scroll-behavior: auto;
+  }
+  
+  *,
+  *::before,
+  *::after {
+    animation-duration: 0.01ms !important;
+    transition-duration: 0.01ms !important;
+  }
+}
+
+/* ===================
+   📲 Mobile
+   =================== */
+@media (max-width: 768px) {
+  .sl-markdown-content {
+    font-size: 1rem;
+  }
+  
+  .sl-markdown-content table {
+    font-size: 0.875rem;
+  }
+  
+  .sl-markdown-content th,
+  .sl-markdown-content td {
+    padding: 0.625rem 0.75rem;
+  }
+}
+
+/* ===================
+   ⭐ Hero Section
+   =================== */
+.hero {
+  position: relative;
+}
+
+/* ===================
+   🌙 Reduced Motion
+   =================== */
+@media (prefers-reduced-motion: reduce) {
+  *,
+  *::before,
+  *::after {
+    animation-duration: 0.01ms !important;
+    transition-duration: 0.01ms !important;
+  }
+}

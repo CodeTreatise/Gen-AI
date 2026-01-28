@@ -1,0 +1,64 @@
+---
+title: "Quality Monitoring"
+---
+
+# Quality Monitoring
+
+- Evaluation Frameworks (NEW 2025)
+  - OpenAI Evals Platform
+    - Built-in evaluators
+    - Prompt optimizer
+    - External model support
+    - Graders and scoring
+  - Langfuse Evaluation
+    - LLM-as-a-Judge
+    - Annotation queues
+    - Dataset experiments
+    - Score analytics
+  - LangSmith Evaluation
+    - Custom evaluators
+    - Automated testing
+    - Regression detection
+  - Braintrust, Weights & Biases
+- LLM-as-a-Judge (NEW 2025)
+  - Automated quality scoring
+  - Criteria-based evaluation
+  - Reference-based comparison
+  - Multi-aspect scoring
+  - Judge model selection
+- Response quality tracking
+  - Quality metrics
+  - Automated scoring
+  - Sample evaluation
+  - Quality trends
+  - Trace-linked scoring
+- Hallucination detection strategies
+  - Fact verification
+  - Source checking (RAG)
+  - Consistency checks
+  - Confidence signals
+  - Grounded response validation (NEW 2025)
+- User feedback collection
+  - Thumbs up/down
+  - Detailed feedback
+  - Implicit signals (regeneration, copy)
+  - Feedback analysis
+  - Feedback-to-trace linking (NEW 2025)
+- A/B testing AI features
+  - Test design
+  - Metric selection
+  - Statistical significance
+  - Result interpretation
+  - Prompt A/B testing (Langfuse) (NEW 2025)
+- Regression detection
+  - Benchmark tests
+  - Continuous evaluation
+  - Version comparison
+  - Automated alerts
+  - Dataset-based testing (NEW 2025)
+- Quality degradation alerts
+  - Quality thresholds
+  - Trend monitoring
+  - Root cause analysis
+  - Recovery procedures
+  - Model degradation detection

@@ -1,0 +1,62 @@
+---
+title: "Prompt Injection Attacks"
+---
+
+# Prompt Injection Attacks
+
+- OWASP LLM01:2025 Prompt Injection (NEW 2025)
+  - #1 risk in OWASP LLM Top 10
+  - Attack definition and taxonomy
+  - Exploiting prompt structure
+  - Manipulation techniques
+  - Stochastic nature makes full prevention impossible
+- What is prompt injection?
+  - Altering LLM behavior via crafted inputs
+  - Imperceptible to humans but parsed by model
+  - Bypassing guidelines and safety measures
+  - Enabling unauthorized access
+- Direct Prompt Injection
+  - User input directly alters model behavior
+  - Intentional (malicious crafting)
+  - Unintentional (accidental triggering)
+  - System prompt override attempts
+- Indirect Prompt Injection (NEW 2025)
+  - LLM accepts input from external sources
+  - Website content injection
+  - Document-based injection (PDFs, emails)
+  - RAG retrieval poisoning
+  - URL-based injection
+  - Cross-domain prompt injection
+- Attack vectors and examples
+  - Ignore instructions pattern
+  - Role-playing attacks
+  - Delimiter exploitation
+  - Encoding tricks (Base64, Unicode)
+  - Payload splitting across messages (NEW 2025)
+  - Adversarial suffix attacks (NEW 2025)
+  - Multilingual/obfuscated attacks (NEW 2025)
+- Multimodal Prompt Injection (NEW 2025)
+  - Hidden instructions in images
+  - Cross-modal attacks (image + text)
+  - Audio-based injection
+  - Video frame injection
+  - Expanded attack surface
+- Jailbreaking vs. Prompt Injection
+  - Jailbreaking is subset of prompt injection
+  - Safety bypass techniques
+  - DAN-style prompts
+  - Character roleplay exploitation
+  - Multi-turn manipulation
+  - Requires ongoing model training updates
+- Data exfiltration via injection
+  - System prompt extraction (LLM07)
+  - User data extraction
+  - Configuration leakage
+  - Context window extraction
+  - Tool/function discovery
+- Real-world incidents
+  - Slack AI data exfiltration (2024)
+  - ChatGPT plugin vulnerabilities
+  - Email assistant CVE-2024-5184
+  - Resume injection attacks
+  - RAG poisoning incidents

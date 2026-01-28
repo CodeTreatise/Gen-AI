@@ -1,0 +1,85 @@
+---
+title: "Prompt Injection Prevention"
+---
+
+# Prompt Injection Prevention
+
+- OWASP Prevention Framework (NEW 2025)
+  - No foolproof prevention exists
+  - Defense in depth required
+  - Multiple mitigation layers
+  - Continuous monitoring essential
+- Constrain Model Behavior
+  - Specific role/capability instructions
+  - Strict context adherence
+  - Limit responses to specific tasks
+  - Ignore modification attempts
+- Input Sanitization Strategies
+  - Special character handling
+  - Delimiter escaping
+  - Input normalization
+  - Length and token limits
+- Prompt/Data Separation
+  - Clear boundaries with tags
+  - Structural separation
+  - Instruction isolation
+  - XML/JSON structured prompts
+- Define Expected Output Formats
+  - Clear output specifications
+  - Request detailed reasoning
+  - Source citation requirements
+  - Deterministic validation code
+- Input and Output Filtering (NEW 2025)
+  - Define sensitive categories
+  - Semantic filters
+  - String-checking rules
+  - RAG Triad evaluation
+    - Context relevance
+    - Groundedness
+    - Question/answer relevance
+- Prompt Shields (Azure) (NEW 2025)
+  - Jailbreak attack detection
+  - User prompt attack detection
+  - Indirect attack detection
+  - Real-time blocking
+- Llama Guard 3 Integration (NEW 2025)
+  - Input filtering before LLM
+  - Output filtering after LLM
+  - 13 safety categories (S1-S13)
+  - Custom category definitions
+  - 1B model for on-device/low-latency
+- Instruction Hierarchy
+  - Priority levels
+  - Override prevention
+  - System instruction protection
+  - User instruction scoping
+- Privilege Control (NEW 2025)
+  - Least privilege access
+  - Per-operation API tokens
+  - Handle functions in code, not model
+  - Restrict model access
+- Human-in-the-Loop
+  - Require approval for high-risk actions
+  - Confirmation for privileged operations
+  - User verification workflows
+- Segregate External Content
+  - Clearly denote untrusted content
+  - Separate from user prompts
+  - Tag external sources
+- Defensive System Prompts
+  - Explicit boundaries
+  - Behavior constraints
+  - Rejection instructions
+  - Safety reinforcement
+- Adversarial Testing (NEW 2025)
+  - Regular penetration testing
+  - Breach simulations
+  - Treat model as untrusted user
+  - Test trust boundaries
+  - MITRE ATLAS framework
+- Monitoring and Detection
+  - Attack pattern detection
+  - Logging suspicious inputs
+  - Alert systems
+  - Response protocols
+  - Rate limiting

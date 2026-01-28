@@ -1,0 +1,61 @@
+---
+title: "Built-in Tools & MCP Integration"
+---
+
+# Built-in Tools & MCP Integration
+
+- OpenAI built-in tools
+  - Web search (`type: "web_search"`)
+  - Code interpreter (`type: "code_interpreter"`)
+  - File search (`type: "file_search"`)
+  - Image generation (`type: "image_generation"`)
+  - Computer use (`type: "computer_use_preview"`)
+  - Apply patch (`type: "apply_patch"`)
+  - Shell command execution (`type: "shell"`)
+- File search advanced configuration
+  - `ranking_options.ranker` (auto, default_2024_08_21)
+  - `ranking_options.score_threshold` (0-1)
+  - `max_num_results` (default 20, max 50)
+  - Vector store association
+  - Chunking strategies
+  - Metadata filtering
+- Computer use tool details
+  - Anthropic `computer_use_20241022` tool
+  - Screen dimensions configuration
+  - Action types (click, type, scroll, screenshot)
+  - Coordinate-based interactions
+  - Safety considerations and sandboxing
+  - Human-in-the-loop patterns
+  - OpenAI `computer_use_preview` (beta)
+- Using built-in tools
+  - Tool configuration in `tools` array
+  - `tool_choice` for forcing tool use
+  - Tool output in response
+  - Combining multiple tools
+- Model Context Protocol (MCP)
+  - What is MCP
+  - Remote MCP server integration
+  - `server_url` configuration
+  - Streamable HTTP and SSE transports
+- MCP tool workflow
+  - `mcp_list_tools` response
+  - Tool definitions from server
+  - `mcp_call` execution
+  - Error handling for MCP
+- MCP approval system
+  - `require_approval` settings
+  - `mcp_approval_request` handling
+  - `mcp_approval_response` submission
+  - Skipping approvals for trusted servers
+- OpenAI Connectors
+  - Built-in service connectors
+  - Dropbox, Gmail, Google Calendar/Drive
+  - Microsoft Teams, Outlook, SharePoint
+  - OAuth authorization setup
+  - `connector_id` configuration
+- MCP security considerations
+  - Prompt injection risks
+  - Trusting remote servers
+  - Logging tool call data
+  - ZDR and data residency implications
+  - `allowed_tools` filtering

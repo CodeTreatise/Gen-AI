@@ -1,0 +1,50 @@
+---
+title: "Model Context Protocol (MCP)"
+---
+
+# Model Context Protocol (MCP)
+
+- MCP architecture fundamentals
+  - Universal tool/context interface standard
+  - Client-server architecture
+  - Transport protocols (stdio, SSE, WebSocket)
+  - JSON-RPC message format
+- MCP primitives
+  - Tools (agent-invoked functions)
+  - Resources (context provision)
+  - Prompts (reusable templates)
+  - Sampling (LLM request delegation)
+  - Roots (filesystem boundaries)
+- Building MCP servers
+  - Server class setup
+  - Tool registration with schemas
+  - Resource handlers
+  - Prompt templates
+  - Capability declarations
+- Building MCP clients
+  - Client initialization
+  - Server discovery and connection
+  - Tool invocation patterns
+  - Resource fetching
+  - Multi-server orchestration
+- Transport implementations
+  - stdio transport for local processes
+  - SSE transport for HTTP
+  - Streamable HTTP (2025 spec)
+  - WebSocket for bidirectional
+- MCP with agent frameworks
+  - LangChain MCP integration
+  - OpenAI Agents SDK + MCP
+  - CrewAI MCP tools
+  - Custom framework integration
+- Popular MCP servers
+  - Filesystem MCP server
+  - Database MCP servers (PostgreSQL, MongoDB)
+  - GitHub MCP server
+  - Web search MCP servers
+  - Browser automation MCP
+- Security considerations
+  - Capability-based permissions
+  - Server sandboxing
+  - Input validation
+  - Audit logging

@@ -1,0 +1,130 @@
+---
+title: "Sparse Neural Retrieval (SPLADE)"
+---
+
+# Sparse Neural Retrieval (SPLADE)
+
+- SPLADE fundamentals
+  - Sparse lexical expansion concept
+    - BERT MLM head for term importance
+    - Sparse vector generation
+    - Vocabulary-sized representations
+    - Interpretable term weights
+  - How SPLADE differs from dense retrieval
+    - Explicit lexical matching
+    - Inverted index compatibility
+    - Term-based interpretability
+    - Complementary to dense
+  - Evolution: SPLADE → SPLADE++ → SPLADE-v3
+    - Progressive improvements
+    - Distillation techniques
+    - Hard negative mining
+    - Current state-of-the-art (40.2 MRR@10)
+- SPLADE architecture deep dive
+  - Query and document encoders
+    - Shared vs. separate encoders
+    - Efficiency trade-offs
+    - Query-specific regularization
+    - Encoding pipeline
+  - FLOPS regularization
+    - Sparsity control
+    - Lambda tuning
+    - Efficiency-effectiveness balance
+    - Latency optimization
+  - Sparse vector generation
+    - Import SparseEncoder from sentence_transformers library
+    - Load SPLADE-v3 model by instantiating SparseEncoder with model name "naver/splade-v3"
+    - Prepare queries and documents as lists of strings
+    - Encode queries using model.encode_query() method
+    - Encode documents using model.encode_document() method
+    - Sparse embeddings have vocabulary-size dimensions (30522 for BERT tokenizer)
+    - Query embeddings shape: [num_queries, 30522]
+    - Document embeddings shape: [num_docs, 30522]
+    - Compute similarity scores using model.similarity() with dot product
+    - Returns similarity matrix between queries and documents
+- Integration with inverted indexes
+  - Anserini integration
+    - JSON collection export
+    - Query file generation
+    - Index building
+    - Retrieval pipeline
+  - Elasticsearch sparse vectors
+    - Sparse vector field type
+    - Token-weight pairs
+    - Efficient storage
+    - Query support
+  - PISA for maximum efficiency
+    - Optimized inverted index
+    - BM25-comparable latency
+    - < 4ms query time
+    - Production deployment
+- SPLADE vs. traditional BM25
+  - Semantic understanding advantages
+    - Query expansion
+    - Synonym handling
+    - Conceptual matching
+    - Context awareness
+  - Efficiency comparison
+    - Latency parity achievable
+    - Index size differences
+    - Resource requirements
+    - Scaling characteristics
+  - When to replace BM25
+    - Zero-shot performance needs
+    - Semantic gap issues
+    - Multi-language requirements
+    - Complex query handling
+- ELSER (Elastic Learned Sparse Encoder)
+  - Elasticsearch native sparse encoder
+    - Built-in model deployment
+    - semantic_text field type
+    - Inference API integration
+    - Simplified workflow
+  - ELSER architecture
+    - Sparse token weights
+    - Optimized for Elasticsearch
+    - Out-of-domain performance
+    - Continuous improvements
+  - Implementation with semantic_text
+    - Define Elasticsearch index mappings with properties object
+    - Set content field type to "semantic_text" for automatic sparse encoding
+    - Configure inference_id to point to ELSER endpoint (e.g., "elser-endpoint")
+    - Elasticsearch automatically handles sparse vector generation on indexing
+    - Queries against semantic_text fields use ELSER model for matching
+  - Hybrid search with ELSER
+    - Combining with BM25
+    - RRF fusion
+    - Performance optimization
+    - Production patterns
+- Training custom SPLADE models
+  - Training data requirements
+    - Query-document pairs
+    - Relevance labels
+    - Hard negatives
+    - Data augmentation
+  - Fine-tuning for domains
+    - Domain-specific vocabulary
+    - Specialized corpora
+    - Evaluation datasets
+    - Quality metrics
+  - Distillation from cross-encoders
+    - Teacher model selection
+    - Knowledge transfer
+    - Quality improvement
+    - Training efficiency
+- Hybrid sparse-dense retrieval
+  - Combining SPLADE with dense
+    - Complementary strengths
+    - Fusion strategies
+    - Score normalization
+    - Ensemble methods
+  - Score fusion approaches
+    - Linear interpolation
+    - Reciprocal rank fusion
+    - Learned fusion weights
+    - Query-dependent weighting
+  - Production hybrid patterns
+    - Parallel retrieval
+    - Candidate pooling
+    - Re-ranking pipeline
+    - Latency management

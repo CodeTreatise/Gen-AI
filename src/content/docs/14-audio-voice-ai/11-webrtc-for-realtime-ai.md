@@ -1,0 +1,41 @@
+---
+title: "WebRTC for Real-Time AI"
+---
+
+# WebRTC for Real-Time AI
+
+- WebRTC fundamentals
+  - Peer-to-peer connections
+  - Signaling servers
+  - ICE candidates
+  - STUN/TURN servers
+  - Connection establishment
+- Audio/video capture with getUserMedia
+  - Media constraints
+  - Device selection
+  - Permission handling
+  - Stream management
+  - Track manipulation
+- Real-time voice AI with WebRTC
+  - Live transcription streaming
+  - Real-time translation
+  - Voice activity detection
+  - Echo cancellation
+  - Noise suppression
+- AI-powered video calls
+  - Background blur/replacement
+  - Face tracking
+  - Gesture recognition
+  - Real-time filters
+  - Caption overlay
+- WebRTC data channels for AI
+  - Binary data transfer
+  - Low-latency messaging
+  - AI coordination
+  - State synchronization
+- Multi-party AI interactions
+  - SFU vs. mesh topology
+  - Scalability considerations
+  - Simultaneous processing
+  - Resource management
+  - Quality adaptation

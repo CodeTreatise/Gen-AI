@@ -1,0 +1,62 @@
+---
+title: "JSON Schema for Parameters"
+---
+
+# JSON Schema for Parameters
+
+- JSON Schema basics
+  - Schema syntax overview
+  - OpenAPI schema subset support
+  - Type definitions
+  - Property definitions
+- Strict mode schema requirements (OpenAI)
+  - `additionalProperties: false` mandatory
+  - All fields must be in `required` array
+  - Optional fields use `type: ["string", "null"]`
+  - Schema caching for performance
+- Property types (string, number, boolean, array, object)
+  - String constraints
+    - `format`: date-time, time, date, email, uuid, ipv4, ipv6
+    - `pattern`: regex validation
+    - `minLength`, `maxLength`
+  - Number constraints
+    - `minimum`, `maximum`
+    - `exclusiveMinimum`, `exclusiveMaximum`
+    - `multipleOf`
+  - Integer vs number distinction
+  - Boolean usage
+- Required vs. optional parameters
+  - Required array specification
+  - Strict mode: all must be required
+  - Optional pattern: `type: ["string", "null"]`
+  - Default values (not in strict mode)
+- Enums for constrained values
+  - Enum definition improves accuracy
+  - Maximum 1000 enum values
+  - 15,000 character limit for enum strings
+  - Better than description-only constraints
+- Nested object schemas
+  - Object property definitions
+  - Maximum 10 levels of nesting
+  - Maximum 5000 total properties
+  - `additionalProperties: false` at each level
+- Recursive and reusable schemas
+  - `$ref: "#"` for root recursion
+  - `$defs` for reusable definitions
+  - `$ref: "#/$defs/schema_name"` references
+  - Recursive schema examples (UI trees, linked lists)
+- Array item schemas
+  - Items schema definition
+  - `minItems`, `maxItems`
+  - Unique items
+  - Tuple validation
+- anyOf for union types
+  - Multiple valid schemas
+  - Discriminated unions
+  - Not at root level (must be object)
+  - Each nested schema must be valid
+- Description for each property
+  - Property purpose
+  - Format expectations with examples
+  - Edge cases
+  - Constraints explanation

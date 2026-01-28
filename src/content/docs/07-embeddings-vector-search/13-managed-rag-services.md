@@ -1,0 +1,52 @@
+---
+title: "Managed RAG Services (2025)"
+---
+
+# Managed RAG Services (2025)
+
+- The managed RAG paradigm
+  - End-to-end RAG without infrastructure
+  - Auto-chunking, auto-embedding, auto-indexing
+  - API-level simplicity
+  - Trade: control vs convenience
+- OpenAI Vector Stores & File Search
+  - Create vector store via API
+  - Upload files (PDF, docs, code, etc.)
+  - Automatic processing pipeline
+  - Use with Responses API file_search tool
+  - Citations in responses
+  - Metadata filtering support
+  - max_num_results for cost control
+- Gemini File Search (2025)
+  - FileSearchStore creation
+  - uploadToFileSearchStore API
+  - Chunking configuration:
+    - max_tokens_per_chunk
+    - max_overlap_tokens
+  - File metadata for filtering
+  - Citations in grounding_metadata
+  - Works with Gemini 3 models
+  - Pricing: embeddings at indexing, storage free
+- Comparison: OpenAI vs Gemini managed RAG
+  - OpenAI: broader file format support
+  - Gemini: chunking configuration control
+  - Both: automatic citation support
+  - Both: metadata filtering
+  - Consider: existing API ecosystem
+- When to use managed RAG
+  - Rapid prototyping
+  - Simple knowledge bases (<1GB)
+  - Teams without vector DB expertise
+  - Cost-sensitivity (no infrastructure)
+- When to build custom
+  - Complex chunking requirements
+  - Hybrid search needs
+  - Multi-tenant architectures
+  - Fine-tuned embedding models
+  - Regulatory requirements
+- Limitations of managed services
+  - Less control over chunking
+  - Fixed embedding models
+  - Rate limits and quotas
+  - Vendor lock-in considerations
+  - May not support latest techniques

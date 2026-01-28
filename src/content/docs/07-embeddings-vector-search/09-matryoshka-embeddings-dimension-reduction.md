@@ -1,0 +1,49 @@
+---
+title: "Matryoshka Embeddings & Dimension Reduction"
+---
+
+# Matryoshka Embeddings & Dimension Reduction
+
+- What are Matryoshka embeddings?
+  - Named after Russian nesting dolls
+  - Matryoshka Representation Learning (MRL)
+  - Single model, multiple valid dimensions
+  - Coarse-to-fine information encoding
+  - First N dimensions are independently useful
+- How MRL training works
+  - Loss computed at multiple dimension cutoffs
+  - Early dimensions: most important information
+  - Later dimensions: fine-grained details
+  - No separate models needed per dimension
+- Models supporting Matryoshka
+  - OpenAI text-embedding-3-small/large
+  - Google gemini-embedding-001
+  - Cohere embed-v4.0
+  - Nomic embed (open source)
+  - Many Sentence Transformers models
+- Dimension selection strategies
+  - Full dimensions: maximum quality
+  - 50% dimensions: ~1% quality loss typical
+  - 25% dimensions: ~2-3% quality loss
+  - Gemini recommended: 768, 1536, 3072
+  - OpenAI: any dimension up to max
+- API parameters for dimension control
+  - OpenAI: dimensions parameter
+  - Gemini: output_dimensionality parameter
+  - Cohere: output_dimension parameter
+  - Set at embedding generation time
+- Critical: Normalization after truncation
+  - Truncated vectors are NOT normalized
+  - MUST re-normalize to unit length
+  - Required for cosine similarity to work
+  - L2 normalization: v / ||v||
+  - Skip only if using dot product intentionally
+- Cost-benefit analysis
+  - Storage savings: 50% dimensions = 50% storage
+  - Faster search with smaller vectors
+  - Quality trade-offs by task
+  - Recommendation: benchmark on your data
+- Migration strategies
+  - Store full embeddings, query with reduced
+  - Gradual migration with A/B testing
+  - Re-embedding considerations

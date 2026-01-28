@@ -1,0 +1,56 @@
+---
+title: "Rate Limiting & Quotas"
+---
+
+# Rate Limiting & Quotas
+
+- Understanding rate limits (RPM, TPM)
+  - Requests Per Minute (RPM)
+  - Tokens Per Minute (TPM)
+  - Requests Per Day (RPD)
+  - Tier-based limits
+  - Images Per Minute (IPM) for vision
+  - Audio tokens rate limits
+- Rate limit response headers
+  - `x-ratelimit-limit-requests` — Max requests allowed
+  - `x-ratelimit-limit-tokens` — Max tokens allowed
+  - `x-ratelimit-remaining-requests` — Requests remaining
+  - `x-ratelimit-remaining-tokens` — Tokens remaining
+  - `x-ratelimit-reset-requests` — Time until request limit resets
+  - `x-ratelimit-reset-tokens` — Time until token limit resets
+  - `retry-after` — Seconds to wait before retry
+- Tier-based rate limits (2024-2025)
+  - Tier 1-5 system
+  - Automatic tier promotion based on usage
+  - Tier-specific RPM and TPM limits
+  - Enterprise tier custom limits
+- Quota management
+  - Monthly quotas
+  - Spending limits
+  - Quota exhaustion handling
+  - Quota increase requests
+- Request queuing
+  - Queue implementation
+  - Priority queuing
+  - Queue size limits
+  - Queue persistence
+- Throttling strategies
+  - Token bucket algorithm
+  - Leaky bucket algorithm
+  - Sliding window
+  - Client-side throttling
+- Handling 429 errors
+  - Retry-After header
+  - Automatic retry with delay
+  - User notification
+  - Request prioritization
+- Usage monitoring
+  - Real-time usage tracking
+  - Usage dashboards
+  - Alert thresholds
+  - Historical usage analysis
+- Service tier routing
+  - `service_tier: "auto"` (default)
+  - `service_tier: "flex"` for batch-like pricing
+  - `service_tier: "priority"` for high availability
+  - Background mode rate limits

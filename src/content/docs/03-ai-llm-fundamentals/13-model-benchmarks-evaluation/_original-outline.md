@@ -1,0 +1,49 @@
+---
+title: "Model Benchmarks & Evaluation"
+---
+
+# Model Benchmarks & Evaluation
+
+- Why benchmarks matter for selection
+  - Objective comparison across models
+  - Task-specific capability assessment
+  - Tracking model improvements over time
+  - Cost-quality optimization
+- Artificial Analysis Intelligence Index v4.0
+  - 10 evaluations methodology
+  - GDPval-AA, τ²-Bench, Terminal-Bench Hard
+  - SciCode, AA-LCR, AA-Omniscience
+  - IFBench, Humanity's Last Exam, GPQA Diamond, CritPt
+  - Composite scoring system
+- Common evaluation benchmarks
+  - MMLU — Massive Multitask Language Understanding (57 subjects)
+  - HumanEval — Code generation accuracy
+  - GPQA Diamond — Graduate-level science QA
+  - MT-Bench — Multi-turn conversation quality
+  - HellaSwag — Commonsense reasoning
+  - ARC-Challenge — Scientific reasoning
+  - GSM8K — Grade school math
+  - TruthfulQA — Factual accuracy
+- AA-Omniscience Index
+  - Hallucination measurement (-100 to 100 scale)
+  - Knowledge reliability scoring
+  - Factual accuracy assessment
+- Chatbot Arena / LMSYS Leaderboard
+  - Human preference rankings
+  - ELO rating system
+  - Blind comparison methodology
+  - Category-specific rankings
+- Performance metrics
+  - Speed benchmarks (tokens/second)
+  - Time to First Token (TTFT)
+  - Cost analysis (USD per 1M tokens input/output)
+  - Latency percentiles (p50, p95, p99)
+- Interpreting benchmark scores
+  - Benchmark gaming and overfitting
+  - Contamination concerns (training on test sets)
+  - Real-world vs benchmark performance gap
+  - Domain-specific evaluation importance
+- Open weights vs proprietary comparisons
+  - Performance parity trends
+  - Cost at scale differences
+  - Customization trade-offs

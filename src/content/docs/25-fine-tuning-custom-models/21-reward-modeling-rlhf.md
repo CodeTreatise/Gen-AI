@@ -1,0 +1,42 @@
+---
+title: "25.21 Reward Modeling & RLHF"
+---
+
+# 25.21 Reward Modeling & RLHF
+
+- Reward model fundamentals
+  - What reward models do
+  - Preference data requirements
+  - Model architecture choices
+  - Training objectives
+  - Evaluation metrics
+- TRL RewardTrainer
+  - Hugging Face reward model training
+  - Preference pair formatting
+  - Margin-based training
+  - Model initialization
+  - Hyperparameter tuning
+- Process Reward Models (PRM)
+  - Step-by-step reasoning evaluation
+  - TRL PRMTrainer implementation
+  - Math and reasoning applications
+  - Process vs outcome supervision
+  - Data annotation for PRM
+- RLHF pipeline
+  - Reward model training phase
+  - Policy optimization with PPO
+  - KL divergence constraints
+  - Reference model management
+  - Iterative RLHF cycles
+- Preference data collection
+  - Human annotation strategies
+  - Comparison interface design
+  - Annotator agreement metrics
+  - Quality control measures
+  - Synthetic preference generation
+- Reward model deployment
+  - Serving reward models
+  - Online vs offline evaluation
+  - Reward hacking detection
+  - Model ensemble strategies
+  - Calibration and normalization

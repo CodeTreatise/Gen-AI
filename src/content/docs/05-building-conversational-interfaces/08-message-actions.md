@@ -1,0 +1,54 @@
+---
+title: "Message Actions"
+---
+
+# Message Actions
+
+- Copy message content
+  - Full message copy
+  - Formatted vs plain text
+  - Clipboard API usage
+  - Copy success feedback
+- Copy code blocks
+  - Individual block copy buttons
+  - Code-specific formatting
+  - Preserving indentation
+  - Language-aware copying
+- Regenerate response
+  - Regenerate button placement
+  - Previous response handling
+  - Variation generation
+  - Version comparison
+- useChat action methods (2024-2025)
+  - `regenerate()` — regenerate last response
+  - `stop()` — cancel in-progress stream
+  - `setMessages()` — programmatic message updates
+  - `reload()` — retry after error
+  - Action button state management
+- Edit and resend messages
+  - Inline editing UI
+  - Conversation branching
+  - History preservation
+  - Resubmission flow
+- Message version history
+  - Version tracking for edited messages
+  - Version navigation UI
+  - Diff view between versions
+  - Restore previous versions
+  - Version timestamp display
+- Delete messages
+  - Single message deletion
+  - Cascade deletion options
+  - Confirmation dialogs
+  - Undo support
+- Long message handling
+  - "Show more" truncation patterns
+  - Character limit thresholds (e.g., 500 chars)
+  - Expand/collapse animations
+  - Full message modal view
+  - Virtualization for very long messages
+- Message reactions/feedback
+  - Thumbs up/down
+  - Detailed feedback forms
+  - Feedback collection
+  - Improvement suggestions

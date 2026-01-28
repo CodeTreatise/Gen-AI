@@ -1,0 +1,41 @@
+---
+title: "Reasoning Model APIs"
+---
+
+# Reasoning Model APIs
+
+- Reasoning models overview
+  - o-series models (o3, o4-mini)
+  - GPT-5 with reasoning
+  - Test-time compute scaling
+  - When to use reasoning models
+- Reasoning-specific parameters
+  - `reasoning_effort` settings
+  - `max_completion_tokens` (replaces max_tokens)
+  - `verbosity` for response length
+  - Parameters not supported by reasoning models
+- Reasoning tokens
+  - Reasoning vs output tokens
+  - `completion_tokens_details.reasoning_tokens`
+  - Cost implications
+  - Budget management
+- Multi-turn with reasoning
+  - Passing reasoning items back
+  - `include: [\"reasoning.encrypted_content\"]`
+  - Context preservation
+  - Maintaining reasoning state
+- Encrypted reasoning
+  - ZDR organization support
+  - Encrypted reasoning items
+  - In-memory decryption
+  - Stateless with reasoning benefits
+- Reasoning in Responses API
+  - Reasoning items in output
+  - Better performance than Chat Completions
+  - Native tool use with reasoning
+  - Reasoning summaries
+- Best practices
+  - High-level guidance over explicit instructions
+  - Avoid excessive examples
+  - Let model reason naturally
+  - Monitor reasoning token usage

@@ -1,0 +1,50 @@
+---
+title: "AI Gateway & Unified API Layer (NEW 2025)"
+---
+
+# AI Gateway & Unified API Layer (NEW 2025)
+
+- AI Gateway Platforms
+  - Portkey AI Gateway
+    - 1600+ LLMs supported
+    - OpenAI-compatible API
+    - Enterprise-grade (SOC 2, HIPAA)
+    - Self-hostable option
+  - LiteLLM
+    - 100+ providers
+    - OpenAI format standardization
+    - Proxy server mode
+    - Python SDK
+  - Helicone Gateway
+    - Unified API
+    - Built-in observability
+    - 100+ models
+  - Cloudflare AI Gateway
+- Smart Routing & Load Balancing
+  - Conditional routing rules
+  - Model-based routing
+  - Cost-based routing
+  - Latency-based routing
+  - Weighted distribution
+- Automatic Fallbacks
+  - Provider failover
+  - Model fallback chains
+  - Error-triggered switching
+  - Health-based routing
+  - Retry with different provider
+- Caching at Gateway Level
+  - Simple caching (exact match)
+  - Semantic caching (embedding similarity)
+  - Cache TTL configuration
+  - Cost savings tracking
+- Virtual Keys & Access Control
+  - Virtual key generation
+  - Per-key rate limits
+  - Per-key budgets
+  - Key rotation
+  - Audit trails
+- Request Transformation
+  - Provider format conversion
+  - Header injection
+  - Request/response logging
+  - Metadata tagging

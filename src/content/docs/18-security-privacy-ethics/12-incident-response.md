@@ -1,0 +1,46 @@
+---
+title: "Incident Response"
+---
+
+# Incident Response
+
+- AI-Specific Incident Types
+  - Model failures (hallucinations, wrong outputs)
+  - Safety incidents (harmful content generated)
+  - Privacy breaches (data exposure, PII leakage)
+  - Bias incidents (discriminatory outputs)
+  - Prompt injection attacks (system compromise)
+  - Jailbreaks (bypassed guardrails)
+  - Data exfiltration (sensitive info extraction)
+- Response Procedures (NEW 2025)
+  - Detection protocols (automated monitoring)
+  - Initial response (immediate containment)
+  - Containment (disable features, rollback)
+  - Remediation (fix, retrain, update)
+  - Recovery (restore service)
+  - Model rollback procedures
+- Communication Strategies
+  - Internal communication (stakeholder notification)
+  - User notification (affected users)
+  - Public disclosure (transparency)
+  - Media handling (PR coordination)
+  - Regulatory notification (compliance)
+- Post-Incident Analysis
+  - Root cause analysis (why it happened)
+  - Impact assessment (scope, severity)
+  - Documentation (complete record)
+  - Action items (prevention steps)
+  - Blameless postmortems
+- Learning and Improvement
+  - Lessons learned (team retrospectives)
+  - Process updates (procedure changes)
+  - Prevention measures (new guardrails)
+  - Team training (upskilling)
+  - Adversarial testing updates
+- Regulatory Reporting (NEW 2025)
+  - Reporting requirements (jurisdiction-specific)
+  - Timeline obligations (72 hours GDPR)
+  - Documentation needs (evidence preservation)
+  - Authority communication (data protection)
+  - EU AI Act serious incident reporting
+  - Market surveillance authority notification

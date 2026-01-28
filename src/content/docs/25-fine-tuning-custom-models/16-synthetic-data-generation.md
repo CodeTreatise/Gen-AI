@@ -1,0 +1,42 @@
+---
+title: "25.16 Synthetic Data Generation"
+---
+
+# 25.16 Synthetic Data Generation
+
+- Why synthetic data for fine-tuning?
+  - Overcoming data scarcity
+  - Cost reduction vs manual annotation
+  - Privacy-preserving data creation
+  - Scaling dataset size
+  - Domain-specific coverage
+- Teacher model approaches
+  - Using larger models to generate training data
+  - GPT-4/Claude as teachers for smaller models
+  - Distillation data generation
+  - Quality filtering strategies
+  - Teacher model selection
+- Synthetic data tools
+  - Distilabel for data generation pipelines
+  - Argilla for data curation and annotation
+  - LLM-as-judge for quality scoring
+  - Self-instruct methodology
+  - Evol-instruct for complexity scaling
+- Data augmentation techniques
+  - Paraphrasing and rephrasing
+  - Format variation
+  - Difficulty scaling
+  - Domain transfer
+  - Negative example generation
+- Quality assurance for synthetic data
+  - Diversity metrics
+  - Factuality verification
+  - Consistency checking
+  - Human validation sampling
+  - Decontamination from benchmarks
+- Synthetic data pipelines
+  - End-to-end workflow design
+  - Batch processing strategies
+  - Cost optimization
+  - Version control for generated data
+  - Iterative refinement cycles

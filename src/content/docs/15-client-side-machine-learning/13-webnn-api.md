@@ -1,0 +1,64 @@
+---
+title: "WebNN API"
+---
+
+# WebNN API
+
+- What is WebNN?
+  - Web Neural Network API
+  - W3C standard (Candidate Recommendation)
+  - Native acceleration
+  - Hardware abstraction
+  - Direct NPU/GPU access
+- WebNN vs WebGPU vs WebGL
+  - API levels (WebNN highest abstraction)
+  - Abstraction differences
+  - Performance comparison (WebNN fastest for supported ops)
+  - Use case selection
+- Browser support status (VERIFIED January 2026)
+  - Chrome 112-143+: Behind flag (#web-machine-learning-neural-network)
+  - Edge 112-143+: Behind flag (Windows ML backend, best support)
+  - Firefox: Not supported (no announced plans)
+  - Safari: Not supported (no announced plans)
+  - Global production support: 0% (caniuse.com verified)
+  - Requires explicit user flag enablement
+  - NOT ready for production deployment (IMPORTANT)
+- WebNN Polyfill (NEW 2025)
+  - webnn-polyfill package
+  - WebGL/WebGPU fallback implementation
+  - Enables WebNN API on unsupported browsers
+  - Performance: slower than native, faster than pure JS
+  - Use for API compatibility during transition
+- Framework Integration (NEW 2025)
+  - ONNX Runtime Web: WebNN execution provider
+  - Transformers.js: Polyfill support
+  - LiteRT.js (TensorFlow Lite): WebNN backend
+  - Automatic fallback to WebGPU/WebGL
+- Neural network primitives
+  - Convolution ops (conv2d, depthwiseConv2d)
+  - Activation functions (relu, sigmoid, tanh, gelu)
+  - Pooling operations (maxPool, averagePool)
+  - Normalization (batchNorm, layerNorm)
+  - Matrix operations (gemm, matmul)
+- Hardware acceleration options
+  - GPU acceleration (via DirectML, Metal)
+  - NPU acceleration (Intel, Qualcomm, Apple Neural Engine)
+  - CPU fallback (optimized SIMD)
+  - Hardware detection and selection
+- NPU Acceleration (NEW 2025)
+  - Intel Core Ultra NPUs
+  - Qualcomm Snapdragon NPUs
+  - Apple Neural Engine (M-series, A-series)
+  - AMD Ryzen AI NPUs
+  - Dedicated ML silicon access
+- WebNN Development Status (NEW 2025)
+  - W3C Web Machine Learning Working Group
+  - Active specification development
+  - Browser vendor participation (Microsoft, Intel, Google)
+  - Expected broader support: 2026-2027
+  - Current focus: Edge/Windows ecosystem
+- Future of browser ML
+  - Standard evolution (WebNN 2.0 planning)
+  - Hardware trends (NPUs becoming standard)
+  - Performance expectations (10x over WebGL)
+  - Ecosystem growth (framework adoption)

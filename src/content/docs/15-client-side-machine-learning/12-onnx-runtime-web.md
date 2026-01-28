@@ -1,0 +1,58 @@
+---
+title: "ONNX Runtime Web"
+---
+
+# ONNX Runtime Web
+
+- ONNX format overview
+  - Open format standard
+  - Framework interoperability
+  - Operator support
+  - Version compatibility
+  - Current version: v1.23+ (NEW 2025)
+- ONNX Runtime Web 2025 Updates (NEW 2025)
+  - WebGPU execution provider (stable)
+  - WebNN execution provider (experimental)
+  - Improved WASM backend performance
+  - Smaller bundle sizes
+  - Better quantization support (int4, int8)
+- ONNX Runtime GenAI (NEW 2025)
+  - onnxruntime-genai package
+  - LLM inference support
+  - Generative AI models
+  - Phi, Llama, Mistral support
+  - Streaming generation
+- Running ONNX models in browser
+  - ONNX Runtime Web (onnxruntime-web)
+  - Session creation
+  - Input preparation (ort.Tensor)
+  - Output extraction
+  - Execution providers selection
+- Execution Providers (NEW 2025)
+  - WebGPU: Best performance for ML
+  - WASM: Wide compatibility
+  - WebGL: Legacy support
+  - WebNN: Hardware acceleration (experimental)
+  - Automatic provider selection
+- Model conversion to ONNX
+  - PyTorch to ONNX (torch.onnx.export)
+  - TensorFlow to ONNX (tf2onnx)
+  - Hugging Face Optimum
+  - Conversion tools (onnx-simplifier)
+  - Validation (onnx.checker)
+- Performance characteristics
+  - WebGPU backend (fastest, 2025)
+  - WASM backend (compatible)
+  - Quantized model support
+  - Benchmarks vs TensorFlow.js
+- Cross-Platform Deployment (NEW 2025)
+  - Same ONNX model: browser, Node.js, Python, mobile
+  - Consistent inference results
+  - Framework-agnostic models
+  - Model zoo and hub
+- Use cases
+  - Cross-framework models
+  - Optimized inference
+  - Edge deployment
+  - Model serving
+  - Hugging Face model deployment (NEW 2025)

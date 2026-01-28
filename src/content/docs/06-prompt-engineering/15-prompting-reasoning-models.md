@@ -1,0 +1,46 @@
+---
+title: "Prompting Reasoning Models"
+---
+
+# Prompting Reasoning Models
+
+- **Understanding Reasoning Models**
+  - o3, o4-mini, GPT-5 (OpenAI reasoning models)
+  - Claude with extended thinking
+  - Gemini with thinking mode
+  - Internal chain-of-thought before response
+  - Reasoning tokens vs output tokens
+- **Key Differences from Standard Models**
+  - Reasoning models = "planners", GPT = "workhorses"
+  - Don't need chain-of-thought prompts
+  - Give high-level goals, not step-by-step instructions
+  - Like senior coworker vs junior coworker
+  - They determine their own approach
+- **Reasoning Effort Control**
+  - `reasoning: { effort: "low" | "medium" | "high" }`
+  - Low: faster, fewer tokens
+  - High: more thorough reasoning
+  - Task-dependent optimization
+  - Cost vs accuracy trade-off
+- **When to Use Reasoning Models**
+  - Ambiguous or complex tasks
+  - Multi-step planning problems
+  - Scientific and mathematical reasoning
+  - Agentic workflows requiring planning
+  - Needle-in-haystack code analysis
+- **Prompting Best Practices for Reasoning**
+  - Try zero-shot first (often sufficient)
+  - Use XML tags for structure
+  - Provide clear success criteria
+  - Don't over-specify the approach
+  - Include context but not instructions for "how to think"
+- **Reasoning Summaries**
+  - Request reasoning summary with `summary: "auto"`
+  - See model's thought process
+  - Debugging and validation
+  - Not raw tokens (privacy preserved)
+- **Context Window Management**
+  - Reserve 25,000+ tokens for reasoning
+  - Monitor `reasoning_tokens` in usage
+  - Handle `incomplete` status gracefully
+  - Adjust `max_output_tokens` appropriately

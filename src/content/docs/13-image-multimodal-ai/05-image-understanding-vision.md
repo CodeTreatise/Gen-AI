@@ -1,0 +1,49 @@
+---
+title: "Image Understanding (Vision)"
+---
+
+# Image Understanding (Vision)
+
+- Vision-capable models (2025-2026 landscape)
+  - **GPT-5, GPT-4.1 Vision** (replacing GPT-4V)
+  - **Claude 4 Vision** (enhanced capabilities)
+  - **Gemini 3 Flash/Pro Vision** (gemini-3-flash-preview)
+  - Feature comparison and selection
+- Sending images to AI
+  - Message content structure
+  - Image placement in messages
+  - Combining with text
+  - System prompt considerations
+  - **File ID references (NEW 2025)**
+- Image encoding (base64, URLs, File API)
+  - Base64 encoding process (inline <20MB)
+  - URL requirements
+  - **File API for large images** (Gemini)
+  - Format compatibility (PNG, JPEG, WebP, HEIC, HEIF)
+- **Detail and resolution control (NEW 2025)**
+  - **`detail` parameter**: low, high, auto (OpenAI)
+  - **`media_resolution` parameter** (Gemini 3)
+  - Token control via resolution settings
+  - Quality vs. cost optimization
+- Multiple images in one request
+  - Multi-image syntax
+  - Image ordering
+  - **Up to 3,600 images per request** (Gemini)
+  - Comparison queries
+- **Token calculation formulas (2025)**
+  - **≤384px both dimensions**: 258 tokens
+  - **Larger images**: Tiled into 768x768 tiles, 258 tokens each
+  - Crop unit size calculation
+  - Resolution impact on cost
+- **Object detection with bounding boxes (NEW 2025)**
+  - **Gemini 2.0+ object detection**
+  - **`box_2d` coordinates**: [ymin, xmin, ymax, xmax] normalized 0-1000
+  - Descaling to original image dimensions
+  - Custom detection instructions
+  - `response_mime_type: "application/json"`
+- **Segmentation with masks (NEW 2025)**
+  - **Gemini 2.5+ segmentation**
+  - Base64 encoded PNG masks
+  - Bounding box + label + mask per object
+  - **`thinking_budget: 0`** for better detection results
+  - Mask resizing and thresholding (>127)

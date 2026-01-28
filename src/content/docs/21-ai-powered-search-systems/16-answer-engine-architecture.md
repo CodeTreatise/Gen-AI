@@ -1,0 +1,125 @@
+---
+title: "Answer Engine Architecture"
+---
+
+# Answer Engine Architecture
+
+- Evolution from search to answers
+  - Traditional search limitations
+    - "10 blue links" paradigm
+    - User must synthesize information
+    - Multiple clicks required
+    - Cognitive load on users
+  - Answer engine paradigm shift
+    - Direct answers to questions
+    - Synthesized from multiple sources
+    - Citations for verification
+    - Conversational follow-ups
+  - Perplexity-style architecture
+    - "Compressed, cited, made clear"
+    - Real-time web search integration
+    - Multi-source synthesis
+    - Confidence indication
+- Retrieval-Augmented Generation for answers
+  - RAG pipeline for answer engines
+    - Query analysis
+    - Multi-source retrieval
+    - Context assembly
+    - Answer generation
+  - Source selection and ranking
+    - Relevance scoring
+    - Source credibility
+    - Recency weighting
+    - Diversity consideration
+  - Context window optimization
+    - Chunking strategies
+    - Context ordering
+    - Relevance filtering
+    - Token budget management
+- Citation generation
+  - Inline citation patterns
+    - Numbered references
+    - Hyperlinked sources
+    - Hoverable previews
+    - Citation confidence
+  - Source attribution techniques
+    - Import anthropic library for Claude API access
+    - Define generate_cited_answer function accepting query string and sources list
+    - Format sources into numbered context string with [1], [2] prefixes
+    - Each source includes title and content joined with newlines
+    - Initialize Anthropic client for API communication
+    - Call client.messages.create() with model, max_tokens, and messages
+    - Prompt instructs model to answer using sources with inline citations
+    - Include formatted sources and query in the prompt content
+    - Extract answer from response.content[0].text
+    - Return dictionary containing answer text, source list, and model name
+    - Citations appear as [1], [2] references matching source numbers
+  - Citation verification
+    - Claim extraction
+    - Source matching
+    - Hallucination detection
+    - Citation accuracy scoring
+- Answer confidence and calibration
+  - Confidence estimation
+    - Model uncertainty
+    - Source agreement
+    - Knowledge coverage
+    - Answer completeness
+  - When to show vs. not show answers
+    - Confidence thresholds
+    - Query type detection
+    - Fallback strategies
+    - User preference handling
+  - Calibration techniques
+    - Temperature tuning
+    - Ensemble methods
+    - Human feedback integration
+    - A/B testing confidence
+- Multi-turn answer conversations
+  - Follow-up question handling
+    - Context preservation
+    - Reference resolution
+    - Topic continuation
+    - Clarification requests
+  - Conversation memory
+    - Turn history
+    - Entity tracking
+    - User intent evolution
+    - Session management
+  - Drill-down and exploration
+    - Related question suggestions
+    - Topic expansion
+    - Depth vs. breadth navigation
+    - Discovery facilitation
+- Answer engine UI patterns
+  - Answer card design
+    - Primary answer display
+    - Source list layout
+    - Confidence indicators
+    - Action buttons
+  - Source preview and verification
+    - Inline source preview
+    - Full source access
+    - Source credibility signals
+    - User trust building
+  - Feedback collection
+    - Answer quality rating
+    - Source relevance feedback
+    - Correction submission
+    - Improvement loops
+- Implementation considerations
+  - Latency optimization
+    - Streaming answers
+    - Progressive rendering
+    - Source prefetching
+    - Cache strategies
+  - Cost management
+    - Token optimization
+    - Tiered processing
+    - Cache utilization
+    - Query routing
+  - Quality monitoring
+    - Answer accuracy tracking
+    - Citation precision
+    - User satisfaction
+    - Continuous improvement

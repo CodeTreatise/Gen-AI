@@ -1,0 +1,46 @@
+---
+title: "Production Monitoring & Online Evaluation"
+---
+
+# Production Monitoring & Online Evaluation
+
+- Development vs Production Evaluation
+  - Development: Benchmarking with datasets
+  - Production: Continuous monitoring
+  - Different goals and constraints
+  - Complementary approaches
+- Online Evaluation Requirements
+  - Async execution (never block responses)
+  - Minimal resource overhead
+  - No local LLM judge calls in request path
+  - Trend tracking over time
+- Metric Collections
+  - Pre-defined metric sets on cloud platform
+  - metric_collection parameter in @observe
+  - Centralized metric management
+  - Team-wide consistency
+- Async Production Evals
+  - Trace export to evaluation platform
+  - Background metric calculation
+  - Result storage and analysis
+  - No production latency impact
+- Quality Trend Monitoring
+  - Score tracking over time
+  - Degradation detection
+  - Alert thresholds
+  - Seasonal pattern analysis
+- Annotation Queues (LangSmith)
+  - Human review workflows
+  - Sample selection strategies
+  - Feedback loop integration
+  - Continuous improvement
+- Production Alerting
+  - Quality drop alerts
+  - Error rate monitoring
+  - Latency anomalies
+  - Cost threshold alerts
+- A/B Testing in Production
+  - Model version comparison
+  - Prompt variant testing
+  - Statistical significance
+  - Rollout decisions

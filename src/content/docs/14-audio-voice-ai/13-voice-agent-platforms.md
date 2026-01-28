@@ -1,0 +1,45 @@
+---
+title: "Voice Agent Platforms (NEW 2025)"
+---
+
+# Voice Agent Platforms (NEW 2025)
+
+- ElevenLabs Conversational AI
+  - Complete voice agent solution
+  - ASR + LLM + TTS integrated
+  - Turn-taking model
+  - 5000+ voices, 31 languages
+  - Workflow builder for conversation flows
+- ElevenLabs integration options
+  - React SDK for web apps
+  - Swift SDK for iOS
+  - Kotlin SDK for Android
+  - React Native for cross-platform
+  - Widget embedding
+  - WebSocket API for custom builds
+- ElevenLabs telephony
+  - SIP trunk integration
+  - Twilio native integration
+  - Batch outbound calls
+  - Call center automation
+- Hume Empathic Voice Interface (EVI)
+  - Speech-to-speech with emotion understanding
+  - Empathic response generation
+  - Prosody-guided responses
+  - Natural turn-taking via tone detection
+  - Multi-lingual (11 languages)
+- EVI versions and capabilities
+  - EVI 3: English, quick responses
+  - EVI 4-mini: 11 languages, supplemental LLM
+  - Expression measurement integration
+  - Interruptibility and context preservation
+- EVI integration
+  - WebSocket real-time connection
+  - React, TypeScript, Python, Swift SDKs
+  - Session configuration
+  - Voice design and cloning
+- Voice agent architecture patterns
+  - Function calling in voice agents
+  - Tool execution during conversation
+  - Context window management
+  - Conversation state persistence

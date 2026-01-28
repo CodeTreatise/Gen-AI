@@ -1,0 +1,75 @@
+---
+title: "Evaluating AI Output Quality"
+---
+
+# Evaluating AI Output Quality
+
+- Automated quality metrics
+  - BLEU, ROUGE scores
+  - Semantic similarity
+  - Custom metrics
+  - Metric selection
+- LLM-as-judge patterns
+  - LLM evaluation setup
+  - Rubric design
+  - Score calibration
+  - Judge consistency
+- Semantic similarity scoring
+  - Embedding comparison
+  - Cosine similarity
+  - Threshold setting
+  - Benchmark comparison
+- Factual accuracy checking
+  - Fact extraction
+  - Verification sources
+  - Accuracy scoring
+  - Hallucination detection
+- Format compliance testing
+  - Schema validation
+  - Structure checking
+  - Required elements
+  - Style compliance
+- Human evaluation sampling
+  - Sample selection
+  - Evaluation rubrics
+  - Inter-rater reliability
+  - Feedback integration
+- G-Eval Framework (2024-2026)
+  - LLM-as-judge with Chain-of-Thought reasoning
+  - Custom evaluation criteria in natural language
+  - Automatic evaluation_steps generation
+  - Rubric-based scoring (1-10 scales)
+  - Self-explaining metrics with reasoning
+  - Custom GEval metric definition
+  - evaluation_params configuration
+  - Threshold and strict_mode options
+- RAG-Specific Evaluation Metrics
+  - FaithfulnessMetric: Output alignment with retrieval_context
+  - AnswerRelevancyMetric: Response relevance to input query
+  - ContextualPrecisionMetric: Retrieval precision scoring
+  - ContextualRecallMetric: Retrieval completeness
+  - HallucinationMetric: Detecting unsupported claims
+  - Claim extraction and verification
+  - Truthful claims ratio calculation
+  - truths_extraction_limit for focused evaluation
+- Agent Evaluation Metrics (DeepEval 2025-2026)
+  - Reasoning Layer Metrics
+    - PlanQualityMetric: Plan logic, completeness, efficiency
+    - PlanAdherenceMetric: Agent follows its own plan
+  - Action Layer Metrics
+    - ToolCorrectnessMetric: Right tools selected and called
+    - ArgumentCorrectnessMetric: Valid arguments generated
+    - Tool ordering verification
+  - Overall Execution Metrics
+    - TaskCompletionMetric: Did agent complete the task?
+    - StepEfficiencyMetric: Minimal steps without redundancy
+- Reference-Free vs Reference-Based Evaluation
+  - Reference-free: No ground truth needed (LLM-as-judge)
+  - Reference-based: Compare against expected output
+  - Hybrid approaches for comprehensive coverage
+  - When to use each evaluation type
+- Pairwise Evaluation Patterns
+  - A/B testing LLM outputs
+  - Preference ranking with LLM judges
+  - Model comparison experiments
+  - Winner determination algorithms

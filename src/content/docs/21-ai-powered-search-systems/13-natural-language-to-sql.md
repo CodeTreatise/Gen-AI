@@ -1,0 +1,46 @@
+---
+title: "Natural Language to SQL"
+---
+
+# Natural Language to SQL
+
+- Text-to-SQL concepts
+  - Query translation
+  - Natural language understanding
+  - SQL generation
+  - End-to-end flow
+- Schema understanding for AI
+  - Schema description
+  - Table relationships
+  - Column semantics
+  - Context provision
+- Query generation from natural language
+  - Prompt engineering
+  - Query structure
+  - Join handling
+  - Aggregation support
+- SQL validation and safety
+  - Syntax validation
+  - Query sanitization
+  - Injection prevention
+  - Permission checking
+- Handling ambiguous queries
+  - Ambiguity detection
+  - Clarification requests
+  - Default handling
+  - Multiple interpretations
+- Database-specific SQL generation
+  - Dialect differences
+  - Function compatibility
+  - Syntax variations
+  - Provider handling
+- Error handling and retry
+  - SQL error handling
+  - Error interpretation
+  - Query refinement
+  - Retry strategies
+- Combining with RAG for context
+  - Schema retrieval
+  - Example queries
+  - Context augmentation
+  - Hybrid approaches

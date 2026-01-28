@@ -1,0 +1,41 @@
+---
+title: "MCP Server Testing & Multimodal Evaluation"
+---
+
+# MCP Server Testing & Multimodal Evaluation
+
+- MCP (Model Context Protocol) Server Testing
+  - Tool definition validation
+  - Resource endpoint testing
+  - Protocol compliance verification
+  - Error handling for MCP tools
+- MCP Tool Testing Patterns
+  - Schema validation for tool inputs
+  - Expected output format testing
+  - Tool timeout and error handling
+  - Permission and scope testing
+- Multimodal Test Cases
+  - Image + text input testing
+  - Vision model evaluation
+  - Multi-modal LLMTestCase construction
+  - Image URL and base64 handling
+- Vision-Language Evaluation Metrics
+  - Image description accuracy
+  - Visual question answering eval
+  - Object detection verification
+  - OCR accuracy testing
+- Audio Model Testing
+  - Speech-to-text accuracy
+  - Audio understanding evaluation
+  - Transcription quality metrics
+  - Speaker identification testing
+- Multimodal RAG Testing
+  - Image retrieval evaluation
+  - Multi-modal context handling
+  - Cross-modal relevance scoring
+  - Combined text-image responses
+- Multimodal Safety Testing
+  - Image content safety
+  - Harmful image generation prevention
+  - Multimodal prompt injection
+  - Cross-modal attack vectors

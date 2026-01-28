@@ -1,0 +1,42 @@
+---
+title: "25.15 GRPO & Reasoning Enhancement"
+---
+
+# 25.15 GRPO & Reasoning Enhancement
+
+- Group Relative Policy Optimization (GRPO)
+  - DeepSeek-R1 training methodology
+  - Group-based reward comparison
+  - No critic model required
+  - Memory-efficient RL training
+  - TRL GRPOTrainer implementation
+- How GRPO works
+  - Multiple response generation per prompt
+  - Relative reward ranking within groups
+  - Advantage estimation without value function
+  - Policy gradient updates
+  - Batch efficiency benefits
+- Training reasoning models with GRPO
+  - Chain-of-thought enhancement
+  - Self-reflection capabilities
+  - Multi-step problem solving
+  - Verification and correction
+  - Reasoning trace quality
+- GRPO hyperparameters
+  - Group size selection
+  - KL divergence coefficient
+  - Learning rate scheduling
+  - Reward scaling
+  - Clip range settings
+- Practical GRPO implementation
+  - Dataset preparation for GRPO
+  - Reward function design
+  - Training stability techniques
+  - Evaluation metrics for reasoning
+  - Common pitfalls and solutions
+- FP8 GRPO training
+  - Unsloth FP8 GRPO support
+  - Memory reduction benefits
+  - Training speed improvements
+  - Quality preservation
+  - Hardware requirements

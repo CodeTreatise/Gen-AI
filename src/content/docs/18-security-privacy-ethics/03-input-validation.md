@@ -1,0 +1,53 @@
+---
+title: "Input Validation"
+---
+
+# Input Validation
+
+- OpenAI Safety Identifiers (NEW 2025-2026)
+  - safety_identifier parameter
+  - Hash user email/ID (no PII)
+  - Per-user tracking for abuse
+  - Enables user-level blocking
+  - Required for GPT-5+ safety classifiers
+- Validating user inputs
+  - Type validation
+  - Format checking
+  - Range validation
+  - Semantic validation
+- Content Length Limits
+  - Character limits
+  - Token limits (model-specific)
+  - Message count limits
+  - Attachment size limits
+  - Context window budgeting
+- Character Filtering
+  - Unicode normalization
+  - Control character removal
+  - Emoji handling
+  - Script filtering
+  - Homoglyph detection
+- Language Detection
+  - Supported language check
+  - Script detection
+  - Language routing
+  - Rejection handling
+  - Multilingual attack prevention
+- Intent Classification for Safety
+  - Harmful intent detection
+  - Category classification
+  - Threshold setting
+  - Action triggering
+  - Pre-screening before LLM
+- Task Adherence Detection (Azure) (NEW 2025)
+  - Detect agent tool misuse
+  - Misaligned tool calls
+  - Unintended actions
+  - Premature operations
+  - Max 100K character input
+- Rate Limiting Abusive Users
+  - User identification
+  - Limit thresholds
+  - Escalating restrictions
+  - Ban procedures
+  - OpenAI identifier blocking

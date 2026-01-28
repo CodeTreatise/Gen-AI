@@ -1,0 +1,44 @@
+---
+title: "Multi-Turn Function Calling"
+---
+
+# Multi-Turn Function Calling
+
+- Conversation flow with functions
+  - Message sequence management
+  - State tracking
+  - Context accumulation
+  - Turn management
+- Multiple sequential function calls
+  - Chain detection
+  - Dependency handling
+  - State between calls
+  - Termination conditions
+- Parallel function calls
+  - Model requests multiple calls simultaneously
+  - Concurrent execution in application
+  - Result aggregation
+  - Order independence
+  - `parallel_tool_calls: false` to disable
+- Compositional function calling
+  - Model chains functions logically
+  - get_location() → get_weather(location)
+  - Automatic dependency resolution
+  - Multi-step workflow completion
+  - Live API native support (Gemini)
+- Function call chains
+  - Multi-step workflows
+  - Intermediate results
+  - Chain orchestration
+  - Loop detection and prevention
+- Thought signatures (Gemini 3)
+  - Thinking models use internal reasoning
+  - `thought_signature` in response parts
+  - Must pass signatures back unchanged
+  - Don't merge parts with different signatures
+  - SDK handles automatically
+- Maintaining context across calls
+  - Conversation history management
+  - Result accumulation
+  - Stateful handlers
+  - Memory patterns

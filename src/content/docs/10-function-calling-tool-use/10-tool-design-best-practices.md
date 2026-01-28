@@ -1,0 +1,52 @@
+---
+title: "Tool Design Best Practices"
+---
+
+# Tool Design Best Practices
+
+- Atomic vs. composite tools
+  - Single responsibility principle
+  - Composable primitives
+  - Complex workflows as chains
+  - When to combine functions
+- Clear naming and descriptions
+  - Self-documenting names
+  - Comprehensive descriptions with examples
+  - Edge case documentation
+  - Pass the "intern test"
+- System prompt guidance for tools
+  - Describe when to use each function
+  - Specify when NOT to use functions
+  - Provide role context
+  - Encourage clarifying questions
+- Safe defaults
+  - Read-before-write patterns
+  - Confirmation for destructive actions
+  - Limit default scope
+  - Reversible actions preferred
+- Temperature settings
+  - Low temperature (0) for deterministic calls
+  - Gemini 3: keep at 1.0 to avoid loops
+  - Provider-specific recommendations
+  - Testing different values
+- Idempotency considerations
+  - Idempotent operation design
+  - Retry safety
+  - State verification before action
+  - Duplicate prevention
+- Security best practices
+  - Validate before destructive actions
+  - Appropriate authentication/authorization
+  - Avoid exposing sensitive data
+  - Input sanitization
+  - Principle of least privilege
+- Rate limiting tools
+  - Per-tool limits
+  - User-based limits
+  - Backpressure handling
+  - Quota management
+- Audit logging
+  - Call logging
+  - Result logging
+  - User attribution
+  - Compliance requirements

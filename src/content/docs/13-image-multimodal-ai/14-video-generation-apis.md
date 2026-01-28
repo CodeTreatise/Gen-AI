@@ -1,0 +1,47 @@
+---
+title: "Video Generation APIs (NEW 2025)"
+---
+
+# Video Generation APIs (NEW 2025)
+
+- **OpenAI Sora API**
+  - **sora-2**: Fast iteration, concepting, social media content
+  - **sora-2-pro**: Production-quality, cinematic output
+  - Video API endpoints: create, status, download, list, delete
+  - Asynchronous job-based architecture
+  - Prompt → render job → poll status → download MP4
+- **Google Veo 3.1 API**
+  - **veo-3.1-generate-preview**: 8-second videos with native audio
+  - **veo-3.1-fast-preview**: Speed-optimized for high-volume
+  - Text-to-video generation
+  - Native dialogue, sound effects, ambient audio
+  - 720p, 1080p, 4K resolution options
+- **Text-to-video generation**
+  - Prompt structure: subject, action, style, camera, ambiance
+  - Cinematic terminology (shot types, lens effects)
+  - Duration control (4s, 6s, 8s)
+  - Aspect ratios (16:9, 9:16)
+- **Image-to-video generation**
+  - First frame from image
+  - Reference images for style/content guidance
+  - Up to 3 reference images (Veo 3.1)
+  - Frame interpolation (first + last frame)
+- **Video extension**
+  - Extend existing videos by 7 seconds
+  - Up to 141 seconds total (Veo)
+  - Continuity preservation
+  - Audio extension considerations
+- **Remix and iteration**
+  - `remix_video_id` for variations
+  - Style adjustments without regeneration
+  - Incremental refinement
+  - A/B testing workflows
+- **Webhook notifications**
+  - `video.completed`, `video.failed` events
+  - Alternative to polling
+  - Integration with backend services
+- **Prompting for audio**
+  - Dialogue in quotes ("She said...")
+  - Sound effect descriptions
+  - Ambient noise specification
+  - Audio-visual synchronization

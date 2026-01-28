@@ -1,0 +1,70 @@
+---
+title: "Cost Optimization"
+---
+
+# Cost Optimization
+
+- Token usage monitoring
+  - Input token tracking
+  - Output token tracking
+  - Reasoning tokens (o1/o3 models) (NEW 2025)
+  - Per-request logging
+  - Aggregated reporting
+  - Cost per conversation/session
+- OpenAI Batch API (NEW 2024-2025)
+  - 50% cost discount vs synchronous
+  - Higher rate limits (separate pool)
+  - 24-hour completion window
+  - .jsonl file format
+  - Supported: /chat/completions, /embeddings, /moderations
+  - Up to 50,000 requests per batch
+  - Use cases: evaluations, embeddings, classification
+  - batch_abc123 status tracking
+  - Batch expiration handling
+- Anthropic Message Batches (NEW 2025)
+  - 50% cost reduction
+  - 24-hour processing window
+  - Batch API for high-volume
+- OpenAI Flex Processing (NEW 2025)
+  - Batch API pricing for synchronous requests
+  - service_tier: "flex" parameter
+  - Slower response times (trade-off)
+  - Ideal for evaluations, data enrichment
+  - 429 Resource Unavailable handling
+  - Fallback to standard processing
+- Prompt optimization for cost
+  - Prompt compression
+  - Removing redundancy
+  - Efficient instructions
+  - Context window optimization
+  - System prompt reuse (caching)
+- Model routing for cost (NEW 2025)
+  - Cheaper model alternatives
+  - Intelligent model routing by task complexity
+  - Quality-cost trade-offs
+  - Model benchmarking
+  - Small models for simple tasks (GPT-4.1-nano, Claude Haiku)
+  - Large models for complex reasoning
+- Caching impact on cost
+  - Cache hit rates
+  - Prompt caching savings (50-90%)
+  - Semantic cache ROI
+  - Cache optimization strategies
+- Cost tracking platforms (NEW 2025)
+  - Langfuse cost tracking
+  - Portkey spend management
+  - Helicone cost analytics
+  - LiteLLM budget controls
+  - Per-project/team budgets
+- Usage alerts and budgets
+  - Budget thresholds
+  - Alert configuration
+  - Automatic throttling
+  - Emergency cutoffs
+  - Spend alerts (Langfuse, Portkey)
+- Cost allocation by feature
+  - Feature tagging
+  - Cost attribution
+  - Per-user costs
+  - Cost dashboards
+  - Virtual keys for attribution (NEW 2025)

@@ -1,0 +1,53 @@
+---
+title: "AI SDK Integration (useChat)"
+---
+
+# AI SDK Integration (useChat)
+
+- useChat hook fundamentals
+  - Hook initialization and configuration
+  - DefaultChatTransport setup
+  - API endpoint configuration (`/api/chat`)
+  - Custom headers and body options
+- Message structure (2024-2025)
+  - `message.parts` array format
+  - Part types: text, file, tool-invocation, tool-result, reasoning
+  - `message.metadata` for token usage and model info
+  - Type-safe message handling with generics
+- Status management
+  - `status: "submitted"` — request sent
+  - `status: "streaming"` — receiving chunks
+  - `status: "ready"` — complete
+  - `status: "error"` — failed
+  - Conditional rendering based on status
+- Action methods
+  - `sendMessage({text, files})` for submission
+  - `stop()` for cancellation
+  - `regenerate()` for retry
+  - `setMessages()` for programmatic updates
+  - `reload()` for error recovery
+- Event callbacks
+  - `onFinish` for completion handling
+  - `onError` for error handling
+  - `onData` for custom data parts
+- Transport configuration
+  - DefaultChatTransport customization
+  - DirectChatTransport for server-side
+  - prepareSendMessagesRequest for custom routing
+  - Trigger-based routing (submit, regenerate)
+- Performance optimization
+  - `experimental_throttle` for render batching
+  - Message metadata streaming
+  - Partial JSON updates
+- Agentic chat patterns (2025)
+  - `maxSteps` for multi-step tool loops
+  - Automatic tool execution chains
+  - Step-by-step progress display
+  - Intermediate result rendering
+  - Loop termination conditions
+- Request customization
+  - `experimental_prepareRequestBody` for custom payloads
+  - Adding custom fields to requests
+  - Provider-specific parameters
+  - Request interception patterns
+  - Authentication token injection

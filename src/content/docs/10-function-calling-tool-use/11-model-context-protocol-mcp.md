@@ -1,0 +1,77 @@
+---
+title: "Model Context Protocol (MCP)"
+---
+
+# Model Context Protocol (MCP)
+
+- What is MCP? (Anthropic's open standard)
+  - Open protocol for AI tool integration
+  - Standardized communication like USB-C for AI
+  - Language-agnostic design
+  - Industry adoption (OpenAI, Google, Anthropic)
+- MCP architecture (clients, servers, hosts)
+  - Host applications (Claude Desktop, IDEs)
+  - Client connections (SDK manages)
+  - Server implementations (tool providers)
+  - Separation of concerns
+- MCP transport layers
+  - stdio: local process communication
+  - HTTP with SSE: remote servers
+  - WebSocket: real-time bidirectional
+  - Transport selection criteria
+- MCP resources (data exposure)
+  - File system resources
+  - Database resources
+  - API data exposure
+  - Resource URIs and discovery
+- MCP tools (actions AI can take)
+  - Tool definitions with schemas
+  - Input schemas (JSON Schema)
+  - Execution handlers
+  - Result formatting
+- MCP prompts (reusable prompt templates)
+  - Prompt templates with arguments
+  - Template discovery
+  - Use case patterns
+  - Prompt injection
+- MCP sampling (controlled AI generation)
+  - Nested AI calls
+  - Controlled generation
+  - Human approval workflows
+  - Quality control
+- Building MCP servers
+  - TypeScript SDK: `@modelcontextprotocol/sdk`
+  - Python SDK: `pip install mcp`
+  - Server structure and handlers
+  - `StdioServerParameters` configuration
+  - Tool registration and implementation
+- MCP client implementation
+  - `ClientSession` for connections
+  - Session initialization
+  - Tool discovery
+  - Automatic tool calling support
+- Built-in MCP support in SDKs
+  - Gemini SDK MCP integration
+  - OpenAI MCP connectors
+  - Passing `session` as tools parameter
+  - Automatic function calling with MCP
+- Current MCP limitations (2026)
+  - SDK support: tools only (not resources/prompts)
+  - Available in Python and TypeScript SDKs
+  - Breaking changes possible
+  - Manual integration always available
+- MCP vs. function calling comparison
+  - Protocol standardization benefits
+  - Portability across providers
+  - Feature differences
+  - When to use each
+- MCP ecosystem and community servers
+  - Official servers (filesystem, git, postgres)
+  - Community contributions
+  - Server discovery registries
+  - Quality standards
+- Security considerations for MCP
+  - Permission models
+  - Authentication
+  - Resource access control
+  - Audit and logging

@@ -1,0 +1,77 @@
+---
+title: "OpenAI Agents SDK (NEW 2025)"
+---
+
+# OpenAI Agents SDK (NEW 2025)
+
+- Agent class fundamentals
+  - Agent definition with name, instructions, model
+  - System prompt configuration
+  - Tools attachment (function tools, hosted tools)
+  - Output types (plain text, structured output)
+  - Agent cloning with .clone() method
+- Runner execution model
+  - Runner.run() for single-turn execution
+  - Runner.run_sync() for synchronous calls
+  - run_streamed() for streaming responses
+  - Turn-by-turn execution pattern
+  - Multi-turn conversations with result.to_input_list()
+- Tool implementation patterns
+  - @function_tool decorator
+  - Automatic Pydantic schema generation
+  - Hosted tools (WebSearchTool, FileSearchTool, CodeInterpreterTool)
+  - Tool filtering per turn
+  - Async tool functions
+- Handoffs and multi-agent orchestration
+  - Agent-to-agent delegation
+  - handoffs=[agent1, agent2] pattern
+  - Conditional handoff logic
+  - Swarm-style agent choreography
+  - Handoff context preservation
+- Guardrails and safety
+  - Input guardrails (pre-processing)
+  - Output guardrails (post-processing)
+  - Custom guardrail functions
+  - Tripwire guardrails for escalation
+  - Content filtering patterns
+- Context management
+  - RunContext for dependency injection
+  - Context variables across tool calls
+  - Session state management
+  - Context passing between agents
+- Tracing and observability
+  - Built-in tracing to OpenAI dashboard
+  - Custom trace processors
+  - Span annotations
+  - Integration with external platforms
+- Voice agents (NEW 2025)
+  - RealtimeAgent for voice interactions
+  - WebRTC integration patterns
+  - Voice-to-text-to-voice pipelines
+  - Real-time streaming responses
+- Sessions and persistence (NEW 2025)
+  - SQLAlchemySessions for database-backed storage
+  - AdvancedSQLiteSessions for enhanced SQLite
+  - EncryptedSessions for secure state persistence
+  - Session restore and resume patterns
+  - Cross-session conversation continuity
+- REPL utility (NEW 2025)
+  - Interactive agent debugging
+  - Live testing and experimentation
+  - Step-by-step execution tracing
+  - Real-time tool inspection
+- Agent visualization (NEW 2025)
+  - Visual agent flow debugging
+  - Graph-based agent inspection
+  - Handoff chain visualization
+  - Execution path tracing
+- LiteLLM model support (NEW 2025)
+  - Using non-OpenAI models via LiteLLM
+  - Model-agnostic agent patterns
+  - Anthropic, Google, local model integration
+  - Unified API across providers
+- Computer use capabilities (NEW 2026)
+  - ComputerTool for desktop automation
+  - Screen capture and analysis
+  - Mouse and keyboard control
+  - Application interaction patterns

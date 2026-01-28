@@ -1,0 +1,46 @@
+---
+title: "Computer Use & Browser Automation"
+---
+
+# Computer Use & Browser Automation
+
+- AI-controlled browser interactions
+  - Browser automation with AI
+  - Navigation understanding
+  - Page interaction
+  - Session management
+- Screen understanding capabilities
+  - Screenshot analysis
+  - Element identification
+  - Layout understanding
+  - State recognition
+- Click, type, scroll automation
+  - Click coordination
+  - Text input handling
+  - Scroll actions
+  - Keyboard shortcuts
+- Visual element identification
+  - Element locators
+  - AI-based detection
+  - Dynamic elements
+  - Accessibility selectors
+- Web scraping with AI
+  - Content extraction
+  - Structured data
+  - Pattern recognition
+  - Anti-bot handling
+- Form filling automation
+  - Form field detection
+  - Value population
+  - Validation handling
+  - Submission automation
+- Testing with AI agents
+  - End-to-end testing
+  - Visual regression
+  - User journey automation
+  - Self-healing tests
+- Ethical considerations
+  - Terms of service respect
+  - Rate limiting
+  - User consent
+  - Transparency requirements

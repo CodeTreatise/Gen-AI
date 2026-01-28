@@ -1,0 +1,56 @@
+---
+title: "Multimodal Models in Browser (NEW 2025)"
+---
+
+# Multimodal Models in Browser (NEW 2025)
+
+- Vision-Language Models (VLMs)
+  - Models understanding images + text together
+  - Single model, multiple modalities
+  - Browser-optimized variants available
+  - WebGPU acceleration essential
+- Browser-Compatible VLMs (NEW 2025)
+  - SmolVLM (1.7B, 2.2B) - Hugging Face
+  - Gemma 3n (E2B, E4B) - Google
+  - Florence-2 via ONNX Runtime
+  - PaliGemma variants - Google
+  - Moondream (1.8B) - small VLM
+- Image Understanding Tasks
+  - Image captioning in browser
+  - Visual question answering (VQA)
+  - Document/receipt understanding
+  - Screenshot analysis
+  - OCR with understanding
+  - Chart and diagram interpretation
+- Segment Anything Models (NEW 2025)
+  - SAM2 - Image and video segmentation
+  - SAM3 - Concept-aware segmentation
+  - EdgeTAM - On-device tracking
+  - Interactive object selection
+  - Real-time video segmentation
+- Audio-Language Models (NEW 2025)
+  - Gemma 3n with audio support
+  - Whisper + LLM pipelines
+  - Speech-to-text + understanding
+  - Real-time audio processing
+- Audio Tasks in Browser
+  - Speech recognition + reasoning
+  - Audio content summarization
+  - Podcast/meeting understanding
+  - Voice command with context
+- Unified Multimodal Inference (NEW 2025)
+  - Single model, all modalities
+  - Interleaved context (text + image + audio)
+  - Streaming multimodal responses
+  - MediaPipe multimodal prompting
+- Implementation Patterns
+  - Modality-specific preprocessing
+  - Unified embedding space
+  - Cross-attention mechanisms
+  - Output format handling
+- Use Cases for Browser Multimodal
+  - Document scanning with understanding
+  - Accessibility descriptions
+  - Visual search and comparison
+  - Real-time translation with context
+  - Educational content analysis

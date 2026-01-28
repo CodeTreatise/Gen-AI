@@ -1,0 +1,50 @@
+---
+title: "Bias & Fairness"
+---
+
+# Bias & Fairness
+
+- Types of AI Bias
+  - Training data bias (historical patterns)
+  - Selection bias (non-representative samples)
+  - Confirmation bias (reinforcing assumptions)
+  - Representation bias (group imbalances)
+  - Measurement bias (flawed metrics)
+  - Algorithmic bias (model amplification)
+- Bias in Training Data Effects
+  - Amplification effects
+  - Stereotype reinforcement
+  - Underrepresentation of minorities
+  - Historical discrimination encoded
+  - Intersectional bias (compound effects)
+- AI Fairness Testing Frameworks (NEW 2025)
+  - Microsoft Fairlearn
+  - Google What-If Tool
+  - IBM AI Fairness 360
+  - Aequitas (bias audit toolkit)
+  - Fairness metrics (demographic parity, equalized odds)
+- Testing for Biased Outputs
+  - Red teaming for bias
+  - Counterfactual testing
+  - Demographic slice testing
+  - Adversarial inputs
+  - A/B testing across groups
+- Mitigation Strategies
+  - Prompt engineering for fairness
+  - Output filtering and review
+  - Diverse training data curation
+  - Human review queues
+  - Model fine-tuning
+  - Constitutional AI principles
+- Diverse Testing Approaches
+  - Diverse test groups (age, gender, ethnicity)
+  - Scenario variety (contexts, use cases)
+  - Cultural considerations (regional norms)
+  - Accessibility testing (disability)
+  - Language variety testing
+- Continuous Monitoring for Bias
+  - Ongoing evaluation pipelines
+  - Metric tracking dashboards
+  - Drift detection (distribution shift)
+  - Alert systems (threshold violations)
+  - Periodic audits

@@ -1,0 +1,44 @@
+---
+title: "TTS APIs"
+---
+
+# TTS APIs
+
+- Available providers (2025 landscape)
+  - OpenAI: gpt-4o-mini-tts (NEW 2025), tts-1, tts-1-hd
+  - ElevenLabs: Turbo v2.5, multilingual models
+  - Hume: Octave TTS (speech-language model) (NEW 2025)
+  - Google Cloud TTS
+  - Amazon Polly
+- OpenAI TTS features (NEW 2025)
+  - gpt-4o-mini-tts promptable model
+  - instructions parameter for style control
+  - 13 built-in voices (alloy, ash, ballad, coral, echo, fable, nova, onyx, sage, shimmer, verse, marin, cedar)
+  - Accent, emotion, tone, whispering control
+  - LocalAudioPlayer for streaming playback
+- Request structure
+  - Endpoint configuration
+  - Required parameters
+  - Input text limits
+  - Optional settings
+- Voice selection
+  - Voice IDs
+  - Voice previews
+  - Voice characteristics
+  - Localized voices
+- Speed and pitch control
+  - Speed adjustment range
+  - Pitch modification
+  - Rate parameters
+  - Provider differences
+- Response formats
+  - Audio format options (mp3, opus, aac, flac, wav, pcm)
+  - Sample rate selection
+  - Quality settings
+  - File size impact
+- Streaming audio responses
+  - Chunked transfer
+  - Progressive playback
+  - Buffer management
+  - Latency reduction
+  - with_streaming_response pattern

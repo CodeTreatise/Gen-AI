@@ -1,0 +1,66 @@
+---
+title: "Data Privacy"
+---
+
+# Data Privacy
+
+- OpenAI API Data Policy (NEW 2025)
+  - API data NOT used for training (since Mar 2023)
+  - Opt-in only for training
+  - Your data is your data
+  - Business data ownership
+- What data is sent to AI providers?
+  - Request content (prompts, completions)
+  - Context information
+  - Metadata (timestamps, tokens)
+  - User identifiers (safety_identifier)
+  - File uploads, images
+- Data Retention by Provider (NEW 2025)
+  - OpenAI: 30 days abuse monitoring default
+  - OpenAI: Zero Data Retention (ZDR) option
+  - OpenAI: Modified Abuse Monitoring (MAM)
+  - Anthropic: 30 days, enterprise options
+  - Google: varies by product
+  - Azure: configurable retention
+- Zero Data Retention (ZDR) (NEW 2025)
+  - Excludes content from abuse logs
+  - store parameter always false
+  - Not compatible with background mode
+  - Not compatible with Code Interpreter
+  - CSAM scanning still applies
+  - Requires approval
+- Modified Abuse Monitoring (MAM) (NEW 2025)
+  - Excludes most content from logs
+  - More features than ZDR
+  - Background mode compatible
+  - Code Interpreter compatible
+  - Requires approval
+- Per-Endpoint Retention (OpenAI) (NEW 2025)
+  - /v1/responses: 30 days (store=true)
+  - /v1/chat/completions: 30 days
+  - /v1/embeddings: none
+  - /v1/moderations: none
+  - /v1/assistants: until deleted
+  - /v1/files: until deleted
+  - Audio outputs: 1 hour
+- PII Detection and Handling
+  - PII identification patterns
+  - Detection methods (regex, NER)
+  - Handling procedures
+  - Redaction options
+  - Azure PII detection API
+- Data Minimization Principles
+  - Necessity assessment
+  - Minimal data collection
+  - Purpose limitation
+  - Retention minimization
+- Anonymization Strategies
+  - Data anonymization
+  - Pseudonymization
+  - Token replacement
+  - Aggregation
+- User Consent Requirements
+  - Consent collection
+  - Consent management
+  - Withdrawal handling
+  - Documentation

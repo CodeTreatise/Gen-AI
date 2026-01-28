@@ -1,0 +1,42 @@
+---
+title: "Embedding Compression & Quantization"
+---
+
+# Embedding Compression & Quantization
+
+- Why compress embeddings?
+  - Storage cost reduction
+  - Faster similarity computation
+  - Memory efficiency at scale
+  - Enable larger indices
+- Compression types (Cohere embed-v4.0)
+  - float: full precision (32-bit)
+  - int8: 8-bit integer quantization
+  - uint8: unsigned 8-bit integer
+  - binary: 1-bit per dimension
+  - ubinary: unsigned binary
+- Quantization trade-offs
+  - float → int8: ~4x compression, minimal quality loss
+  - float → binary: ~32x compression, noticeable quality loss
+  - Use binary for candidate generation, rescore with float
+  - Two-stage retrieval pattern
+- Binary embedding handling
+  - Bits packed as bytes (1024 binary → 128 bytes)
+  - Unpacking for some vector DBs
+  - Hamming distance for binary search
+  - Rescoring with full embeddings
+- Vector database quantization support
+  - Pinecone: automatic quantization options
+  - Qdrant: scalar and binary quantization
+  - Milvus: IVF_SQ8, IVF_PQ
+  - pgvector: halfvec for float16
+- Product Quantization (PQ)
+  - Compress vectors into codes
+  - Asymmetric distance computation
+  - Significant space savings
+  - Quality-space trade-off tuning
+- Best practices
+  - Benchmark quantization on your data
+  - Consider two-stage retrieval
+  - Store full embeddings for reranking
+  - Monitor quality metrics post-quantization

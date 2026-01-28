@@ -1,0 +1,45 @@
+---
+title: "Local AI & Self-Hosted Models"
+---
+
+# Local AI & Self-Hosted Models
+
+- Running models locally (Ollama, LM Studio)
+  - Ollama installation and setup
+  - LM Studio for GUI interface
+  - Model downloading
+  - Running inference locally
+  - Model management
+- Local API compatibility (OpenAI-compatible endpoints)
+  - OpenAI-compatible servers
+  - Drop-in replacement patterns
+  - Endpoint configuration
+  - Feature compatibility matrix
+- Privacy benefits of local models
+  - Data never leaves device
+  - No API logging concerns
+  - Compliance advantages
+  - Offline capability
+- Hardware requirements
+  - GPU vs CPU inference
+  - VRAM requirements by model size
+  - Quantization for smaller footprint
+  - Apple Silicon optimization
+  - Minimum specifications
+- Performance vs. cloud trade-offs
+  - Latency comparison
+  - Quality comparison
+  - Throughput limitations
+  - Cost at scale analysis
+- Hybrid local/cloud strategies
+  - Local for development/testing
+  - Cloud for production
+  - Sensitive data local, general cloud
+  - Fallback patterns
+- Production local inference (2024-2025)
+  - vLLM for high-throughput serving
+  - Text Generation Inference (TGI)
+  - LocalAI multi-model support
+  - llama.cpp and gguf quantization
+  - MLX for Apple Silicon
+  - Kubernetes deployment patterns

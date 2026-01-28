@@ -1,0 +1,62 @@
+---
+title: "Error Handling"
+---
+
+# Error Handling
+
+- Common API errors (rate limits, invalid requests, server errors)
+  - 400: Bad Request (invalid parameters)
+  - 401: Unauthorized (bad API key)
+  - 403: Forbidden (no access)
+  - 404: Not Found (wrong endpoint)
+  - 429: Too Many Requests (rate limited)
+  - 500: Internal Server Error
+  - 503: Service Unavailable
+- HTTP status codes in AI APIs
+  - Success codes (200, 201)
+  - Client errors (4xx)
+  - Server errors (5xx)
+  - Redirect handling
+- Error response parsing
+  - error.message extraction
+  - error.type classification
+  - error.code specifics
+  - Provider-specific error formats
+- Retry strategies (exponential backoff)
+  - Why exponential backoff
+  - Initial delay and multiplier
+  - Maximum retries
+  - Jitter for distributed systems
+  - Retry-After header respect
+- Graceful degradation
+  - Fallback responses
+  - Cached response usage
+  - Reduced functionality mode
+  - User communication
+- User-friendly error messages
+  - Technical to user-friendly translation
+  - Actionable error messages
+  - Retry suggestions
+  - Support contact options
+- Circuit breaker patterns
+  - Circuit breaker states (closed, open, half-open)
+  - Failure thresholds
+  - Recovery testing
+  - Preventing cascade failures
+- Model and feature-specific errors
+  - Reasoning model parameter errors
+  - Unsupported parameters per model
+  - Encrypted reasoning errors
+  - MCP tool call errors
+  - Background mode errors
+  - Streaming error events
+- Error codes quick reference
+  - 400: Invalid request format/parameters
+  - 401: Invalid or missing API key
+  - 403: Access denied (permissions)
+  - 404: Resource not found
+  - 422: Unprocessable entity (validation)
+  - 429: Rate limit exceeded (retry with backoff)
+  - 500: Internal server error (retry)
+  - 503: Service overloaded (retry with backoff)
+  - 529: API overloaded (Anthropic-specific)

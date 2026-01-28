@@ -1,0 +1,58 @@
+---
+title: "WebGPU Acceleration"
+---
+
+# WebGPU Acceleration
+
+- What is WebGPU?
+  - Next-gen graphics API
+  - Compute capabilities
+  - Performance benefits
+  - GPU access
+  - W3C standard specification
+- Browser compatibility status (Updated 2025-2026)
+  - Chrome 113+ (stable, full support, default enabled)
+  - Edge 113+ (stable, full support, default enabled)
+  - Firefox 139+ (stable since late 2025) (UPDATED 2025)
+  - Safari 18+ (macOS Sonoma+, iOS 18+, stable)
+  - Mobile Chrome Android (stable since Chrome 121)
+  - Mobile Safari iOS 18+ (stable)
+  - Global support: ~85% of modern browsers (UPDATED 2025)
+- WebGPU for ML Workloads (NEW 2025)
+  - Compute shaders for tensor operations
+  - Shared memory optimizations
+  - Workgroup parallelism
+  - ML-specific optimizations in browsers
+  - Reduced CPU-GPU data transfer
+- WebGPU vs. WebGL
+  - Performance comparison (2-10x faster for ML)
+  - Feature differences (compute shaders, better memory)
+  - Compatibility (WebGL: 97%+, WebGPU: ~85%)
+  - Migration path (gradual, with fallbacks)
+- TensorFlow.js with WebGPU
+  - WebGPU backend (setBackend('webgpu'))
+  - Enabling WebGPU
+  - Performance gains (3-5x typical)
+  - Memory usage optimization
+- Framework WebGPU Support (NEW 2025)
+  - TensorFlow.js: Native WebGPU backend
+  - Transformers.js: device: 'webgpu' option
+  - ONNX Runtime Web: WebGPU execution provider
+  - WebLLM: WebGPU required
+  - MediaPipe: WebGPU for LLM inference
+- Performance improvements
+  - Benchmarks (vs WebGL)
+  - Batch processing efficiency
+  - Parallel computation
+  - Large model support (7B+ parameters)
+- Fallback strategies
+  - WebGL fallback (automatic)
+  - CPU fallback (WASM)
+  - Feature detection (navigator.gpu)
+  - Graceful degradation
+- WebGPU Best Practices (NEW 2025)
+  - Prefer WebGPU for LLM inference
+  - Use WebGL fallback for compatibility
+  - Profile performance before/after
+  - Consider mobile GPU limitations
+  - Batch operations for efficiency

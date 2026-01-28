@@ -1,0 +1,56 @@
+---
+title: "Request Structure"
+---
+
+# Request Structure
+
+- Endpoint URLs and versioning
+  - Base URLs for providers
+  - API version in URL path
+  - Version header alternatives
+  - Handling API deprecations
+  - Stable vs beta endpoints
+  - Responses API vs Chat Completions endpoints
+- Request headers (Content-Type, Authorization)
+  - Content-Type: application/json
+  - Authorization header format
+  - Custom headers for tracking
+  - Accept header for response format
+- Request body structure
+  - JSON body format
+  - Required vs optional fields
+  - Nested object patterns
+  - Array parameters
+  - `input` array (Responses API) vs `messages` (Chat Completions)
+- Message formats (system, user, assistant roles)
+  - Role field purpose
+  - System messages for behavior
+  - User messages for input
+  - Assistant messages for context
+  - Tool messages for function results
+  - `developer` role (Responses API, replaces system)
+  - `instructions` parameter for high-level guidance
+- Model specification
+  - Model ID strings
+  - Model aliases
+  - Version pinning
+  - Model availability by region
+- Parameter configuration in requests
+  - temperature, max_tokens
+  - top_p, frequency_penalty
+  - stop sequences
+  - stream boolean
+  - Provider-specific parameters
+- 2024-2025 request parameters
+  - `reasoning_effort` (none, minimal, low, medium, high, xhigh)
+  - `max_completion_tokens` (replaces max_tokens for reasoning)
+  - `verbosity` for response length control
+  - `metadata` for 16 key-value pairs
+  - `safety_identifier` for abuse detection
+  - `service_tier` (auto, default, flex, priority)
+  - `modalities` for output types (["text"], ["text", "audio"])
+  - `web_search_options` for web-grounded responses
+  - `store` parameter for distillation/evals
+  - `previous_response_id` for conversation chaining
+  - `prompt_cache_key` for cache optimization
+  - `prompt_cache_retention` (in_memory, 24h)

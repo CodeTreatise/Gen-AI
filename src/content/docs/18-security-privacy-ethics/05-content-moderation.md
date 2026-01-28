@@ -1,0 +1,90 @@
+---
+title: "Content Moderation"
+---
+
+# Content Moderation
+
+- OpenAI Moderation API (NEW 2025)
+  - omni-moderation-latest model
+  - Text AND image moderation
+  - Free to use
+  - Category scores (0-1 confidence)
+  - flagged boolean
+  - category_applied_input_types (multimodal)
+- OpenAI Moderation Categories
+  - harassment, harassment/threatening
+  - hate, hate/threatening
+  - illicit, illicit/violent (NEW 2025)
+  - self-harm, self-harm/intent, self-harm/instructions
+  - sexual, sexual/minors
+  - violence, violence/graphic
+- Azure AI Content Safety (NEW 2025)
+  - Prompt Shields (jailbreak detection)
+  - Groundedness detection
+  - Protected material (text + code)
+  - Custom categories (rapid/standard)
+  - PII detection
+  - 4 severity levels: safe, low, medium, high
+  - Content Safety Studio UI
+- Azure Task Adherence (NEW 2025)
+  - Agent tool misuse detection
+  - Misaligned operations
+  - Premature actions
+  - 100K character input
+- Llama Guard 3 (NEW 2025)
+  - Llama Guard 3 1B (on-device, fast)
+  - Llama Guard 3 8B (comprehensive)
+  - Llama Guard 3 11B-Vision (multimodal)
+  - 13 safety categories (S1-S13)
+    - S1: Violent Crimes
+    - S2: Non-Violent Crimes
+    - S3: Sex Crimes
+    - S4: Child Exploitation
+    - S5: Defamation
+    - S6: Specialized Advice
+    - S7: Privacy
+    - S8: Intellectual Property
+    - S9: Indiscriminate Weapons
+    - S10: Hate
+    - S11: Self-Harm
+    - S12: Sexual Content
+    - S13: Elections
+  - Input AND output filtering
+  - Custom category definitions
+- Google Perspective API
+  - Toxicity scoring
+  - Severe toxicity
+  - Identity attack
+  - Insult, profanity, threat
+- Anthropic Claude Safety (NEW 2025)
+  - Constitutional AI (CAI) training
+  - RLHF + RLAIF (AI feedback)
+  - Harmlessness from AI feedback
+  - Built-in refusal behaviors
+  - Responsible Scaling Policy (RSP)
+  - AI Safety Levels (ASL-1 to ASL-4)
+  - Usage policy enforcement
+  - Trust & Safety API access
+- Multimodal Moderation (NEW 2025)
+  - Image content analysis
+  - Combined text+image scoring
+  - Cross-modal threat detection
+  - CSAM detection (all providers)
+- Implementing Moderation Pipelines
+  - Pre-check moderation (before LLM)
+  - Post-check moderation (after LLM)
+  - Multi-stage moderation
+  - Human review queues
+  - Async batch moderation
+- Handling Violations
+  - Content rejection
+  - User warnings
+  - Account actions
+  - Logging and reporting
+  - Escalation procedures
+- Appeals and Edge Cases
+  - Appeal process
+  - Edge case handling
+  - Context consideration
+  - Human override
+  - False positive handling

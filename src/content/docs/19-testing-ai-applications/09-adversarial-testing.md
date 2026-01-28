@@ -1,0 +1,78 @@
+---
+title: "Adversarial Testing"
+---
+
+# Adversarial Testing
+
+- Testing edge cases
+  - Edge case identification
+  - Unusual inputs
+  - Corner cases
+  - Extreme values
+- Prompt injection testing
+  - Injection patterns
+  - Attack simulation
+  - Defense verification
+  - Vulnerability detection
+- Jailbreak testing
+  - Jailbreak patterns
+  - Safety bypass attempts
+  - Defense testing
+  - Vulnerability reporting
+- Stress testing with unusual inputs
+  - Unicode variations
+  - Format extremes
+  - Size limits
+  - Malformed inputs
+- Bias detection testing
+  - Bias test cases
+  - Demographic testing
+  - Fairness metrics
+  - Bias documentation
+- Systematic LLM Red Teaming (2025-2026)
+  - Automated adversarial input generation
+  - Quantitative risk measurement before deployment
+  - Thousands of probes across vulnerability categories
+  - One-off runs vs CI/CD integration
+  - Red team report generation with mitigations
+- White-Box vs Black-Box Testing
+  - White-box: Full model access, weight-based attacks
+  - Black-box: Input/output only, real-world simulation
+  - Greedy Coordinate Descent attacks (white-box)
+  - AutoDAN automated jailbreak generation
+  - Practical considerations for each approach
+- Tree of Attacks with Pruning (TAP)
+  - Iterative prompt refinement
+  - Tree-of-thought reasoning for attacks
+  - 80%+ jailbreak success on GPT-4/GPT-4-Turbo
+  - Efficient adversarial prompt discovery
+- OWASP LLM Top 10 Testing (2025)
+  - LLM01: Prompt Injection testing
+  - LLM02: Insecure Output Handling tests
+  - LLM03: Training Data Poisoning checks
+  - LLM04: Model Denial of Service testing
+  - LLM05: Supply Chain Vulnerabilities
+  - LLM06: Sensitive Information Disclosure
+  - LLM07: Insecure Plugin Design testing
+  - LLM08: Excessive Agency testing
+  - LLM09: Overreliance testing
+  - LLM10: Model Theft prevention tests
+- Model vs Application Layer Threats
+  - Model layer: Jailbreaks, hallucinations, bias, PII leaks
+  - Application layer: Indirect injection, tool abuse, hijacking
+  - RAG-specific vulnerabilities
+  - Agent-specific attack vectors
+- Red Team Plugin Categories (Promptfoo)
+  - Harmful content generation
+  - Broken Object-Level Authorization (BOLA)
+  - Broken Function-Level Authorization (BFLA)
+  - Competitor endorsement
+  - Data exfiltration techniques
+  - ASCII art jailbreaks
+  - Markdown image exploits
+- Red Team Best Practices
+  - Define vulnerability focus by use case
+  - Timing in development cycle (model, pre-deploy, CI/CD, post-deploy)
+  - Resource allocation and token budgets
+  - Regulatory compliance (NIST AI RMF, EU AI Act)
+  - Prioritize application-layer vulnerabilities

@@ -1,0 +1,139 @@
+---
+title: "Search Quality & Observability"
+---
+
+# Search Quality & Observability
+
+- Benchmarking search systems
+  - BEIR benchmark (Benchmarking IR)
+    - 18 diverse datasets
+    - Zero-shot evaluation
+    - Cross-domain testing
+    - Standard metrics
+  - MTEB leaderboard (Massive Text Embedding Benchmark)
+    - Embedding model comparison
+    - Task-specific scores
+    - Model selection guidance
+    - Community contributions
+  - MS MARCO benchmark
+    - Passage ranking
+    - Document retrieval
+    - Question answering
+    - Standard training data
+  - Custom benchmark creation
+    - Domain-specific datasets
+    - Annotation guidelines
+    - Baseline establishment
+    - Continuous evaluation
+- Search quality metrics deep dive
+  - Relevance metrics
+    - Precision@K interpretation
+    - Recall@K understanding
+    - Mean Reciprocal Rank (MRR)
+    - Normalized DCG (NDCG)
+  - User-centric metrics
+    - Click-through rate (CTR)
+    - Mean time to first click
+    - Query abandonment rate
+    - Session success rate
+  - Business impact metrics
+    - Conversion from search
+    - Revenue per search
+    - Support ticket reduction
+    - User satisfaction scores
+- A/B testing for search
+  - Experiment design
+    - Hypothesis formation
+    - Sample size calculation
+    - Randomization strategy
+    - Duration planning
+  - Metric selection
+    - Primary metrics
+    - Guardrail metrics
+    - Diagnostic metrics
+    - Statistical significance
+  - Common pitfalls
+    - Position bias
+    - Novelty effects
+    - Interleaving bias
+    - Sample ratio mismatch
+  - Implementation patterns
+    - Import dataclass decorator from dataclasses for experiment configuration
+    - Import Literal from typing for type-safe variant values
+    - Import hashlib for deterministic user assignment
+    - Define SearchExperiment dataclass with name and control_weight (default 0.5)
+    - Create get_variant function accepting user_id and experiment
+    - Generate deterministic hash from experiment name and user_id combination
+    - Use MD5 hash converted to integer for consistent bucketing
+    - Compare hash modulo against control_weight for variant assignment
+    - Return "control" or "treatment" based on hash comparison
+    - Create execute_search function accepting query, user_id, and experiment
+    - Determine variant using get_variant function
+    - Route to baseline_search or experimental_search based on variant
+    - Log search event with query, user_id, experiment name, variant, results, and timestamp
+    - Logging enables post-experiment analysis of search quality metrics
+    - Return search results to caller
+- Real-time monitoring
+  - Key performance indicators
+    - Query latency (p50, p95, p99)
+    - Throughput (queries/second)
+    - Error rates
+    - Cache hit rates
+  - Quality indicators
+    - Zero-result rate
+    - Low-result rate
+    - Click-through trends
+    - Query patterns
+  - Alerting strategies
+    - Threshold-based alerts
+    - Anomaly detection
+    - Trend alerting
+    - Alert fatigue prevention
+- Search analytics dashboards
+  - Query analytics
+    - Popular queries
+    - Failed queries
+    - Query trends
+    - Seasonal patterns
+  - Result analytics
+    - Click distribution
+    - Result coverage
+    - Relevance trends
+    - Content gaps
+  - User journey analytics
+    - Search sessions
+    - Refinement patterns
+    - Conversion funnels
+    - Drop-off analysis
+- Continuous improvement loops
+  - Feedback collection
+    - Explicit feedback (ratings)
+    - Implicit feedback (clicks)
+    - Search refinements
+    - Support escalations
+  - Quality regression detection
+    - Automated testing
+    - Golden query sets
+    - Regression alerts
+    - Rollback triggers
+  - Model refresh cycles
+    - Embedding model updates
+    - Ranking model retraining
+    - Index rebuilding
+    - Staged rollouts
+- Debugging search issues
+  - Query debugging tools
+    - Query explanation
+    - Score breakdown
+    - Match analysis
+    - Index inspection
+  - Common issues and solutions
+    - Relevance drift
+    - Index staleness
+    - Embedding quality
+    - Filter issues
+  - Root cause analysis
+    - Issue categorization
+    - Impact assessment
+    - Fix prioritization
+    - Prevention strategies

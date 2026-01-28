@@ -1,0 +1,41 @@
+---
+title: "Structured Outputs & Strict Mode"
+---
+
+# Structured Outputs & Strict Mode
+
+- What is strict mode?
+  - Guaranteed schema adherence
+  - Model output always matches schema
+  - No hallucinated fields or types
+  - Leverages structured outputs feature
+- Enabling strict mode
+  - `strict: true` in function definition
+  - Schema requirements for strict mode
+  - Provider support (OpenAI primary)
+  - Gemini `validated` mode equivalent
+- Schema requirements for strict mode
+  - `additionalProperties: false` required
+  - All properties in `required` array
+  - No default values allowed
+  - Supported type subset only
+- Optional parameters in strict mode
+  - Use `type: ["string", "null"]` pattern
+  - Field still required, value can be null
+  - Union types for flexibility
+  - Examples and patterns
+- Unsupported schema features
+  - `allOf`, `not` composition
+  - `if/then/else` conditionals
+  - Some format validations
+  - Pattern limitations
+- Schema caching and latency
+  - First request processes schema
+  - Subsequent requests use cache
+  - Variable schemas increase latency
+  - Not eligible for zero data retention
+- Structured outputs vs JSON mode
+  - JSON mode: valid JSON only
+  - Structured outputs: schema adherence
+  - Reliability comparison
+  - Migration path

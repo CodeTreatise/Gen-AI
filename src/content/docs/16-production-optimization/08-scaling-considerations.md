@@ -1,0 +1,52 @@
+---
+title: "Scaling Considerations"
+---
+
+# Scaling Considerations
+
+- Stateless design for AI services
+  - Session externalization
+  - Shared state patterns
+  - Stateless benefits
+  - State management options
+- OpenAI Background Mode (NEW 2025)
+  - background=true for long-running tasks
+  - Async response generation
+  - Polling for status (queued, in_progress, completed)
+  - Streaming background responses
+  - Timeout-resistant execution
+  - Deep Research, Codex patterns
+- OpenAI Webhooks (NEW 2025)
+  - Real-time event notifications
+  - response.completed events
+  - batch.completed events
+  - fine_tuning.job.completed
+  - Standard Webhooks spec
+  - Signature verification
+  - Retry with exponential backoff
+- OpenAI Conversations API (NEW 2025)
+  - Persistent conversation objects
+  - Cross-session state
+  - previous_response_id chaining
+  - Context compaction (/responses/compact)
+  - Long-running conversation management
+- Horizontal scaling patterns
+  - Load balancing
+  - Auto-scaling
+  - Instance management
+  - Health checks
+- Queue-based processing for long tasks
+  - Message queue setup
+  - Worker processing
+  - Result delivery
+  - Queue monitoring
+- Background job patterns
+  - Job scheduling
+  - Job priority
+  - Retry handling
+  - Job monitoring
+- Database scaling for embeddings
+  - Vector database scaling
+  - Sharding strategies
+  - Replication
+  - Query optimization

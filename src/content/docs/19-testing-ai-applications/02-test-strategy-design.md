@@ -1,0 +1,68 @@
+---
+title: "Test Strategy Design"
+---
+
+# Test Strategy Design
+
+- Test pyramid for AI applications
+  - AI test pyramid shape
+  - Layer proportions
+  - Cost distribution
+  - Speed considerations
+- Unit vs. integration vs. E2E testing
+  - Unit test scope
+  - Integration boundaries
+  - E2E coverage
+  - Layer selection
+- Deterministic vs. probabilistic testing
+  - Deterministic components
+  - Probabilistic handling
+  - Hybrid approaches
+  - Confidence intervals
+- Risk-based testing prioritization
+  - Risk assessment
+  - High-risk areas
+  - Test allocation
+  - Coverage decisions
+- Test coverage concepts for AI
+  - Coverage metrics
+  - Prompt coverage
+  - Scenario coverage
+  - Edge case coverage
+- Evaluation Dataset Management (2025-2026)
+  - Golden datasets
+    - Input/expected_output pairs
+    - retrieval_context for RAG tests
+    - expected_tools for agent tests
+    - Golden versioning and updates
+  - Dataset versioning
+    - Version control integration
+    - Splits (train/test/validation)
+    - Rollback capability
+    - Historical comparison
+  - EvaluationDataset patterns
+    - Loading goldens from files
+    - Cloud dataset management
+    - Dataset iteration patterns
+    - Filtering and sampling
+- Evaluator Types
+  - Reference-based evaluators
+    - Compare against expected output
+    - Ground truth required
+    - Exact and fuzzy matching
+    - Semantic similarity
+  - Reference-free evaluators
+    - No ground truth needed
+    - LLM-as-judge assessment
+    - Quality without expected output
+    - Scalable annotation
+  - Code evaluators
+    - Deterministic rule-based
+    - Format validation
+    - Constraint checking
+    - Fast execution
+  - Human evaluators
+    - Expert review workflows
+    - Annotation queues
+    - Inter-rater reliability
+    - Calibration procedures

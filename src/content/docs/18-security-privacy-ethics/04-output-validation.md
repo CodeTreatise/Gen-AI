@@ -1,0 +1,72 @@
+---
+title: "Output Validation"
+---
+
+# Output Validation
+
+- Checking AI outputs before display
+  - Pre-display validation
+  - Filtering pipeline
+  - Sanitization
+  - Transformation
+- Format Validation
+  - JSON schema validation
+  - Structure checking
+  - Required fields
+  - Type verification
+- Structured Output Validation (NEW 2025)
+  - JSON Schema enforcement
+  - Strict mode guarantees
+  - Pydantic/Zod integration
+  - Refusal handling
+  - Schema validation before display
+- Structured Output Refusal Handling (NEW 2025)
+  - Detect refusal in structured responses
+  - refusal field in API response
+  - Graceful fallback for refusals
+  - Differentiate parsing errors vs refusals
+  - User-friendly refusal messages
+  - Log refusals for analysis
+  - Retry with modified prompt
+- Content Policy Enforcement
+  - Policy checking
+  - Violation handling
+  - Replacement content
+  - User notification
+- Groundedness Detection (Azure) (NEW 2025)
+  - Detect ungrounded responses
+  - Source material verification
+  - Hallucination flagging
+  - Factuality scoring
+  - 55K character grounding sources
+  - Streaming-only support
+- Hallucination Detection
+  - Fact checking pipelines
+  - Source verification
+  - Confidence signals
+  - Human review triggers
+  - Citation validation
+- Protected Material Detection (Azure) (NEW 2025)
+  - Known text content detection
+  - Song lyrics, articles, recipes
+  - Source code matching
+  - Citation URL generation
+  - Copyright compliance
+- Link and Reference Validation
+  - URL verification
+  - Link safety checking
+  - Reference validation
+  - Citation checking
+  - Dead link detection
+- Executable Code Safety
+  - Code scanning
+  - Sandboxing
+  - Dangerous function detection
+  - Execution controls
+  - Static analysis integration
+- LLM Output Sanitization (OWASP LLM05) (NEW 2025)
+  - Treat output as untrusted
+  - Encode before display
+  - Prevent XSS via output
+  - SQL injection prevention
+  - Command injection prevention

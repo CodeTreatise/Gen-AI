@@ -1,0 +1,62 @@
+---
+title: "Performance Optimization"
+---
+
+# Performance Optimization
+
+- Model quantization concepts
+  - Float32 to Int8/Int4
+  - Quantization methods (post-training, QAT)
+  - Accuracy impact (1-3% typical)
+  - Size reduction (4x with int8, 8x with int4)
+- Advanced Quantization (NEW 2025)
+  - Int4 quantization (q4) for SLMs
+  - Mixed precision (FP16 + Int8)
+  - Dynamic quantization
+  - Weight-only vs activation quantization
+  - GPTQ, AWQ methods for LLMs
+- Model pruning concepts
+  - Weight pruning
+  - Structured pruning
+  - Sparsity levels
+  - Fine-tuning after pruning
+- LLM-Specific Optimizations (NEW 2025)
+  - KV-cache optimization
+  - Speculative decoding
+  - Continuous batching
+  - Flash attention patterns
+  - Sliding window attention
+- Lazy loading models
+  - On-demand loading
+  - Progressive loading
+  - Feature-based loading
+  - User action triggers
+- Web Workers for inference
+  - Worker setup
+  - Message passing
+  - Tensor serialization
+  - Thread pool patterns
+  - Dedicated LLM worker (NEW 2025)
+- Service Worker Strategies (NEW 2025)
+  - Model prefetching
+  - Background model updates
+  - Offline model serving
+  - Cache-first strategies
+- Caching models
+  - IndexedDB storage
+  - Cache API
+  - Version management
+  - Size limits
+  - Compression strategies (NEW 2025)
+- Memory leak prevention
+  - Tensor disposal
+  - tf.tidy usage
+  - Memory profiling
+  - Cleanup patterns
+  - LLM session cleanup (NEW 2025)
+- Performance Monitoring (NEW 2025)
+  - Inference time measurement
+  - Tokens per second tracking
+  - Memory usage monitoring
+  - GPU utilization checks
+  - Performance API integration

@@ -1,0 +1,47 @@
+---
+title: "Function Calling Concepts"
+---
+
+# Function Calling Concepts
+
+- What is function calling?
+  - AI invoking external functions
+  - Structured output for actions
+  - Bridge between AI and code
+  - Real-world capabilities
+  - Also known as "tool calling" or "tool use"
+- How LLMs decide to call functions
+  - User intent recognition
+  - Function matching
+  - Parameter extraction
+  - Call vs. respond decision
+  - Confidence thresholds
+- Function calling vs. prompt-based extraction
+  - Reliability comparison
+  - Schema enforcement
+  - Error handling differences
+  - When to use each
+  - Structured outputs guarantee
+- Supported providers and models (2025-2026)
+  - OpenAI: GPT-5, GPT-4.1, o4-mini (Responses API)
+  - Anthropic: Claude 4.5, Claude 4 Sonnet (tool use)
+  - Google: Gemini 3 Pro/Flash, Gemini 2.5 (function calling)
+  - Open-source: Llama 3.2, Mistral, Qwen with tool support
+  - Provider API differences (Responses vs Chat Completions)
+- Reasoning models and function calling
+  - GPT-5, o4-mini reasoning items
+  - Gemini 3 thinking process
+  - Claude extended thinking
+  - Passing reasoning items back to model
+- Response validation before processing
+  - Checking finish_reason / stop_reason
+  - Detecting function call vs text response
+  - Handling incomplete or failed calls
+  - finishReason values by provider
+- Use cases for function calling
+  - Data retrieval
+  - Action execution
+  - Calculations
+  - External API access
+  - Multi-step workflows
+  - Agentic applications

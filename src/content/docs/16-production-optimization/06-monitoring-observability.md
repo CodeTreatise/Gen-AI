@@ -1,0 +1,71 @@
+---
+title: "Monitoring & Observability"
+---
+
+# Monitoring & Observability
+
+- LLM Observability Platforms (NEW 2025)
+  - Langfuse (open-source, self-hostable)
+    - Trace logging
+    - Prompt management
+    - Evaluation integration
+    - Cost tracking
+    - OpenTelemetry support
+  - LangSmith (LangChain ecosystem)
+    - Agent tracing
+    - Custom dashboards
+    - Insights clustering
+    - OTel support
+  - Portkey Observability
+    - Request logging
+    - AI Gateway integration
+    - Multi-provider unified view
+  - Helicone (100+ model support)
+    - Unified API observability
+    - Cost analytics
+    - Gateway + logging
+  - Arize Phoenix (ML observability)
+- LLM-Specific Metrics (NEW 2025)
+  - Time to First Token (TTFT)
+  - Time to Last Token (TTLT)
+  - Tokens per second
+  - Token usage per trace
+  - Cost per request/user/feature
+  - Cache hit rates
+  - Model version performance
+- Key metrics to track
+  - Request latency (P50/P95/P99)
+  - Token usage (input/output/reasoning)
+  - Error rates by type
+  - Cost metrics per feature
+  - Quality scores
+- Logging best practices
+  - Structured logging (JSON)
+  - Log levels
+  - Sensitive data masking (NEW 2025)
+  - PII redaction
+  - Log retention policies
+- Trace IDs for requests
+  - Request correlation
+  - Distributed tracing
+  - Trace propagation
+  - Debug workflows
+  - Agent graph visualization (NEW 2025)
+  - MCP tracing (NEW 2025)
+- Dashboard design
+  - Key metric displays
+  - Real-time updates
+  - Historical trends
+  - Alert integration
+  - Custom dashboards (Langfuse, LangSmith)
+- Alerting strategies
+  - Threshold alerts
+  - Anomaly detection
+  - Alert routing
+  - Alert fatigue prevention
+  - Spend alerts (NEW 2025)
+- Performance baselines
+  - Baseline establishment
+  - Deviation detection
+  - Trend analysis
+  - Capacity indicators

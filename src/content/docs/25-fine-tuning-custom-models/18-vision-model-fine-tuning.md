@@ -1,0 +1,42 @@
+---
+title: "25.18 Vision Model Fine-tuning"
+---
+
+# 25.18 Vision Model Fine-tuning
+
+- Vision-Language Model (VLM) fine-tuning
+  - Multimodal model customization
+  - Image understanding enhancement
+  - Domain-specific visual tasks
+  - Custom image-text pairs
+  - VLM architecture considerations
+- OpenAI vision fine-tuning
+  - GPT-4o vision fine-tuning support
+  - Image + text training data format
+  - Supported image types and sizes
+  - Vision-specific hyperparameters
+  - Use cases and limitations
+- Open-source VLM fine-tuning
+  - Llama-Vision fine-tuning
+  - Qwen2-VL and Qwen3-VL training
+  - Pixtral model customization
+  - LLaVA fine-tuning approaches
+  - SmolVLM2 for efficiency
+- Dataset preparation for VLMs
+  - Image-text pair formatting
+  - Annotation requirements
+  - Multi-image conversations
+  - Video frame extraction
+  - Quality standards for images
+- VLM training considerations
+  - Memory requirements for vision
+  - Batch size constraints
+  - Resolution vs compute trade-offs
+  - Freezing vision encoders
+  - End-to-end vs adapter training
+- VLM evaluation strategies
+  - Visual question answering benchmarks
+  - Image captioning metrics
+  - Domain-specific evaluation
+  - Human evaluation for vision tasks
+  - Hallucination detection for images

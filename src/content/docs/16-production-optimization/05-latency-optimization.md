@@ -1,0 +1,65 @@
+---
+title: "Latency Optimization"
+---
+
+# Latency Optimization
+
+- LLM Latency Metrics (NEW 2025)
+  - Time to First Token (TTFT)
+  - Time to Last Token (TTLT)
+  - Tokens per second (TPS)
+  - Inter-token latency
+  - End-to-end latency
+  - P50/P95/P99 latency percentiles
+- Streaming for perceived performance
+  - First token time optimization
+  - Progressive display
+  - User perception benefits
+  - Engagement improvements
+  - Server-Sent Events (SSE)
+- Parallel requests where possible
+  - Independent requests
+  - Promise.all patterns
+  - Aggregation strategies
+  - Dependency analysis
+  - Parallel tool calls (NEW 2025)
+- Request waterfall analysis
+  - Timing visualization
+  - Bottleneck identification
+  - Sequential to parallel
+  - Critical path optimization
+  - Trace visualization (Langfuse, LangSmith)
+- Edge deployment for AI proxies
+  - Edge function placement
+  - Geographic routing
+  - Latency reduction
+  - Provider proximity
+  - AI Gateway at edge (Portkey, Cloudflare)
+- Speculative Decoding (NEW 2025)
+  - Draft model predictions
+  - Parallel verification
+  - 2-3x speedup potential
+  - Provider implementations
+- Context Caching for Speed (NEW 2025)
+  - Prompt caching reduces TTFT
+  - Cached context instant retrieval
+  - System prompt optimization
+- Predicted Outputs (NEW 2025)
+  - prediction parameter in Chat Completions
+  - Code refactoring use case
+  - accepted_prediction_tokens tracking
+  - rejected_prediction_tokens (billed)
+  - 2-5x latency reduction for known outputs
+  - Streaming with predictions
+  - GPT-4o, GPT-4.1 series support
+- Connection pooling
+  - HTTP/2 connections
+  - Keep-alive
+  - Connection reuse
+  - Pool sizing
+- Model selection for speed
+  - Faster model options (nano, mini, flash)
+  - Speed vs. quality trade-offs
+  - Task-appropriate models
+  - Model benchmarking
+  - GPT-4.1-nano, Claude Haiku, Gemini Flash (NEW 2025)

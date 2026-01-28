@@ -1,0 +1,132 @@
+---
+title: "Agentic Search Systems"
+---
+
+# Agentic Search Systems
+
+- From search to autonomous agents
+  - Evolution of search paradigms
+    - Keyword matching (1990s)
+    - Semantic search (2010s)
+    - Answer engines (2020s)
+    - Agentic search (2024+)
+  - Agent capabilities for search
+    - Multi-step reasoning
+    - Tool use and web browsing
+    - Iterative refinement
+    - Task completion focus
+  - Magentic-One architecture pattern
+    - Orchestrator agent (planning)
+    - WebSurfer agent (web browsing)
+    - FileSurfer agent (file navigation)
+    - Coder agent (code execution)
+    - Task and progress ledgers
+- Multi-agent search orchestration
+  - Orchestrator design patterns
+    - Task decomposition
+    - Agent assignment
+    - Progress tracking
+    - Error recovery
+  - Specialized search agents
+    - Web search agent
+    - Document search agent
+    - Database query agent
+    - API search agent
+  - Agent communication protocols
+    - Message passing
+    - State sharing
+    - Result aggregation
+    - Conflict resolution
+- LangGraph for search agents
+  - Stateful search workflows
+    - Import StateGraph and END from langgraph.graph module
+    - Import TypedDict and Annotated from typing for state definition
+    - Define SearchState TypedDict with query, search_results, refined_query, final_answer, and iteration fields
+    - Use Annotated with operator.add for accumulating search_results across iterations
+    - Create search_node function that executes search using refined_query or original query
+    - Create evaluate_node function that returns routing decision ("generate" or "refine")
+    - Evaluation checks iteration count (max 3) and result sufficiency
+    - Create refine_node function that generates improved query from current results
+    - Refine node increments iteration counter for loop control
+    - Create generate_node function that produces final answer from accumulated results
+    - Build workflow using StateGraph initialized with SearchState class
+    - Add nodes with workflow.add_node() for search, refine, and generate
+    - Set entry point to search node with workflow.set_entry_point()
+    - Add conditional edges from search using evaluate_node for routing
+    - Add edge from refine back to search for iteration loop
+    - Add edge from generate to END for workflow completion
+    - Compile workflow into executable agent with workflow.compile()
+  - Human-in-the-loop search
+    - Approval checkpoints
+    - Query confirmation
+    - Result validation
+    - Feedback integration
+  - Memory and context persistence
+    - Conversation history
+    - User preferences
+    - Session continuity
+    - Long-term learning
+- Iterative search refinement
+  - Query reformulation loops
+    - Result analysis
+    - Gap identification
+    - Query expansion
+    - Scope adjustment
+  - Multi-hop reasoning
+    - Follow-up searches
+    - Evidence chain building
+    - Cross-reference validation
+    - Comprehensive coverage
+  - Self-reflection and correction
+    - Quality self-assessment
+    - Error detection
+    - Strategy adjustment
+    - Learning from failures
+- Web browsing agents
+  - Browser automation for search
+    - Page navigation
+    - Content extraction
+    - Form interaction
+    - Dynamic content handling
+  - WebSurfer pattern implementation
+    - Accessibility tree parsing
+    - Set-of-marks prompting
+    - Action generation
+    - State reporting
+  - Safety and sandboxing
+    - Action restrictions
+    - Sandbox environments
+    - Rate limiting
+    - Audit logging
+- Tool-augmented search
+  - Search as a tool
+    - Tool definition
+    - Parameter schema
+    - Result formatting
+    - Error handling
+  - Multi-tool orchestration
+    - Tool selection
+    - Parallel execution
+    - Result synthesis
+    - Tool chaining
+  - Calculator, code execution, APIs
+    - Computational tools
+    - Data fetching
+    - Verification tools
+    - Specialized APIs
+- Production considerations
+  - Latency management
+    - Timeout strategies
+    - Progressive results
+    - Parallel agent execution
+    - Caching agent decisions
+  - Cost optimization
+    - Agent call budgets
+    - Model selection per task
+    - Early termination
+    - Result caching
+  - Observability and debugging
+    - Agent trace logging
+    - Decision visualization
+    - Performance metrics
+    - Error analysis

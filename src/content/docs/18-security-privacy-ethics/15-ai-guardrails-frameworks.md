@@ -1,0 +1,51 @@
+---
+title: "AI Guardrails Frameworks (NEW 2025)"
+---
+
+# AI Guardrails Frameworks (NEW 2025)
+
+- NVIDIA NeMo Guardrails
+  - Colang programmable rails
+  - Topical guardrails
+  - Safety guardrails
+  - Security guardrails
+  - Input/output rails
+  - Dialog management
+- Guardrails AI Framework
+  - Validators (pydantic-based)
+  - Structural validation
+  - Semantic validation
+  - Custom validators
+  - Retry and correction loops
+  - Guard class for wrapping LLMs
+- Llama Guard 3 (Meta)
+  - Safety classification model
+  - 13 safety categories (S1-S13)
+  - Input and output filtering
+  - Custom category fine-tuning
+  - On-device (1B) and cloud (8B)
+- Azure AI Content Safety
+  - Prompt Shields
+  - Groundedness detection
+  - Protected material detection
+  - Custom categories
+  - Real-time moderation
+- OpenAI Built-in Safety
+  - Default guardrails in models
+  - Refusal behaviors
+  - System prompt enforcement
+  - Moderation API integration
+- Anthropic Claude Guardrails (NEW 2025)
+  - Constitutional AI principles
+  - Built-in harmlessness training
+  - System prompt boundaries
+  - Refusal for harmful requests
+  - Usage policy enforcement
+  - Claude's character traits
+  - Honest uncertainty expression
+- Guardrail Implementation Patterns
+  - Pre-call validation (input rails)
+  - Post-call validation (output rails)
+  - Fallback responses
+  - Human escalation triggers
+  - Monitoring and logging

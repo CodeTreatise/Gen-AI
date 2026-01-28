@@ -1,0 +1,59 @@
+---
+title: "Modern Evaluation Frameworks (2025-2026)"
+---
+
+# Modern Evaluation Frameworks (2025-2026)
+
+- DeepEval Framework
+  - Open-source LLM evaluation framework
+  - 50+ built-in metrics
+  - pytest-style testing (deepeval test run)
+  - LLMTestCase and ConversationalTestCase
+  - @observe decorator for tracing
+  - Confident AI cloud platform integration
+  - G-Eval for custom metrics
+  - DAGMetric for decision tree evaluations
+- Promptfoo CLI
+  - Open-source CLI and library
+  - Test-driven LLM development
+  - promptfoo.yaml configuration
+  - Red teaming and security testing
+  - Guardrail validation
+  - Model comparison and A/B testing
+  - GitHub Actions integration
+  - SOC2/HIPAA compliant
+- LangSmith Evaluation Platform
+  - LangChain's evaluation platform
+  - Offline evaluations (pre-deployment)
+    - Datasets and examples
+    - Experiments for comparisons
+  - Online evaluations (production)
+    - Runs and threads monitoring
+    - Annotation queues
+  - Reference-free and reference-based evaluators
+  - Human, Code, LLM-as-judge evaluation types
+- Ragas Framework
+  - RAG-specific evaluation
+  - Faithfulness and answer relevancy
+  - Context precision and recall
+  - Semantic similarity metrics
+  - End-to-end RAG pipeline scoring
+- Braintrust Platform
+  - AI observability platform
+  - Workflow: Instrument → Observe → Annotate → Evaluate → Deploy
+  - Experiment tracking
+  - Trace analysis
+  - Team collaboration features
+- OpenAI Evals
+  - Official OpenAI evaluation framework
+  - YAML-based eval configuration
+  - Model-graded evaluations
+  - Completion Function Protocol
+  - Community eval registry
+- Framework Selection Criteria
+  - Use case alignment (RAG, agents, chatbots)
+  - Metric coverage needs
+  - CI/CD integration requirements
+  - Cloud platform needs
+  - Team size and collaboration
+  - Compliance requirements

@@ -1,0 +1,43 @@
+---
+title: "Infrastructure Patterns"
+---
+
+# Infrastructure Patterns
+
+- AI Gateway Architecture (NEW 2025)
+  - Unified API layer
+  - Multi-provider abstraction
+  - Request/response normalization
+  - Centralized control plane
+  - Gateway placement patterns
+- Serverless for AI APIs
+  - Function design
+  - Cold start handling
+  - Timeout management (streaming-aware)
+  - Cost efficiency
+  - Vercel AI SDK integration (NEW 2025)
+- Edge functions for AI
+  - Edge deployment
+  - Latency benefits (50-100ms reduction)
+  - Size constraints
+  - Use cases
+  - Cloudflare Workers AI (NEW 2025)
+  - Vercel Edge Runtime
+- Container patterns
+  - Container design
+  - Orchestration (Kubernetes)
+  - Scaling
+  - Resource limits
+  - GPU containers for inference (NEW 2025)
+- Queue systems for async processing
+  - Queue selection (Redis, SQS, Bull)
+  - Message patterns
+  - Retry policies
+  - Dead letter queues
+  - Long-running AI job queues (NEW 2025)
+- Worker architectures
+  - Worker design
+  - Scaling workers
+  - Task distribution
+  - Worker monitoring
+  - AI-specific worker pools

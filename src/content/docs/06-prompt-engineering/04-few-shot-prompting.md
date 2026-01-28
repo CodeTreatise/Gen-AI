@@ -1,0 +1,42 @@
+---
+title: "Few-Shot Prompting"
+---
+
+# Few-Shot Prompting
+
+- What is few-shot learning?
+  - Learning from examples in prompt
+  - Pattern recognition from samples
+  - No training required
+  - In-context learning mechanism
+- Example selection strategies
+  - Diverse examples
+  - Representative cases
+  - Edge case coverage
+  - Similar to target input
+- Example formatting
+  - Input/output pairs
+  - Clear delimiters
+  - Consistent structure
+  - Labels (e.g., "Input:" "Output:")
+- Number of examples optimization
+  - Diminishing returns analysis
+  - Token cost consideration
+  - Quality vs. quantity
+  - Typical recommendations (3-5)
+- Zero-shot vs. few-shot trade-offs
+  - When zero-shot is sufficient
+  - Complex task few-shot
+  - Cost considerations
+  - Latency impact
+- Dynamic example selection
+  - Runtime example selection
+  - Similarity-based retrieval
+  - Task-specific examples
+  - A/B testing examples
+- **RAG-Enhanced Few-Shot**
+  - Retrieve examples from vector database
+  - Semantic similarity to current query
+  - Dynamic example count based on context
+  - Combining retrieved examples with curated ones
+  - Example quality scoring

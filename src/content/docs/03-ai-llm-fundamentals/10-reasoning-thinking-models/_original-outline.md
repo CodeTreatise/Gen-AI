@@ -1,0 +1,48 @@
+---
+title: "Reasoning & Thinking Models"
+---
+
+# Reasoning & Thinking Models
+
+- What are reasoning models? (o1, o3, Claude thinking)
+  - Models that "think" before answering
+  - Internal chain-of-thought
+  - OpenAI o1 and o3 series
+  - Claude extended thinking mode
+  - Gemini thinking capabilities
+- Extended thinking vs. fast responses
+  - When to use each mode
+  - Latency implications
+  - Quality improvements from thinking
+  - User experience considerations
+- When to use reasoning models
+  - Complex multi-step problems
+  - Mathematical reasoning
+  - Code debugging and analysis
+  - Strategic planning tasks
+  - Scientific reasoning
+- Cost implications of thinking tokens
+  - Thinking tokens add to cost
+  - Budgeting for reasoning
+  - Cost vs quality trade-off
+  - Optimizing thinking budget
+- Reasoning budget and test-time compute
+  - Configurable compute allocation (o3 low/medium/high)
+  - Test-time compute scaling — More thinking = better results
+  - Reasoning token limits
+  - Dynamic budget based on task complexity
+- Reasoning token visibility
+  - OpenAI: Hidden reasoning, summary only
+  - Claude: Optional thinking block visibility
+  - Gemini: Thinking process access
+  - Debugging with visible reasoning
+- Streaming thinking blocks
+  - Showing thinking process to users
+  - Hiding vs revealing reasoning
+  - UX patterns for thinking display
+  - Progressive disclosure of thought
+- Verifiable reasoning outputs
+  - Inspecting reasoning steps
+  - Debugging through thinking
+  - Consistency checking
+  - Reasoning audits

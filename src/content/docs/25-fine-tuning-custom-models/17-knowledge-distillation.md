@@ -1,0 +1,42 @@
+---
+title: "25.17 Knowledge Distillation"
+---
+
+# 25.17 Knowledge Distillation
+
+- What is knowledge distillation?
+  - Transferring knowledge from large to small models
+  - Teacher-student training paradigm
+  - Soft label training
+  - Capability compression
+  - Deployment optimization
+- Generalized Knowledge Distillation (GKD)
+  - TRL GKDTrainer implementation
+  - On-policy distillation
+  - Sequence-level knowledge transfer
+  - Divergence minimization
+  - Training configuration
+- MiniLLM distillation
+  - TRL MiniLLMTrainer support
+  - Reverse KL divergence training
+  - Improved generation quality
+  - Small model optimization
+  - Use case scenarios
+- Distillation strategies
+  - Response-based distillation
+  - Feature-based distillation
+  - Logit matching
+  - Attention transfer
+  - Hidden state alignment
+- Practical distillation workflow
+  - Teacher model selection
+  - Student architecture choice
+  - Training data preparation
+  - Temperature tuning
+  - Evaluation methodology
+- Benefits and trade-offs
+  - Inference cost reduction
+  - Latency improvements
+  - Model size reduction
+  - Capability preservation assessment
+  - When distillation makes sense

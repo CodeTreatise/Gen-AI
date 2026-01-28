@@ -1,0 +1,106 @@
+---
+title: "Late Interaction Retrieval (ColBERT)"
+---
+
+# Late Interaction Retrieval (ColBERT)
+
+- ColBERT architecture fundamentals
+  - Late interaction paradigm
+    - Token-level embeddings vs. single vector
+    - Query-document interaction at retrieval time
+    - MaxSim operator for scoring
+    - Deferred fine-grained matching
+  - Architectural differences from bi-encoders
+    - Per-token representations
+    - Interaction computation
+    - Score aggregation
+    - Expressiveness advantages
+  - ColBERT v2 improvements
+    - Residual compression
+    - Denoised supervision
+    - Cross-encoder distillation
+    - State-of-the-art effectiveness
+- PLAID engine for efficient retrieval
+  - Centroid-based retrieval
+    - Cluster pruning
+    - Candidate generation
+    - Late interaction scoring
+    - Tens of milliseconds retrieval
+  - Index compression techniques
+    - Residual quantization
+    - Memory optimization
+    - Storage efficiency
+    - Quality preservation
+  - Scaling to billions of documents
+    - Distributed PLAID
+    - Shard management
+    - Query routing
+    - Production deployment
+- RAGatouille implementation
+  - Quick start with RAGatouille
+    - Import RAGPretrainedModel from the ragatouille library
+    - Load a pretrained ColBERT model using from_pretrained() with model identifier (e.g., "colbert-ir/colbertv2.0")
+    - Prepare documents as a list of strings to be indexed
+    - Create index using RAG.index() method with index_name and collection parameters
+    - Returns index_path pointing to stored index location
+    - Search using RAG.search() with query string and k parameter for top-k results
+    - Results contain score and content fields for each matched document
+    - Iterate through results to access relevance scores and document content
+  - Document metadata and IDs
+    - Custom document identifiers
+    - Metadata attachment
+    - Filtering with metadata
+    - Rich result objects
+  - Index management
+    - Adding to existing index
+    - Index persistence
+    - Multi-index queries
+    - Version control
+- Training and fine-tuning ColBERT
+  - RAGTrainer for custom models
+    - Training data preparation
+    - Hard negative mining
+    - Distillation support
+    - Domain adaptation
+  - Data processing pipeline
+    - Triplet generation
+    - Automatic deduplication
+    - Negative sampling
+    - Quality enhancement
+  - Fine-tuning pretrained models
+    - Domain-specific tuning
+    - Few-shot adaptation
+    - Evaluation during training
+    - Checkpoint management
+- Integration patterns
+  - LlamaIndex integration
+    - ColBERT retriever node
+    - Hybrid with dense retrievers
+    - Pipeline composition
+    - Production patterns
+  - LangChain integration
+    - ColBERT retriever wrapper
+    - Chain composition
+    - Agent tool integration
+    - Streaming support
+  - Vespa production deployment
+    - Managed ColBERT service
+    - Scale and reliability
+    - Enterprise features
+    - Monitoring integration
+- When to use ColBERT
+  - Best fit scenarios
+    - Zero-shot domain transfer
+    - Complex queries
+    - High precision requirements
+    - Semantic nuance matters
+  - Trade-off considerations
+    - Index size vs. accuracy
+    - Latency requirements
+    - Infrastructure complexity
+    - Maintenance overhead
+  - Comparison with dense retrieval
+    - Effectiveness differences
+    - Efficiency trade-offs
+    - Use case alignment
+    - Hybrid opportunities

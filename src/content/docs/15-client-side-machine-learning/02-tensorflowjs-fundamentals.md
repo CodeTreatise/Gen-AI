@@ -1,0 +1,44 @@
+---
+title: "TensorFlow.js Fundamentals"
+---
+
+# TensorFlow.js Fundamentals
+
+- What is TensorFlow.js?
+  - Browser-based ML framework
+  - JavaScript API
+  - Node.js support
+  - WebGL acceleration
+  - Current version: v4.22+ (NEW 2025)
+- TensorFlow.js 2025 Updates (NEW 2025)
+  - Stable WebGPU backend (production-ready)
+  - React Native backend support
+  - Improved model converter (Python → JS)
+  - Enhanced tfjs-models repository
+  - Better memory management
+  - Smaller bundle sizes with tree-shaking
+- Installation and setup
+  - CDN inclusion
+  - npm package (@tensorflow/tfjs)
+  - Bundle size optimization
+  - Backend selection (webgpu, webgl, wasm, cpu)
+- Tensor basics
+  - Tensor creation
+  - Tensor operations
+  - Shape and dtype
+  - Tensor disposal
+- Model loading
+  - loadGraphModel
+  - loadLayersModel
+  - Model formats
+  - Loading options
+- Running inference
+  - predict method
+  - Input preparation
+  - Output interpretation
+  - Batch processing
+- Memory management
+  - tf.tidy for cleanup
+  - dispose methods
+  - Memory leaks
+  - Profiling memory

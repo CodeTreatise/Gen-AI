@@ -1,0 +1,102 @@
+---
+title: "Google Agent Development Kit (NEW 2025)"
+---
+
+# Google Agent Development Kit (NEW 2025)
+
+- ADK architecture overview
+  - Agent class with model configuration
+  - Instruction-based agent definition
+  - Tool integration patterns
+  - Multi-model support (Gemini, others)
+- Agent definition patterns
+  - LlmAgent for LLM-powered agents
+  - Custom agent implementations
+  - Agent with tools attachment
+  - Agent configuration options
+- Tool creation in ADK
+  - FunctionTool for Python functions
+  - Tool decorators and schemas
+  - Async tool support
+  - Tool output formatting
+  - Built-in Google tools integration
+- Multi-agent hierarchies
+  - Parent-child agent relationships
+  - Sub-agent delegation
+  - Agent-as-tool pattern
+  - Hierarchical task decomposition
+- Session and state management
+  - Session creation and management
+  - InMemorySessionService
+  - Persistent session backends
+  - State serialization
+- Memory systems
+  - Conversation history
+  - Session persistence
+  - Memory injection
+  - Context window management
+- Workflow patterns
+  - Sequential agent workflows
+  - Parallel agent execution
+  - Conditional routing
+  - Loop constructs
+- Callbacks and observability
+  - Event callbacks
+  - Logging integration
+  - Tracing and debugging
+  - Performance monitoring
+- ADK web integration
+  - FastAPI deployment patterns
+  - Streaming response handling
+  - REST API creation
+  - Production deployment
+- Multi-language SDK support (NEW 2025)
+  - Python ADK (primary)
+  - TypeScript ADK v0.2.0
+  - Go ADK v0.3.0
+  - Java ADK v0.5.0
+- A2A Protocol v0.3.0+ (NEW 2026)
+  - Agent-to-Agent communication standard
+  - Linux Foundation governance (donated May 2025)
+  - 3-layer architecture:
+    - Layer 1: Canonical Data Model (Protocol Buffers)
+    - Layer 2: Abstract Operations
+    - Layer 3: Protocol Bindings (JSON-RPC, gRPC, HTTP+JSON)
+  - Agent Cards discovery at `/.well-known/agent-card.json`
+  - Task states: submitted → working → input-required → completed/failed
+  - Core operations: SendMessage, GetTask, ListTasks, CancelTask
+  - Push notifications and streaming support
+  - SDKs: Python, Go, JavaScript, Java, .NET
+  - Cross-platform agent interoperability
+  - Multi-framework agent collaboration
+- Workflow agents (NEW 2025)
+  - SequentialAgent for ordered execution
+  - ParallelAgent for concurrent tasks
+  - LoopAgent for iterative workflows
+  - Workflow composition patterns
+- Visual Builder (NEW 2025)
+  - No-code agent design interface
+  - Drag-and-drop workflow creation
+  - Visual debugging tools
+  - Export to code
+- Plugins system (NEW 2025)
+  - Reflect and retry plugin
+  - Extensible plugin architecture
+  - Custom behavior injection
+  - Pre-built plugin library
+- Resume agents (NEW 2025)
+  - Session rewind capability
+  - State restoration patterns
+  - Conversation replay
+  - Checkpoint-based recovery
+- Third-party tool integrations (NEW 2025)
+  - Atlassian (Jira, Confluence)
+  - GitHub and GitLab
+  - Linear, Notion, Slack
+  - PayPal, Stripe payments
+  - Qdrant, Hugging Face
+- Bidi-streaming live (NEW 2026)
+  - Real-time bidirectional streaming
+  - Audio streaming support
+  - Image and video streaming
+  - Live agent interactions

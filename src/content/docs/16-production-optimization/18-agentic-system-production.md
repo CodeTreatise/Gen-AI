@@ -1,0 +1,53 @@
+---
+title: "Agentic System Production (NEW 2025-2026)"
+---
+
+# Agentic System Production (NEW 2025-2026)
+
+- Agent Reliability Patterns
+  - Maximum iteration limits
+  - Timeout controls
+  - Cost caps per execution
+  - Graceful termination
+  - Human-in-the-loop checkpoints
+- Tool Failure Handling
+  - Tool-level retries
+  - Fallback tools
+  - Error recovery strategies
+  - Partial result handling
+  - Tool timeout management
+- State Management
+  - Conversation state persistence
+  - Session management
+  - Checkpoint and resume
+  - State serialization
+  - Redis/database state storage
+- MCP (Model Context Protocol) Production (NEW 2025)
+  - MCP server deployment
+  - MCP client integration
+  - Tool discovery
+  - Resource management
+  - MCP tracing (Langfuse)
+- Agent Observability
+  - Agent graph visualization
+  - Step-by-step tracing
+  - Tool call logging
+  - Decision path analysis
+  - Cost per agent run
+- Multi-Agent Coordination
+  - Agent communication patterns
+  - Shared state access
+  - Conflict resolution
+  - Orchestration patterns
+  - Swarm/hierarchical architectures
+- Function Calling Reliability
+  - Strict mode (guaranteed schema)
+  - parallel_tool_calls control
+  - Tool choice configuration
+  - Streaming function calls
+  - Error handling for malformed calls
+- Structured Outputs for Agents (NEW 2025)
+  - JSON Schema enforcement
+  - Pydantic/Zod integration
+  - Refusal handling
+  - Streaming structured output

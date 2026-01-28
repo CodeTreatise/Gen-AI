@@ -1,0 +1,73 @@
+---
+title: "Integration Testing AI Pipelines"
+---
+
+# Integration Testing AI Pipelines
+
+- End-to-end AI flow testing
+  - Full pipeline tests
+  - Component integration
+  - Data flow verification
+  - Result validation
+- RAG pipeline testing
+  - Retrieval testing
+  - Augmentation testing
+  - Generation testing
+  - Full RAG flow
+- Agent workflow testing
+  - Agent action testing
+  - Tool call verification
+  - Multi-step flows
+  - State transitions
+- Multi-step interaction testing
+  - Conversation flows
+  - Context maintenance
+  - Turn progression
+  - Session handling
+- External service integration tests
+  - Service mocking
+  - Real service testing
+  - Failure scenarios
+  - Timeout handling
+- Multi-Turn Conversation Testing (2025-2026)
+  - ConversationalTestCase pattern
+    - Conversation history tracking
+    - Turn-by-turn evaluation
+    - Context carryover testing
+    - Session state verification
+  - Conversational metrics
+    - Coherence across turns
+    - Context retention scoring
+    - Topic drift detection
+    - Memory accuracy
+  - Multi-turn dataset design
+    - Realistic conversation flows
+    - Branching scenarios
+    - Recovery from errors
+    - Long conversation handling
+- Agent Integration Testing
+  - Tool sequence verification
+    - Expected tool order testing
+    - Parallel tool call handling
+    - Tool dependency chains
+  - State management testing
+    - Agent memory persistence
+    - Context window management
+    - State corruption detection
+  - Error recovery flows
+    - Tool failure handling
+    - Retry behavior
+    - Graceful degradation
+- RAG Integration Testing (2025-2026)
+  - Retriever-Generator integration
+    - Context passing verification
+    - Chunk size impact testing
+    - Retrieval latency effects
+  - Embedding pipeline testing
+    - Embedding consistency
+    - Vector store integration
+    - Similarity threshold tuning
+  - Full RAG evaluation
+    - End-to-end faithfulness
+    - Source attribution accuracy
+    - Citation verification

@@ -1,0 +1,59 @@
+---
+title: "Multimodal Prompting"
+---
+
+# Multimodal Prompting
+
+- **Image Prompting Fundamentals**
+  - Images as input to vision-capable models
+  - Text + image combined prompts
+  - URL reference vs base64 inline
+  - File API upload for large/repeated images
+- **Image Input Best Practices**
+  - Clear, non-blurry images
+  - Correct orientation (rotate if needed)
+  - Place text prompt after image in content array
+  - Use detail parameter: `low`, `high`, `auto`
+  - Token cost increases with resolution
+- **Multi-Image Prompts**
+  - Compare multiple images in one prompt
+  - Reference images for style guidance
+  - Before/after analysis
+  - Mix inline and uploaded images
+- **Document Understanding**
+  - PDF and document inputs
+  - Table extraction prompts
+  - Chart and graph analysis
+  - Form field extraction
+  - OCR from imperfect images
+- **Vision-Specific Capabilities**
+  - Object detection with bounding boxes
+  - Image segmentation (Gemini 2.5+)
+  - Visual question answering
+  - Image captioning
+  - Spatial reasoning (with limitations)
+- **Gemini Vision Features**
+  - `media_resolution` parameter for token control
+  - Object detection: `box_2d` normalized 0-1000
+  - Segmentation masks with labels
+  - Disable thinking for object detection: `thinking_budget: 0`
+- **Vision Limitations to Note**
+  - Not for medical image interpretation
+  - May struggle with non-Latin text
+  - Approximate counts for objects
+  - Spatial reasoning challenges
+  - No CAPTCHA processing (safety)
+- **Audio Input Prompting**
+  - Speech-to-text preprocessing vs direct input
+  - Transcription quality considerations
+  - Multi-language audio handling
+  - Audio context in prompts
+- **Video Understanding (Gemini)**
+  - Video files as input (Gemini 2.0+)
+  - Upload via Files API for large videos
+  - Frame-by-frame vs holistic analysis
+  - Temporal reasoning prompts ("what happens at 2:30?")
+  - Video summarization prompts
+  - Action recognition and scene detection
+  - Combining video with text instructions
+  - Token cost proportional to video length

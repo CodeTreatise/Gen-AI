@@ -1,0 +1,86 @@
+---
+title: "Transformers.js"
+---
+
+# Transformers.js
+
+- Hugging Face Transformers for JavaScript
+  - Library overview
+  - API similarity to Python
+  - Browser optimization
+  - Node.js support
+  - Current version: v3.8.1 (NEW 2025)
+- Transformers.js v3.x Features (NEW 2025)
+  - 177+ model architecture support
+  - WebGPU native acceleration (device: 'webgpu')
+  - Quantized models (q4, q8 dtypes for smaller size)
+  - ONNX model format compatibility
+  - Improved caching and lazy loading
+  - Web Worker support for non-blocking inference
+- Supported Model Architectures (NEW 2025)
+  - Llama 4, Llama 3.x (text generation)
+  - Gemma 3, Gemma 3n, Gemma 2 (multimodal)
+  - Phi-3, Phi-4 (reasoning)
+  - Qwen3, Qwen2.5 (multilingual)
+  - SmolLM3 (efficient small models)
+  - SmolVLM (vision-language) (NEW 2025)
+  - DeepSeek models (coding)
+  - Mistral, Mixtral, Ministral (instruction following)
+  - Voxtral (audio transcription) (NEW 2025)
+  - LFM2 (Liquid Foundation Models) (NEW 2025)
+  - Whisper, LiteWhisper, Moonshine (speech recognition)
+  - Florence-2 (vision-language)
+  - SAM2, SAM3, EdgeTAM (segmentation) (NEW 2025)
+  - Supertonic TTS, StyleTTS 2 (text-to-speech) (NEW 2025)
+  - ModernBERT (encoder/decoder) (NEW 2025)
+- Available models and tasks
+  - Model catalog (177+ architectures)
+  - Task coverage (25+ task types)
+  - Model sizes (tiny to large)
+  - Quality tiers (base, instruct, chat)
+- Text tasks (classification, generation)
+  - Sentiment analysis
+  - Text generation (streaming support)
+  - Summarization
+  - Question answering
+  - Translation (100+ languages)
+  - Named entity recognition
+  - Zero-shot classification (NEW 2025)
+  - Text embeddings (NEW 2025)
+- Vision tasks
+  - Image classification
+  - Object detection
+  - Image segmentation
+  - Depth estimation
+  - Background removal (NEW 2025)
+  - Zero-shot image classification (NEW 2025)
+  - Image feature extraction (NEW 2025)
+  - Image-to-text captioning
+- Audio tasks
+  - Speech recognition (Whisper models)
+  - Audio classification
+  - Voice activity detection
+  - Speaker identification
+  - Text-to-speech (NEW 2025)
+- Multimodal tasks (NEW 2025)
+  - Document question answering
+  - Visual question answering
+  - Image-text matching
+  - Any-to-any generation
+  - Zero-shot audio classification
+  - Zero-shot object detection
+- Reinforcement Learning (NEW 2025)
+  - Decision Transformer models
+  - Sequence modeling approach
+  - Browser-based RL inference
+- Model loading and caching
+  - Progressive loading
+  - Cache management (IndexedDB)
+  - Version control
+  - Offline availability
+  - Quantization on load (NEW 2025)
+- WebGPU Acceleration (NEW 2025)
+  - Enable with device: 'webgpu'
+  - 2-5x faster than WebGL
+  - Automatic fallback to WebGL
+  - Memory-efficient inference

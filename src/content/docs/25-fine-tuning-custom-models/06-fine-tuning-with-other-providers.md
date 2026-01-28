@@ -1,0 +1,46 @@
+---
+title: "25.6 Fine-Tuning with Other Providers"
+---
+
+# 25.6 Fine-Tuning with Other Providers
+
+- Google fine-tuning (Gemini, Vertex AI)
+  - Vertex AI fine-tuning
+  - Gemini model support
+  - Google Cloud integration
+  - Pricing model
+- Cohere fine-tuning (Command models)
+  - Cohere API
+  - Command model variants
+  - Fine-tuning process
+  - Use cases
+- Mistral fine-tuning options
+  - Mistral API
+  - Supported models
+  - Fine-tuning process
+  - Pricing
+- AWS Bedrock fine-tuning
+  - Bedrock customization
+  - Supported models
+  - AWS integration
+  - Enterprise features
+- Azure OpenAI fine-tuning
+  - Azure OpenAI Service
+  - Enterprise compliance
+  - Region support
+  - Integration patterns
+- Provider comparison and pricing
+  - Feature comparison
+  - Pricing comparison
+  - Quality comparison
+  - Selection criteria
+- Migration considerations
+  - Cross-provider migration
+  - Dataset compatibility
+  - Model equivalence
+  - Testing requirements
+- Note: Some providers (e.g., Anthropic) offer enterprise-only or no public fine-tuning
+  - Anthropic status
+  - Enterprise options
+  - Alternatives
+  - Future availability

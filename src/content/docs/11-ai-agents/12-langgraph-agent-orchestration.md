@@ -1,0 +1,65 @@
+---
+title: "LangGraph Agent Orchestration (2025 Focus)"
+---
+
+# LangGraph Agent Orchestration (2025 Focus)
+
+- LangGraph core concepts
+  - StateGraph for stateful workflows
+  - Nodes as functions or chains
+  - Edges for flow control
+  - Conditional edges for routing
+  - TypedDict state schemas
+- Graph construction patterns
+  - add_node() for processing steps
+  - add_edge() for connections
+  - add_conditional_edges() for branching
+  - START and END nodes
+  - Compilation with .compile()
+- State management
+  - Annotated reducers for state updates
+  - MessageState for chat applications
+  - Custom state schemas
+  - State persistence across invocations
+- Prebuilt agents (NEW 2025)
+  - create_react_agent() helper
+  - ToolNode for tool execution
+  - Built-in ReAct loop implementation
+  - Quick agent prototyping
+- Checkpointing and memory
+  - MemorySaver for in-memory persistence
+  - SqliteSaver for SQLite storage
+  - PostgresSaver for production
+  - Thread-based conversation management
+  - Session restoration from checkpoints
+- Human-in-the-loop patterns
+  - interrupt_before for pause points
+  - interrupt_after for review
+  - Human input injection
+  - Approval workflow patterns
+  - Command-based resumption
+- Streaming in LangGraph
+  - .stream() for node-by-node updates
+  - .astream_events() for detailed events
+  - Token-level streaming
+  - State change streaming
+- Subgraphs and composition
+  - Nested graph workflows
+  - Graph as node pattern
+  - Modular agent design
+  - Reusable graph components
+- LangGraph Platform (NEW 2025)
+  - LangGraph Cloud deployment
+  - Cron jobs for scheduled agents
+  - Double-texting handling
+  - Production-ready hosting
+- Durable execution (NEW 2025)
+  - Fault-tolerant workflow execution
+  - Automatic state recovery on failure
+  - Long-running process support
+  - Resumable agent workflows
+- LangSmith Agent Server (NEW 2026)
+  - One-click agent deployment
+  - Production monitoring integration
+  - A/B testing for agent versions
+  - API endpoint generation

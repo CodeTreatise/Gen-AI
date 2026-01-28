@@ -1,0 +1,50 @@
+---
+title: "Image Generation APIs"
+---
+
+# Image Generation APIs
+
+- API authentication and setup
+  - API key configuration
+  - Endpoint selection
+  - SDK vs. HTTP
+  - Account setup
+- **Image API vs. Responses API (NEW 2025)**
+  - **Image API**: Single image generation/editing
+  - **Responses API**: Conversational image generation as tool
+  - **`tools=[{"type": "image_generation"}]`** pattern
+  - **When to use each approach**
+- Request structure for image generation
+  - Prompt parameter
+  - Model selection (gpt-image-1.5, gemini-2.5-flash-image)
+  - Optional parameters
+  - Request formatting
+- **Size, format, and resolution options (2025 expanded)**
+  - Supported dimensions (1024x1024, 1536x1024, 1024x1536)
+  - **Aspect ratios** (1:1, 2:3, 3:2, 3:4, 4:3, 4:5, 5:4, 9:16, 16:9, 21:9)
+  - **Resolution levels** (1K, 2K, 4K for Gemini 3 Pro)
+  - Format options (PNG, JPEG, WebP)
+  - **Transparency support** (`background: "transparent"`)
+- **Quality and fidelity settings (NEW 2025)**
+  - Quality levels (low, medium, high, auto)
+  - **Input fidelity** (`input_fidelity: "high"` for faces/logos)
+  - **Output compression** (0-100% for JPEG/WebP)
+  - Stylization parameters
+- **Streaming image generation (NEW 2025)**
+  - **`partial_images` parameter** (0-3 partial images)
+  - Progressive image delivery
+  - Real-time preview
+  - 100 tokens per partial image
+- Response handling (URLs vs. base64)
+  - URL response handling
+  - URL expiration (1 hour max)
+  - Base64 encoding/decoding
+  - **File ID references** (for Responses API)
+  - Storage decisions
+- **Image token costs (2025 pricing)**
+  - **Low quality**: 272-408 tokens
+  - **Medium quality**: 1056-1584 tokens
+  - **High quality**: 4160-6240 tokens
+  - Resolution-based pricing
+  - Rate limit handling
+  - Cost optimization

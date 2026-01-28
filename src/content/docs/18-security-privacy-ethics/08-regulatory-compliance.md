@@ -1,0 +1,113 @@
+---
+title: "Regulatory Compliance"
+---
+
+# Regulatory Compliance
+
+- GDPR Implications for AI
+  - Lawful basis (consent, legitimate interest, contract)
+  - Data subject rights (access, rectification, erasure)
+  - Automated decision-making (Article 22)
+  - Data Protection Impact Assessment (DPIA)
+  - International transfers (SCCs, adequacy)
+- CCPA/CPRA Considerations
+  - Consumer rights (know, delete, opt-out)
+  - Disclosure requirements
+  - Opt-out mechanisms (Do Not Sell)
+  - Service provider rules
+  - Right to limit sensitive data use
+- EU AI Act (Regulation 2024/1689) (NEW 2025)
+  - Effective: August 1, 2024
+  - Full application: August 2, 2026
+  - World's first comprehensive AI regulation
+- EU AI Act Risk Categories (NEW 2025)
+  - Prohibited AI (banned entirely)
+  - High-Risk AI (strict requirements)
+  - Limited Risk (transparency obligations)
+  - Minimal Risk (voluntary codes)
+- EU AI Act Prohibited Practices (Feb 2, 2025) (NEW 2025)
+  - Subliminal manipulation
+  - Exploitation of vulnerabilities
+  - Social scoring by public authorities
+  - Real-time remote biometric identification (exceptions)
+  - Predictive policing (individual level)
+  - Emotion recognition (workplace/education)
+  - Untargeted facial image scraping
+  - Biometric categorization (protected characteristics)
+- EU AI Act High-Risk Requirements (Aug 2026) (NEW 2025)
+  - Risk management systems
+  - Data governance requirements
+  - Technical documentation
+  - Record-keeping (logging)
+  - Transparency to users
+  - Human oversight
+  - Accuracy, robustness, security
+  - Conformity assessment
+- General-Purpose AI (GPAI) Rules (Aug 2, 2025) (NEW 2025)
+  - Model documentation requirements
+  - Copyright compliance documentation
+  - Training data summaries
+  - Technical documentation for downstream
+  - Systemic risk models (>10^25 FLOPs)
+  - Red teaming for systemic risk
+  - Incident reporting for systemic risk
+- EU AI Act Penalties (NEW 2025)
+  - Prohibited practices: €35M or 7% global turnover
+  - High-risk violations: €15M or 3% global turnover
+  - Incorrect information: €7.5M or 1% global turnover
+  - SME/startup reduced penalties
+- EU AI Act Timeline (NEW 2025)
+  - Feb 2, 2025: Prohibited practices apply
+  - Aug 2, 2025: GPAI rules apply
+  - Aug 2, 2026: Full application (high-risk)
+  - Aug 2, 2027: Some Annex I systems
+- Colorado AI Act (SB24-205) (NEW 2026)
+  - First comprehensive US state AI law
+  - Effective: February 1, 2026
+  - High-risk AI system requirements
+  - Algorithmic discrimination prevention
+  - Developer obligations:
+    - Disclosure to deployers
+    - Impact assessment documentation
+    - Risk of discrimination disclosure
+  - Deployer obligations:
+    - Risk management program
+    - Annual review for discrimination
+    - Consumer notification
+    - Human appeal opportunity
+  - AI interaction disclosure required
+  - Enforcement: Colorado Attorney General
+  - Deceptive trade practice violations
+  - Affirmative defense for compliance
+- US State AI Laws Emerging (NEW 2026)
+  - California AI transparency bills
+  - Illinois AI Video Interview Act
+  - New York City Local Law 144 (hiring)
+  - Texas AI governance proposals
+  - Patchwork regulatory landscape
+- NIST AI Risk Management Framework (NEW 2025)
+  - Govern: policies, accountability, culture
+  - Map: context, risks, impacts
+  - Measure: risk assessment, monitoring
+  - Manage: prioritize, respond, communicate
+  - AI RMF Playbook 1.0
+  - Voluntary framework
+- Industry-Specific Regulations
+  - HIPAA for healthcare (BAA required)
+  - SOC 2 Type II compliance
+  - Financial regulations (SEC, FINRA)
+  - PCI DSS for payment data
+  - FERPA for education
+  - FDA for medical devices
+- Terms of Service Compliance
+  - Provider terms (OpenAI, Anthropic, Google)
+  - Usage policies (acceptable use)
+  - Rate limits and quotas
+  - Audit requirements
+- Documentation Requirements
+  - AI system documentation
+  - Training data documentation
+  - Risk assessment records
+  - Human oversight logs
+  - Incident reports
+  - Audit trails

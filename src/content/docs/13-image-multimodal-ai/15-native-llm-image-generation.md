@@ -1,0 +1,46 @@
+---
+title: "Native LLM Image Generation (NEW 2025)"
+---
+
+# Native LLM Image Generation (NEW 2025)
+
+- **Responses API image generation**
+  - **`tools=[{"type": "image_generation"}]`** pattern
+  - Image generation as built-in tool
+  - Conversational image creation
+  - Multi-turn editing in single session
+- **gpt-image-1.5 capabilities**
+  - Superior instruction following
+  - Accurate text rendering in images
+  - Detailed editing capabilities
+  - Real-world knowledge integration
+  - **`action` parameter**: auto, generate, edit
+- **Gemini Nano Banana**
+  - **gemini-2.5-flash-image**: Speed-optimized, 1024px
+  - **gemini-3-pro-image-preview**: 4K, thinking mode
+  - `response_modalities=['TEXT', 'IMAGE']`
+  - Interleaved text and image output
+- **Multi-turn image editing**
+  - `previous_response_id` for conversation continuity
+  - Iterative refinement across turns
+  - Context preservation
+  - Edit history management
+- **Reference image handling**
+  - Up to 5 high-fidelity images (gpt-image-1.5)
+  - Up to 14 reference images (Gemini 3 Pro)
+  - File ID, base64, or URL input
+  - `input_fidelity: "high"` for faces/logos
+- **Thought signatures (Gemini 3 Pro)**
+  - Encrypted reasoning context
+  - Multi-turn coherence
+  - Automatic handling by SDK
+  - Thinking mode for complex composition
+- **Grounding with search**
+  - Google Search tool for real-time data
+  - Weather, news, events in images
+  - Factual accuracy in generation
+- **Batch image generation**
+  - Batch API for high volume
+  - 24-hour turnaround
+  - Higher rate limits
+  - Cost-effective bulk generation

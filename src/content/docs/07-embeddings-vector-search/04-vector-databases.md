@@ -1,0 +1,71 @@
+---
+title: "Vector Databases"
+---
+
+# Vector Databases
+
+- What are vector databases?
+  - Specialized storage for high-dimensional vectors
+  - Optimized approximate nearest neighbor (ANN)
+  - vs. traditional databases (exact match vs similarity)
+  - Index structures for sub-linear search time
+  - Metadata filtering capabilities
+- Managed vector databases (2025)
+  - Pinecone Serverless (pay-per-query, auto-scaling)
+  - Weaviate Cloud (hybrid search built-in)
+  - Qdrant Cloud (filtering excellence)
+  - Zilliz Cloud (managed Milvus, enterprise)
+  - Turbopuffer (cost-optimized for scale)
+  - Comparison: pricing, features, scale limits
+- Self-hosted options
+  - Chroma: simple, great for prototyping
+  - Milvus: production-ready, billion-scale
+  - Qdrant: Rust-based, excellent filtering
+  - LanceDB: embedded, serverless-friendly
+  - Weaviate: self-hosted with modules
+  - Docker and Kubernetes deployment
+- PostgreSQL with pgvector extension
+  - pgvector installation and setup
+  - Index types: IVFFlat, HNSW
+  - SQL + vector queries together
+  - Performance tuning (ef_construction, m)
+  - When pgvector is enough
+- Managed PostgreSQL vector options
+  - Supabase Vector (one-click pgvector)
+  - Neon with pgvector (serverless, branching)
+  - AWS RDS PostgreSQL with pgvector
+  - Azure PostgreSQL Flexible Server
+  - Comparison and selection criteria
+- MongoDB Atlas Vector Search
+  - Native vector search in aggregation pipeline
+  - $vectorSearch operator
+  - Existing MongoDB integration advantage
+  - Hybrid search with text indexes
+  - Atlas Search combined queries
+- Redis Vector Similarity Search
+  - Redis Stack vector capabilities
+  - In-memory performance benefits
+  - Existing Redis infrastructure integration
+  - Use cases and limitations
+- Platform-integrated vector stores (NEW 2025)
+  - OpenAI Vector Stores (file_search tool)
+  - Gemini File Search Stores (RAG-as-a-service)
+  - Auto-chunking, auto-embedding, citations
+  - When to use vs. custom vector DB
+- Database selection decision tree
+  - Scale: <100K, 100K-10M, >10M vectors
+  - Existing infrastructure considerations
+  - Query patterns (pure vector vs hybrid)
+  - Budget constraints (free tier needs)
+  - Operational capacity (managed vs self-hosted)
+- Cost and scaling considerations
+  - Pricing models: storage vs query vs both
+  - Serverless vs provisioned costs
+  - Scaling patterns and limits
+  - Cost optimization strategies
+- Migration between vector databases
+  - Export strategies (batch extraction)
+  - Import processes (bulk loading)
+  - Schema and metadata mapping
+  - Validation and testing approaches
+  - Zero-downtime migration patterns

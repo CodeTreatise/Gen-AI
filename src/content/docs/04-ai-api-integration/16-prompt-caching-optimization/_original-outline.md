@@ -1,0 +1,42 @@
+---
+title: "Prompt Caching & Optimization"
+---
+
+# Prompt Caching & Optimization
+
+- How prompt caching works
+  - Automatic for prompts 1024+ tokens
+  - Prefix-based cache matching
+  - Cache routing by hash
+  - Machine-level caching
+- Caching configuration
+  - `prompt_cache_key` for routing optimization
+  - `prompt_cache_retention: "in_memory"` (5-10 min)
+  - `prompt_cache_retention: "24h"` (extended)
+  - Extended caching model support
+- What can be cached
+  - Complete messages array
+  - System/developer messages
+  - Images (links and base64)
+  - Tool definitions
+  - Structured output schemas
+- Cache-friendly prompt design
+  - Static content at beginning
+  - Dynamic content at end
+  - Consistent tool definitions
+  - Identical image detail settings
+- Monitoring cache performance
+  - `prompt_tokens_details.cached_tokens`
+  - Cache hit rate tracking
+  - Latency monitoring
+  - Cost savings analysis
+- Claude prompt caching
+  - `cache_control` blocks
+  - Ephemeral cache with TTL
+  - 5-minute and 1-hour options
+  - Cache creation tokens tracking
+- Best practices
+  - Maintain steady request stream
+  - Keep prefix-key combinations under 15 RPM
+  - Log and analyze cache performance
+  - Structure prompts for maximum reuse

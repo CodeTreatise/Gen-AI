@@ -1,0 +1,52 @@
+---
+title: "RAG Production Optimization (NEW 2025)"
+---
+
+# RAG Production Optimization (NEW 2025)
+
+- Vector Database Scaling
+  - Pinecone (managed, serverless)
+  - Weaviate (hybrid search)
+  - Qdrant (open-source)
+  - Chroma (embedded)
+  - PostgreSQL + pgvector
+  - Scaling strategies (pods, sharding)
+- Integrated Embedding Services (NEW 2025)
+  - Pinecone Inference (text-to-vector)
+  - No external embedding calls
+  - Reduced latency
+  - Simplified architecture
+- Hybrid Search
+  - Dense vectors (semantic)
+  - Sparse vectors (BM25, keyword)
+  - Combined scoring
+  - Reranking layer
+- Reranking Optimization
+  - Cohere Rerank
+  - Voyage Reranker
+  - Jina Reranker
+  - Cross-encoder models
+  - Rerank after initial retrieval
+- Chunking Strategies
+  - Fixed-size chunking
+  - Semantic chunking
+  - Recursive character splitting
+  - Document-aware chunking
+  - Overlap optimization
+- Metadata Filtering
+  - Pre-filtering (fast)
+  - Post-filtering
+  - Namespace isolation
+  - Multi-tenant patterns
+  - Access control per document
+- Context Window Optimization
+  - Retrieved chunk count tuning
+  - Context compression
+  - Lost-in-the-middle mitigation
+  - Relevance threshold filtering
+- RAG Evaluation
+  - Retrieval metrics (recall@k, precision)
+  - Answer quality metrics
+  - Faithfulness scoring
+  - RAGAS framework
+  - Continuous monitoring

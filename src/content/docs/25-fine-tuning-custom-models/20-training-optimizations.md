@@ -1,0 +1,47 @@
+---
+title: "25.20 Training Optimizations"
+---
+
+# 25.20 Training Optimizations
+
+- Memory efficiency techniques
+  - Gradient checkpointing
+  - Mixed precision training (FP16, BF16, FP8)
+  - Gradient accumulation
+  - CPU offloading strategies
+  - Memory-efficient attention
+- Multipacking (sample packing)
+  - Combining multiple samples per sequence
+  - Reduced padding waste
+  - Training throughput improvement
+  - Axolotl multipacking support
+  - Attention mask considerations
+- Flash Attention
+  - IO-aware attention algorithm
+  - Memory reduction benefits
+  - Speed improvements
+  - Flash Attention 2 and 3
+  - Hardware compatibility
+- Liger Kernel
+  - LinkedIn's fused kernel optimizations
+  - Cross-entropy optimization
+  - RMSNorm and layer fusion
+  - Integration with training frameworks
+  - Performance benchmarks
+- Cut Cross Entropy
+  - Apple's cross-entropy optimization
+  - Memory reduction for large vocabularies
+  - Gradient computation efficiency
+  - Framework integration
+- Flex Attention
+  - PyTorch flexible attention
+  - Custom attention patterns
+  - Sparse attention support
+  - Document masking
+  - Sequence parallelism integration
+- Distributed training optimizations
+  - FSDP (Fully Sharded Data Parallel)
+  - DeepSpeed ZeRO stages
+  - Tensor Parallelism (TP)
+  - Context Parallelism (CP)
+  - Multi-node scaling strategies

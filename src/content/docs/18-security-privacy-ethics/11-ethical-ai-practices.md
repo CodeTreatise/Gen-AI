@@ -1,0 +1,75 @@
+---
+title: "Ethical AI Practices"
+---
+
+# Ethical AI Practices
+
+- Responsible AI Principles
+  - Fairness (equitable treatment)
+  - Reliability & safety (predictable behavior)
+  - Privacy & security (data protection)
+  - Inclusiveness (accessible to all)
+  - Transparency (explainable decisions)
+  - Accountability (human oversight)
+- Responsible AI Frameworks (NEW 2025)
+  - Microsoft Responsible AI Standard v2
+  - Google AI Principles
+  - OpenAI Safety Framework
+  - Anthropic Constitutional AI
+  - IBM AI Ethics Board
+  - Partnership on AI guidelines
+- OpenAI Preparedness Framework v2 (NEW 2025)
+  - Tracked Categories:
+    - Biological and Chemical capabilities
+    - Cybersecurity capabilities
+    - AI Self-improvement capabilities
+  - Research Categories:
+    - Long-range Autonomy
+    - Sandbagging (intentional underperforming)
+    - Autonomous Replication and Adaptation
+    - Undermining Safeguards
+    - Nuclear and Radiological
+  - Capability Levels:
+    - High: amplifies existing harm pathways
+    - Critical: introduces new harm pathways
+  - Safety Advisory Group (SAG) review
+  - Capabilities Reports + Safeguards Reports
+  - System cards for each model release
+- Anthropic Responsible Scaling Policy (NEW 2025)
+  - AI Safety Levels (ASL-1 to ASL-4)
+  - ASL-2: current production models
+  - ASL-3: models with significant uplift
+  - Capability evaluations before deployment
+  - Commitment to pause at ASL thresholds
+- Human Oversight Requirements
+  - Human-in-the-loop (approval before action)
+  - Human-on-the-loop (monitoring with intervention)
+  - Human-over-the-loop (policy and governance)
+  - Escalation procedures (complex cases)
+  - Accountability structures (clear ownership)
+  - EU AI Act human oversight requirements
+- Harm Prevention Strategies
+  - Risk assessment (pre-deployment)
+  - Harm categories (physical, psychological, societal)
+  - Prevention measures (guardrails)
+  - Incident response (rapid containment)
+  - Dual-use risk assessment
+- Inclusive Design for AI
+  - Accessibility features (screen readers, captions)
+  - Diverse user needs (age, ability, language)
+  - Cultural sensitivity (regional adaptation)
+  - Language inclusivity (multilingual support)
+  - Disability accommodation
+- Environmental Considerations (NEW 2025)
+  - AI energy consumption awareness
+  - Carbon footprint of training
+  - Sustainable inference practices
+  - Efficiency optimization (smaller models)
+  - Green AI initiatives
+  - Model distillation for efficiency
+- Industry Guidelines and Standards
+  - IEEE 7000 series (ethical AI)
+  - ISO/IEC 42001 (AI management)
+  - Partnership on AI
+  - OECD AI Principles
+  - UNESCO AI Ethics Recommendation

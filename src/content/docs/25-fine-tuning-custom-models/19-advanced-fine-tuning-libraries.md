@@ -1,0 +1,43 @@
+---
+title: "25.19 Advanced Fine-tuning Libraries"
+---
+
+# 25.19 Advanced Fine-tuning Libraries
+
+- Unsloth
+  - 2x faster training, 70% less VRAM
+  - 500K+ context length fine-tuning
+  - FP8 GRPO support (DeepSeek-R1 style)
+  - Vision, TTS, embedding model support
+  - Zero accuracy loss guarantee
+  - Multi-GPU training capabilities
+  - Ollama and vLLM deployment integration
+- Axolotl
+  - Comprehensive fine-tuning framework
+  - YAML-based configuration
+  - Full fine-tuning, LoRA, QLoRA, GPTQ, QAT support
+  - DPO, IPO, KTO, ORPO preference tuning
+  - GRPO and reward modeling
+  - FSDP, DeepSpeed, Tensor Parallelism
+  - VLM support (Llama-Vision, Qwen2-VL, Pixtral)
+  - Multi-node training capabilities
+- TRL (Transformer Reinforcement Learning)
+  - Hugging Face official training library
+  - SFTTrainer for supervised fine-tuning
+  - DPOTrainer, ORPOTrainer, KTOTrainer
+  - GRPOTrainer for reasoning enhancement
+  - RewardTrainer and PRMTrainer
+  - GKDTrainer for knowledge distillation
+  - Online methods with vLLM integration
+- Framework comparison
+  - Ease of use comparison
+  - Performance benchmarks
+  - Feature matrix
+  - Community and support
+  - Integration capabilities
+- Choosing the right library
+  - Use case requirements
+  - Hardware constraints
+  - Team expertise
+  - Production considerations
+  - Migration paths between frameworks

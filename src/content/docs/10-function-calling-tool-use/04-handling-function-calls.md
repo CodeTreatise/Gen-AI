@@ -1,0 +1,49 @@
+---
+title: "Handling Function Calls"
+---
+
+# Handling Function Calls
+
+- Detecting function call in response
+  - OpenAI Responses API: `output` array with `type: "function_call"`
+  - OpenAI Chat Completions: `tool_calls` array
+  - Anthropic: `tool_use` content blocks
+  - Gemini: `function_call` in response parts
+  - Multiple call detection
+- Provider-specific response structures
+  - OpenAI: `call_id`, `name`, `arguments` (JSON string)
+  - Anthropic: `id`, `name`, `input` (object)
+  - Gemini: `name`, `args` (object)
+  - Handling format differences
+- Parsing function name and arguments
+  - Name extraction
+  - JSON argument parsing (OpenAI returns string)
+  - Object arguments (Anthropic, Gemini)
+  - Handling malformed JSON
+  - Type coercion
+- call_id matching requirement
+  - Each function call has unique ID
+  - Results must reference correct call_id
+  - Order matters for parallel calls
+  - ID format varies by provider
+- Reasoning items handling (GPT-5, o4)
+  - Reasoning items in response output
+  - Must pass reasoning back with tool results
+  - Maintains model reasoning context
+  - SDK may handle automatically
+- Argument validation
+  - Schema validation before execution
+  - Required field checking
+  - Type verification
+  - Range checking
+  - Strict mode guarantees validity
+- Function routing/dispatch
+  - Function registry pattern
+  - Dynamic dispatch by name
+  - Handler mapping
+  - Middleware patterns
+- Error handling during parsing
+  - Parse error recovery
+  - Unknown function handling
+  - Validation error messages
+  - Retry strategies

@@ -1,0 +1,71 @@
+---
+title: "AI Observability Platforms"
+---
+
+# AI Observability Platforms
+
+- LangSmith overview
+  - Features and capabilities
+  - Integration methods
+  - Pricing model
+  - Use cases
+- Helicone overview
+  - Features and capabilities
+  - Proxy-based approach
+  - Cost tracking
+  - Use cases
+- Langfuse overview
+  - Open-source option
+  - Self-hosting
+  - Feature set
+  - Community support
+- Arize AI overview
+  - Enterprise features
+  - ML observability
+  - Drift detection
+  - Use cases
+- Weights & Biases for AI
+  - Experiment tracking
+  - Prompt logging
+  - Evaluation tools
+  - Integration options
+- Arize Phoenix (OSS)
+  - Open-source LLM tracing
+  - Embedding visualization
+  - Self-hosting options
+  - OTel-native design
+  - Evaluation framework
+  - Community support
+- Braintrust
+  - Eval-first platform
+  - Brainstore database
+  - Loop AI agent
+  - Enterprise features
+  - CI/CD integration
+  - Production monitoring
+- Traceloop/OpenLLMetry
+  - Open-source SDK
+  - Multi-language support
+  - OTel-based design
+  - Custom evaluators
+  - Quality gates
+  - SOC 2 compliance
+- Datadog LLM Observability
+  - APM integration
+  - Enterprise scale
+  - Unified monitoring
+  - Alert management
+  - Dashboard templates
+  - Cost tracking
+- Portkey AI Gateway
+  - Gateway with observability
+  - Multi-provider support
+  - Caching and fallbacks
+  - Request logging
+  - Analytics dashboard
+  - Rate limiting
+- Platform comparison and selection
+  - Feature comparison
+  - Pricing comparison
+  - Scale considerations
+  - Selection criteria

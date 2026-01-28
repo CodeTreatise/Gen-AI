@@ -1,0 +1,57 @@
+---
+title: "Realtime API & Voice"
+---
+
+# Realtime API & Voice
+
+- Realtime API overview
+  - Low-latency multimodal communication
+  - Speech-to-speech interactions
+  - Audio input/output support
+  - Real-time transcription
+- Connection methods
+  - WebRTC for browser applications
+  - WebSocket for server applications
+  - SIP for VoIP telephony
+  - Ephemeral API keys for client-side
+- Voice agent building
+  - Agents SDK for TypeScript
+  - RealtimeAgent and RealtimeSession
+  - Microphone and audio output handling
+  - Automatic connection management
+- Audio in Responses API
+  - `modalities: ["text", "audio"]` for audio output
+  - `modalities: ["audio"]` for audio-only input (transcription)
+  - Audio input with `input_audio` content type
+  - Audio format support (wav, mp3, flac, opus)
+  - Audio output configuration
+  - Voice selection (alloy, ash, ballad, coral, echo, sage, shimmer, verse)
+  - Audio token usage and pricing
+- Session management
+  - Session lifecycle events
+  - Turn-taking patterns
+  - Interruption handling
+  - Session persistence
+- Realtime API events
+  - Client events for input
+  - Server events for output
+  - Conversation item events
+  - Error events
+- Voice agent best practices
+  - Latency optimization
+  - Natural conversation flow
+  - Fallback handling
+  - Cost management for audio
+- Google Gemini 2.0 Live API
+  - WebSocket-based real-time streaming
+  - Audio and video input/output
+  - `gemini-2.0-flash-live-001` model
+  - BidiGenerateContent for bidirectional streaming
+  - Session configuration with generation config
+  - Tool use in live sessions
+  - Server-initiated interruptions
+- Anthropic voice capabilities
+  - Audio input support (Claude 3.5 Sonnet+)
+  - Real-time transcription integration
+  - Voice-to-text-to-voice patterns
+  - Third-party voice provider integration

@@ -1,0 +1,84 @@
+---
+title: "Pose Detection & Body Tracking"
+---
+
+# Pose Detection & Body Tracking
+
+- MediaPipe integration
+  - MediaPipe solutions
+  - JavaScript API
+  - Model loading
+  - Configuration options
+  - Version: v0.10.26 (NEW 2025)
+- MediaPipe Solutions Overview (NEW 2025)
+  - Vision tasks (Web support):
+    - Object detection
+    - Image classification
+    - Image segmentation
+    - Interactive segmentation
+    - Hand landmark detection
+    - Gesture recognition
+    - Face detection
+    - Face landmark detection
+    - Pose landmark detection
+    - Holistic landmark detection
+  - Text tasks:
+    - Text classification
+    - Text embedding
+    - Language detector
+  - Audio tasks:
+    - Audio classification
+  - GenAI tasks (NEW 2025):
+    - LLM Inference API
+- MediaPipe LLM Inference API (NEW 2025)
+  - @mediapipe/tasks-genai package
+  - WebGPU-based inference
+  - Supported models:
+    - Gemma 3n (E2B, E4B variants)
+    - Gemma 2, Gemma 3
+    - Phi-2
+    - StableLM, Falcon
+  - LiteRT model format (.litertlm)
+  - Web-optimized model variants
+  - Streaming response generation
+  - Configuration options (maxTokens, temperature, topK)
+- Multimodal LLM Prompting (NEW 2025)
+  - Image + text prompts
+  - Audio + text prompts (Gemma 3n)
+  - Ordered content arrays
+  - maxNumImages configuration
+  - supportAudio flag
+  - Vision: URL, canvas, video frame sources
+  - Audio: AudioBuffer, mono audio files
+- LoRA Fine-Tuning in Browser (NEW 2025)
+  - Dynamic LoRA model loading
+  - Runtime LoRA swapping
+  - Multiple LoRA ranks support
+  - PEFT-trained adapters
+  - Attention layer customization
+  - loadLoraModel() API
+- Body pose estimation
+  - BlazePose model
+  - Skeleton keypoints
+  - Pose landmarks (33 points)
+  - 3D pose estimation
+- Hand tracking
+  - Hand landmarks model (21 points per hand)
+  - Finger positions
+  - Gesture detection
+  - Two-hand tracking
+- Face mesh detection
+  - Face landmarks (478 points)
+  - Facial expressions
+  - Head orientation
+  - Blendshape values
+- Gesture recognition concepts
+  - Gesture classification
+  - Custom gestures (Model Maker)
+  - Gesture events
+  - Gesture sequences
+- MediaPipe Studio (NEW 2025)
+  - Browser-based testing
+  - Model benchmarking
+  - Solution visualization
+  - No code required

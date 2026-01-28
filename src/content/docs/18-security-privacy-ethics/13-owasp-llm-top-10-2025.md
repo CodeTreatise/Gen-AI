@@ -1,0 +1,56 @@
+---
+title: "OWASP LLM Top 10 2025 (NEW 2025)"
+---
+
+# OWASP LLM Top 10 2025 (NEW 2025)
+
+- LLM01: Prompt Injection
+  - Direct injection (user input)
+  - Indirect injection (external sources)
+  - Cross-plugin request forgery
+  - Multimodal injection (images, audio)
+- LLM02: Sensitive Information Disclosure
+  - Training data extraction
+  - PII leakage in outputs
+  - System prompt disclosure
+  - Proprietary data exposure
+- LLM03: Supply Chain Vulnerabilities
+  - Poisoned training data
+  - Malicious models (model poisoning)
+  - Compromised plugins/tools
+  - Third-party dependencies
+- LLM04: Data and Model Poisoning
+  - Training data manipulation
+  - Backdoor insertion
+  - Fine-tuning attacks
+  - Model corruption
+- LLM05: Improper Output Handling
+  - XSS via LLM output
+  - SQL injection via output
+  - Command injection via output
+  - SSRF via generated URLs
+- LLM06: Excessive Agency
+  - Too many permissions
+  - Autonomous actions
+  - Unintended tool execution
+  - Insufficient approval gates
+- LLM07: System Prompt Leakage
+  - Prompt extraction attacks
+  - System instruction disclosure
+  - Confidential configuration exposure
+  - Defense: instruction hiding, monitoring
+- LLM08: Vector and Embedding Weaknesses
+  - Embedding inversion attacks
+  - Vector database poisoning
+  - RAG retrieval manipulation
+  - Semantic similarity exploits
+- LLM09: Misinformation
+  - Hallucination generation
+  - Confident false statements
+  - Authority undermining
+  - Disinformation amplification
+- LLM10: Unbounded Consumption
+  - Denial of Service (DoS)
+  - Resource exhaustion
+  - Cost attacks (billing abuse)
+  - Infinite loops, recursion

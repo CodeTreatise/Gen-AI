@@ -1,0 +1,53 @@
+---
+title: "Agentic AI Security (NEW 2025)"
+---
+
+# Agentic AI Security (NEW 2025)
+
+- Excessive Agency Prevention (OWASP LLM06)
+  - Minimal necessary permissions
+  - Least privilege principle
+  - Approval gates for sensitive actions
+  - Human-in-the-loop for high-risk
+  - Action scope limitations
+- MCP (Model Context Protocol) Security (NEW 2025)
+  - Tool registration security
+  - Permission scoping per tool
+  - Credential isolation
+  - Sandboxed execution
+  - Tool description injection risks
+- Agentic Loop Safety
+  - Maximum iteration limits
+  - Infinite loop prevention
+  - Cost caps and budgets
+  - Timeout enforcement
+  - Graceful degradation
+- Cost and Rate Limiting Controls (NEW 2025)
+  - Per-user budget caps
+  - Per-session token limits
+  - Per-agent spending limits
+  - Real-time cost monitoring
+  - Automatic shutoff thresholds
+  - Usage quotas and alerts
+  - Billing abuse prevention
+  - OpenAI usage tiers and limits
+  - Max output tokens per request
+  - Context window budgeting
+- Tool Calling Security
+  - Tool schema validation
+  - Parameter sanitization
+  - Output verification
+  - Dangerous function blocking
+  - File system access controls
+- Multi-Agent Security
+  - Agent-to-agent communication security
+  - Trust boundaries between agents
+  - Shared context isolation
+  - Orchestrator security
+  - Rogue agent detection
+- Memory and State Security
+  - Conversation memory limits
+  - Context window management
+  - Persistent memory access controls
+  - Memory poisoning prevention
+  - Session isolation

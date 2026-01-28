@@ -1,0 +1,52 @@
+---
+title: "Structured Outputs"
+---
+
+# Structured Outputs
+
+- Structured Outputs overview
+  - Guaranteed JSON schema adherence
+  - No validation or retry needed
+  - Explicit refusal handling
+  - Simpler prompting
+- Structured Outputs vs JSON mode
+  - Schema enforcement differences
+  - Model compatibility
+  - When to use each
+  - Migration from JSON mode
+- Configuration in APIs
+  - `text.format` (Responses API)
+  - `response_format` (Chat Completions)
+  - `strict: true` requirement
+  - JSON schema format
+- SDK integration
+  - Pydantic models (Python)
+  - Zod schemas (JavaScript)
+  - `parse()` method usage
+  - `output_parsed` in responses
+- Schema requirements
+  - `additionalProperties: false`
+  - All fields `required`
+  - Supported types (string, number, boolean, object, array, enum, anyOf)
+  - Optional fields with null union
+- Schema limitations
+  - Max 5000 properties
+  - Max 10 nesting levels
+  - Enum size limits
+  - Unsupported JSON Schema features
+- Streaming structured outputs
+  - Partial JSON chunks
+  - Delta accumulation
+  - Validation on completion
+  - UI update patterns
+- Handling refusals
+  - `refusal` field in response
+  - Safety-based refusals
+  - Conditional logic for refusals
+  - User-friendly refusal display
+- Use cases
+  - Data extraction
+  - Classification
+  - Chain-of-thought reasoning
+  - UI generation
+  - API response formatting

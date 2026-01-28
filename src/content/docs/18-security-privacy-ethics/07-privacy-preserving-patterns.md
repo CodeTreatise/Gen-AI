@@ -1,0 +1,62 @@
+---
+title: "Privacy-Preserving Patterns"
+---
+
+# Privacy-Preserving Patterns
+
+- Client-Side Processing When Possible
+  - Browser-based AI
+  - On-device models (Llama Guard 1B)
+  - WebLLM, WebGPU
+  - Data locality
+  - Privacy benefits
+- Data Redaction Before Sending
+  - Automatic redaction
+  - Pattern-based redaction
+  - Named entity redaction
+  - Placeholder replacement
+  - PII masking services
+- Encryption in Transit
+  - TLS 1.2+ requirements
+  - Certificate management
+  - End-to-end options
+  - Security verification
+- Data Residency Controls (NEW 2025)
+  - OpenAI regional endpoints
+    - us.api.openai.com
+    - eu.api.openai.com
+    - jp.api.openai.com
+    - gb.api.openai.com
+    - au.api.openai.com
+  - Regional storage AND processing (EU)
+  - Regional storage only (other regions)
+  - Per-project configuration
+  - ZDR required for non-US regions
+- Enterprise Key Management (EKM) (NEW 2025)
+  - Bring Your Own Key (BYOK)
+  - AWS KMS support
+  - Azure Key Vault support
+  - Google Cloud KMS support
+  - Customer-controlled encryption
+  - Key rotation capabilities
+- Audit Logging
+  - What to log (requests, responses, errors)
+  - Secure logging (encrypted, tamper-proof)
+  - Retention policies
+  - Access controls
+  - Compliance audit trails
+- Right to Deletion Implementation
+  - Deletion requests (GDPR Article 17)
+  - Complete removal verification
+  - Provider deletion APIs
+  - Documentation
+- HIPAA Compliance (NEW 2025)
+  - OpenAI BAA available
+  - ChatGPT for Healthcare
+  - Web Search NOT HIPAA eligible
+  - ZDR for HIPAA workloads
+- Data Processing Agreements
+  - DPA requirements
+  - Sub-processor lists
+  - Data controller vs processor
+  - International transfers

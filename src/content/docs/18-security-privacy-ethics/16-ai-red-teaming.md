@@ -1,0 +1,42 @@
+---
+title: "AI Red Teaming (NEW 2025)"
+---
+
+# AI Red Teaming (NEW 2025)
+
+- AI Red Teaming Fundamentals
+  - Purpose: find vulnerabilities before attackers
+  - Scope: prompts, tools, agents, workflows
+  - Documentation: findings, reproduction steps
+  - Responsible disclosure practices
+- Red Team Attack Categories
+  - Prompt injection attacks
+  - Jailbreak attempts
+  - Social engineering via AI
+  - Data exfiltration probes
+  - Privilege escalation tests
+  - Denial of service attacks
+- Red Teaming Tools and Frameworks (NEW 2025)
+  - Microsoft PyRIT (Python Risk Identification Tool)
+  - Garak (LLM vulnerability scanner)
+  - NVIDIA Garak integration
+  - HuggingFace adversarial datasets
+  - Custom red team harnesses
+- Automated Adversarial Testing
+  - Fuzzing prompts
+  - Mutation-based testing
+  - Attack playbooks
+  - Regression testing for safety
+  - Continuous red teaming
+- MITRE ATLAS Framework
+  - Adversarial ML threat matrix
+  - Tactics and techniques catalog
+  - Case studies database
+  - Defense recommendations
+  - AI-specific attack patterns
+- Red Team Reporting
+  - Severity classification
+  - Reproduction steps
+  - Impact assessment
+  - Remediation recommendations
+  - Tracking and verification

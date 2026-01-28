@@ -1,0 +1,47 @@
+---
+title: "Error Handling Strategies"
+---
+
+# Error Handling Strategies
+
+- Error categorization (transient vs. permanent)
+  - Transient errors (network, rate limits)
+  - Permanent errors (invalid requests)
+  - Provider errors (5xx, overloaded)
+  - Application errors
+  - Context length exceeded (NEW 2025)
+  - Content policy violations
+- Provider-Specific Error Codes (NEW 2025)
+  - OpenAI: 429, 500, 503 patterns
+  - Anthropic: overloaded_error
+  - Rate limit vs capacity errors
+  - Token limit errors
+- Retry strategies and exponential backoff
+  - Retry intervals
+  - Maximum retries
+  - Exponential growth
+  - Jitter addition
+  - SDK auto-retry (OpenAI: 2x for 408) (NEW 2025)
+- Circuit breaker patterns
+  - Circuit states
+  - Failure thresholds
+  - Reset timing
+  - Half-open testing
+  - Per-provider circuits (NEW 2025)
+- Fallback responses
+  - Cached responses
+  - Default messages
+  - Simplified processing
+  - User notification
+  - Fallback to different provider (NEW 2025)
+- Graceful degradation
+  - Feature reduction
+  - Service priority
+  - Progressive failure
+  - Core functionality preservation
+  - Model downgrade fallback (NEW 2025)
+- User-friendly error messages
+  - Error translation
+  - Actionable guidance
+  - Retry suggestions
+  - Support contact

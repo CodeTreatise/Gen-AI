@@ -1,0 +1,56 @@
+---
+title: "Guardrails & Content Safety (NEW 2025)"
+---
+
+# Guardrails & Content Safety (NEW 2025)
+
+- Llama Guard 3
+  - Llama Guard 3 1B (on-device, fast)
+  - Llama Guard 3 8B (comprehensive)
+  - Llama Guard 3 11B-Vision (multimodal)
+  - 13 safety categories (S1-S13)
+    - Violent Crimes (S1)
+    - Non-Violent Crimes (S2)
+    - Sex Crimes (S3)
+    - Child Exploitation (S4)
+    - Defamation (S5)
+    - Specialized Advice (S6)
+    - Privacy (S7)
+    - Intellectual Property (S8)
+    - Indiscriminate Weapons (S9)
+    - Hate (S10)
+    - Self-Harm (S11)
+    - Sexual Content (S12)
+    - Elections (S13)
+  - Input AND output filtering
+  - Custom category definitions
+- Input Guardrails
+  - Prompt injection detection
+  - Jailbreak prevention
+  - Topic restriction
+  - PII detection and masking
+  - Language filtering
+- Output Guardrails
+  - Response safety screening
+  - Hallucination flagging
+  - Factuality checks
+  - Tone and brand alignment
+  - Structured output validation
+- Guardrails AI Framework
+  - RAIL specifications
+  - Validator library
+  - Re-asking on failure
+  - Custom validators
+- Portkey Network Guardrails
+  - Gateway-level enforcement
+  - Before/after request hooks
+  - Organization-wide policies
+- OpenAI Moderation API
+  - Category detection
+  - Severity scoring
+  - Multi-language support
+- PII Handling
+  - Detection patterns (regex, NER)
+  - Masking strategies
+  - Redaction logging
+  - Compliance (GDPR, HIPAA)

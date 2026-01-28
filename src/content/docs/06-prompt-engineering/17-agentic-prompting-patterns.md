@@ -1,0 +1,55 @@
+---
+title: "Agentic Prompting Patterns"
+---
+
+# Agentic Prompting Patterns
+
+- **What is Agentic Prompting?**
+  - Prompts for autonomous task completion
+  - Multi-turn, tool-using agents
+  - Planning and execution loops
+  - Error recovery and adaptation
+- **Tool Definition Prompts**
+  - Clear tool descriptions
+  - Parameter specifications
+  - Expected return values
+  - Error conditions
+  - When to use which tool
+- **Multi-Turn Agent Loops**
+  - Maintaining context across turns
+  - Tool result handling
+  - Reasoning context preservation
+  - `previous_response_id` for continuity
+- **Goal-Oriented Prompts**
+  - Define end goal clearly
+  - Success criteria
+  - Allow flexible approach
+  - Trust model to plan steps
+- **MCP Server Prompting**
+  - Model Context Protocol tool discovery
+  - Dynamic tool availability
+  - Tool composition patterns
+  - Context injection from MCP
+- **Agentic Safety Patterns**
+  - Confirmation prompts for risky actions
+  - Scope limitation instructions
+  - Rollback and undo guidance
+  - Human-in-the-loop checkpoints
+- **Agent Builder & AgentKit**
+  - OpenAI Agent Builder visual canvas
+  - Workflow composition
+  - Logic nodes for control flow
+  - Prompt integration with tools
+- **Computer Use Prompting**
+  - Screen observation and action generation
+  - Click, type, scroll action formats
+  - Coordinate-based vs element-based targeting
+  - Safety constraints for computer control
+  - Verification prompts between actions
+  - Error recovery for failed actions
+  - OpenAI Operator / Anthropic computer_use patterns
+- **Multi-Agent Orchestration**
+  - Prompts for agent handoffs
+  - Specialist agent routing
+  - Shared context management
+  - Conflict resolution between agents

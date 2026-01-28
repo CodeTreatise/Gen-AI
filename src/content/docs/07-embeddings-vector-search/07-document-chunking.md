@@ -1,0 +1,66 @@
+---
+title: "Document Chunking"
+---
+
+# Document Chunking
+
+- Why chunking is necessary
+  - Context window limits (even with 128K models)
+  - Retrieval granularity matters
+  - Relevance precision (smaller = more precise)
+  - Cost optimization (fewer tokens retrieved)
+  - The "lost in the middle" problem
+- Chunk size considerations
+  - Too small (<200 tokens): lost context
+  - Too large (>2000 tokens): noise in retrieval
+  - Optimal range: 500-1500 tokens typically
+  - Task-specific sizing guidelines
+  - Embedding model context limits
+- Overlap strategies
+  - Why overlap helps (context continuity)
+  - Overlap percentage (10-20% typical)
+  - Sliding window implementation
+  - Context preservation techniques
+  - Overlap vs chunk size trade-offs
+- Chunking by structure
+  - Paragraph-based chunking
+  - Heading/section-based splitting
+  - Semantic boundaries (complete thoughts)
+  - Preserving logical units
+  - Code: function/class boundaries
+- Contextual Chunking (Anthropic method - 2024)
+  - The context problem: chunks lose document context
+  - Solution: prepend explanatory context to each chunk
+  - Use LLM to generate chunk context
+  - Prompt pattern:
+    - Provide full document
+    - Provide specific chunk
+    - Ask for succinct context (50-100 tokens)
+  - Prepend context before embedding
+  - 35% improvement with Contextual Embeddings alone
+  - Use with prompt caching for cost efficiency
+- Managed chunking services (2025)
+  - Gemini File Search chunking_config:
+    - max_tokens_per_chunk
+    - max_overlap_tokens
+    - white_space_config
+  - OpenAI vector store auto-chunking
+  - When to use managed vs custom chunking
+- Late chunking concept
+  - Traditional: chunk first, then embed
+  - Late chunking: embed full document, then chunk representations
+  - Preserves cross-chunk context
+  - ColBERT-style token-level embeddings
+  - Trade-offs and when to use
+- Semantic chunking
+  - AI-assisted boundary detection
+  - Topic-based splitting
+  - Sentence embedding clustering
+  - Quality vs. complexity trade-offs
+  - Tools: LlamaIndex, LangChain semantic chunkers
+- Chunk metadata preservation
+  - Source document tracking (file, URL)
+  - Position information (chunk index, page)
+  - Heading hierarchy (section titles)
+  - Original formatting hints
+  - Cross-references between chunks

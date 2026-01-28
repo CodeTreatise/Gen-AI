@@ -1,0 +1,145 @@
+---
+title: "Modern Vector Database Ecosystem"
+---
+
+# Modern Vector Database Ecosystem
+
+- Vector database landscape (2025-2026)
+  - Purpose-built vector databases
+    - Pinecone (serverless, managed)
+    - Weaviate (open-source, AI-native)
+    - Qdrant (Rust-powered, high-performance)
+    - Milvus (distributed, cloud-native)
+    - Chroma (developer-friendly, embedded)
+  - Traditional databases with vector support
+    - PostgreSQL + pgvector
+    - Elasticsearch dense vectors
+    - MongoDB Atlas Vector Search
+    - Redis Vector Similarity
+  - Selection criteria
+    - Scale requirements
+    - Latency needs
+    - Feature requirements
+    - Operational complexity
+    - Cost structure
+- Pinecone deep dive
+  - Serverless architecture
+    - Auto-scaling
+    - Pay-per-query pricing
+    - Zero infrastructure management
+    - Global availability
+  - Key capabilities
+    - 2.8B+ vectors per namespace
+    - 150ms P90 query latency
+    - 95% P50 recall
+    - Integrated embedding service
+  - Implementation patterns
+    - Import Pinecone class from pinecone library
+    - Initialize client with Pinecone(api_key="your-api-key")
+    - Create serverless index using pc.create_index() with name, dimension, and metric
+    - Specify serverless configuration with cloud provider (aws) and region (us-east-1)
+    - Get index reference using pc.Index("search-index")
+    - Upsert vectors using index.upsert() with vectors list
+    - Each vector contains id (unique identifier), values (embedding array), and metadata (dict)
+    - Metadata can include title, category, date, or any custom fields
+    - Query using index.query() with query vector and top_k parameter
+    - Set include_metadata=True to return metadata with results
+    - Apply metadata filtering using filter parameter with operators like $eq
+    - Filter syntax uses MongoDB-style query operators
+  - Cascading retrieval pattern
+    - Initial vector search
+    - Reranking integration
+    - Metadata filtering
+    - Best-in-class relevance
+- Weaviate deep dive
+  - AI-native architecture
+    - Built-in vectorization
+    - Generative modules
+    - Multi-modal support
+    - GraphQL and REST APIs
+  - Hybrid search implementation
+    - Import weaviate library for client access
+    - Connect to Weaviate cloud using weaviate.connect_to_weaviate_cloud()
+    - Provide cluster_url and auth_credentials with API key
+    - Get collection reference using client.collections.get("CollectionName")
+    - Execute hybrid search using collection.query.hybrid() method
+    - Pass query string for combined keyword and vector search
+    - Set alpha parameter to control keyword vs vector weighting (0=keyword only, 1=vector only)
+    - Specify limit for maximum number of results
+    - Request score metadata using return_metadata=["score"]
+    - Iterate through response.objects to access results
+    - Access score via obj.metadata.score and properties via obj.properties dict
+  - Generative search
+    - Built-in RAG modules
+    - Custom prompts
+    - Streaming responses
+    - Provider flexibility
+  - Multi-tenancy at scale
+    - Tenant isolation
+    - Per-tenant indexes
+    - Resource management
+    - Enterprise patterns
+- Qdrant deep dive
+  - Rust-powered performance
+    - Memory efficiency
+    - Query optimization
+    - Consistent latency
+    - Resource efficiency
+  - Advanced features
+    - 28.3k+ GitHub stars
+    - Scalar/product quantization
+    - Payload filtering
+    - Hybrid search support
+  - Quantization strategies
+    - Import QdrantClient from qdrant_client library
+    - Import VectorParams, Distance, ScalarQuantization, and ScalarQuantizationConfig from models
+    - Initialize client with QdrantClient(url="http://localhost:6333")
+    - Create collection using client.create_collection() with collection_name
+    - Configure vectors with VectorParams specifying size (1536) and distance metric (COSINE)
+    - Enable quantization using quantization_config with ScalarQuantization
+    - Set scalar quantization type to "int8" for memory efficiency
+    - Configure quantile (0.99) for outlier handling and always_ram for performance
+    - Search using client.search() with collection_name and query_vector
+    - Set limit for number of results to return
+    - Configure search_params for quantization behavior during search
+    - Set ignore=False to use quantized vectors and rescore=True for accuracy
+  - Recommendation API
+    - Positive/negative examples
+    - Strategy options
+    - Personalization
+    - Discovery use cases
+- Comparison matrix
+  - Performance characteristics
+    | Feature | Pinecone | Weaviate | Qdrant |
+    |---------|----------|----------|--------|
+    | Hosting | Managed | Self/Cloud | Self/Cloud |
+    | Max Vectors | 2.8B+ | Billions | Billions |
+    | Hybrid Search | Via reranker | Native | Native |
+    | Quantization | Automatic | Product | Scalar/Product |
+    | Open Source | No | Yes | Yes |
+    | Pricing | Pay-per-query | Usage-based | Usage-based |
+  - Use case alignment
+    - Pinecone: Zero-ops, managed service
+    - Weaviate: AI-first features, GraphQL
+    - Qdrant: Performance-critical, Rust
+  - Migration considerations
+    - Data export/import
+    - API compatibility
+    - Feature parity
+    - Testing strategies
+- Production deployment patterns
+  - High availability setup
+    - Replication strategies
+    - Failover handling
+    - Load balancing
+    - Geographic distribution
+  - Scaling strategies
+    - Horizontal scaling
+    - Sharding approaches
+    - Query routing
+    - Resource optimization
+  - Monitoring and operations
+    - Health metrics
+    - Query performance
+    - Index statistics
+    - Alerting setup

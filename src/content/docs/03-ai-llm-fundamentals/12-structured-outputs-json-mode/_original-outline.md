@@ -1,0 +1,41 @@
+---
+title: "Structured Outputs & JSON Mode"
+---
+
+# Structured Outputs & JSON Mode
+
+- JSON Mode vs Structured Outputs
+  - JSON mode — Valid JSON, not schema-enforced
+  - Structured Outputs — Schema-guaranteed adherence
+  - When to use each approach
+  - Provider support comparison
+- response_format parameter
+  - `{ "type": "json_object" }` — Basic JSON mode
+  - `{ "type": "json_schema", "json_schema": {...} }` — Schema enforcement
+  - Strict mode for guaranteed compliance
+- SDK integrations
+  - Pydantic integration (Python)
+  - Zod integration (TypeScript/JavaScript)
+  - Automatic schema generation from classes
+  - Validation and parsing utilities
+- JSON Schema constraints
+  - Supported types: String, Number, Boolean, Object, Array, Enum, anyOf
+  - Maximum 5000 properties per schema
+  - 10 nesting levels maximum
+  - Recursive schemas supported
+  - additionalProperties handling
+- Advanced patterns
+  - Chain-of-thought with structured outputs
+  - Refusal handling (`refusal` property for safety)
+  - Streaming with structured outputs
+  - Partial object parsing during stream
+- Function/tool parameter schemas
+  - Defining tool input schemas
+  - Strict function calling
+  - Parameter validation
+- Use cases
+  - Data extraction from unstructured text
+  - UI component generation
+  - Form validation responses
+  - API response formatting
+  - Classification with confidence scores

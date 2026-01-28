@@ -1,0 +1,43 @@
+---
+title: "Message Components"
+---
+
+# Message Components
+
+- Message container structure
+  - Wrapper element hierarchy
+  - Content area structure
+  - Action buttons placement
+  - Metadata positioning
+- User message styling
+  - Input echo display
+  - Edit indicators
+  - Attachment previews
+  - Pending/sent states
+- AI response styling
+  - Progressive reveal
+  - Completed state
+  - Source citations
+  - Confidence indicators
+- System message handling
+  - Visual distinction
+  - Context information
+  - Error summaries
+  - Status updates
+- Error message display
+  - Error state styling
+  - Retry action buttons
+  - Error details expansion
+  - Recovery suggestions
+- Message grouping strategies
+  - Consecutive sender grouping
+  - Time-based grouping
+  - Thread/topic grouping
+  - Visual separators
+- AI-generated file display (2024-2025)
+  - Rendering `part.type === 'file'` in responses
+  - Image display from `part.url`
+  - Media type detection (`part.mediaType`)
+  - Generated image preview and lightbox
+  - Audio/video player embedding
+  - File download links

@@ -1,0 +1,41 @@
+---
+title: "Production Embedding Systems"
+---
+
+# Production Embedding Systems
+
+- Embedding pipeline architecture
+  - Ingestion: document → chunks → embeddings
+  - Indexing: embeddings → vector database
+  - Query: query → embedding → search → results
+  - Async processing for large ingestion
+- Embedding versioning
+  - Model version tracking
+  - When to re-embed (model updates)
+  - Gradual migration strategies
+  - A/B testing embedding models
+- Monitoring and observability
+  - Embedding latency tracking
+  - Search quality metrics (recall, MRR)
+  - Index health monitoring
+  - Query pattern analysis
+- Caching at scale
+  - Query embedding cache (Redis)
+  - Document embedding cache
+  - Cache invalidation strategies
+  - Cache hit rate optimization
+- Scaling patterns
+  - Horizontal scaling of embedding service
+  - Read replicas for vector DB
+  - Sharding strategies
+  - Global distribution considerations
+- Failure handling
+  - Embedding API failures (retry, fallback)
+  - Vector DB unavailability
+  - Graceful degradation patterns
+  - Circuit breaker implementation
+- Testing strategies
+  - Unit tests for embedding pipeline
+  - Integration tests with vector DB
+  - Retrieval quality regression tests
+  - Load testing for production scale

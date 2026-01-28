@@ -1,0 +1,47 @@
+---
+title: "AI Safety & Security Fundamentals"
+---
+
+# AI Safety & Security Fundamentals
+
+- Prompt injection attacks
+  - Direct injection — Malicious instructions in user input
+  - Indirect injection — Hidden instructions in external data
+  - Defense strategies (input sanitization, instruction hierarchy)
+  - Delimiter-based protection patterns
+- Jailbreaking techniques and defenses
+  - Common jailbreak patterns (DAN, roleplay exploits)
+  - Why jailbreaks work (training vs safety conflict)
+  - Multi-layer defense approaches
+  - Model-specific vulnerabilities
+- OWASP Top 10 for LLM Applications
+  - LLM01: Prompt Injection
+  - LLM02: Insecure Output Handling
+  - LLM03: Training Data Poisoning
+  - LLM04: Model Denial of Service
+  - LLM05: Supply Chain Vulnerabilities
+  - LLM06: Sensitive Information Disclosure
+  - LLM07: Insecure Plugin Design
+  - LLM08: Excessive Agency
+  - LLM09: Overreliance
+  - LLM10: Model Theft
+- Bias, fairness, and ethical considerations
+  - Training data bias propagation
+  - Demographic performance disparities
+  - Mitigation strategies
+  - Fairness evaluation methods
+- Content moderation APIs
+  - OpenAI Moderation API
+  - Google Perspective API
+  - Category scoring (hate, violence, self-harm, sexual)
+  - Threshold configuration
+- Defense and security tools
+  - garak — LLM vulnerability scanner
+  - rebuff — Prompt injection detection
+  - guardrails-ai — Output validation framework
+  - NeMo Guardrails — NVIDIA's safety toolkit
+- Input/output sanitization strategies
+  - Input validation patterns
+  - Output filtering for sensitive data
+  - PII detection and redaction
+  - Rate limiting and abuse prevention

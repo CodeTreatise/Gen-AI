@@ -1,0 +1,43 @@
+---
+title: "Prompt Templates & Reusable Prompts"
+---
+
+# Prompt Templates & Reusable Prompts
+
+- Template design patterns
+  - Placeholder syntax ({{variable}})
+  - Conditional sections
+  - Loops for dynamic content
+  - Template inheritance
+- **Reusable Prompts (OpenAI Dashboard)**
+  - Create prompts in OpenAI Dashboard for reuse
+  - Variables: `{{customer_name}}`, `{{product}}`
+  - Version management built-in
+  - Team sharing capabilities
+  - A/B testing across prompt versions
+  - Quick iteration without code changes
+- **Prompt Libraries**
+  - Organize prompts by task type
+  - Centralized prompt management
+  - Prompt metadata (version, author, performance)
+  - Import/export for sharing
+- Variable substitution
+  - Runtime value injection
+  - Type handling
+  - Escaping special characters
+  - Default values
+- Dynamic prompt construction
+  - Building prompts programmatically
+  - Conditional prompt sections
+  - User input integration
+  - Context-aware generation
+- Template versioning
+  - Version control for prompts
+  - Change tracking
+  - Rollback capabilities
+  - A/B version testing
+- Template testing frameworks
+  - Unit tests for templates
+  - Variable validation
+  - Output format testing
+  - Regression testing

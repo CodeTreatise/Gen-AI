@@ -1,0 +1,41 @@
+---
+title: "Real-time Collaborative AI"
+---
+
+# Real-time Collaborative AI
+
+- Multi-user AI interactions
+  - Shared AI context
+  - User attribution
+  - Permission handling
+  - Session management
+- Shared AI sessions
+  - Session sharing
+  - State synchronization
+  - Conflict prevention
+  - Session lifecycle
+- Conflict resolution in AI outputs
+  - Concurrent edits
+  - Merge strategies
+  - User notification
+  - Resolution UI
+- Real-time sync with AI generation
+  - Streaming to multiple users
+  - Update propagation
+  - Latency handling
+  - Consistency guarantees
+- Multiplayer AI applications
+  - Collaborative features
+  - Role-based access
+  - Activity feeds
+  - User awareness
+- Presence and collaboration features
+  - Online status
+  - Typing indicators
+  - Cursor positions
+  - Activity tracking
+- WebSocket patterns for collaborative AI
+  - Connection management
+  - Message protocols
+  - Reconnection handling
+  - Scaling WebSockets

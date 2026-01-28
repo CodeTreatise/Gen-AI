@@ -1,0 +1,45 @@
+---
+title: "Basic Completion Requests"
+---
+
+# Basic Completion Requests
+
+- Single-turn completions
+  - Simple prompt-response pattern
+  - Stateless requests
+  - One-shot tasks
+  - Content generation examples
+  - String input shorthand (Responses API)
+- Multi-turn conversations
+  - Building message arrays
+  - Maintaining conversation context
+  - Turn-taking patterns
+  - Context accumulation
+  - `previous_response_id` for automatic chaining
+- Message history management
+  - Storing conversation history
+  - Pruning old messages
+  - Summarizing history
+  - Session management
+  - Conversations API for persistent state
+  - Context compaction (`/responses/compact` endpoint)
+- System prompts in requests
+  - Defining AI behavior
+  - Persona establishment
+  - Response constraints
+  - System prompt caching
+  - `instructions` parameter (Responses API alternative)
+- Response parsing
+  - Extracting response content
+  - Handling response metadata
+  - ID and creation time
+  - Usage statistics
+  - `output_text` helper in SDKs
+- Extracting generated content
+  - choices[0].message.content pattern
+  - Handling multiple choices
+  - Content filtering results
+  - Empty response handling
+  - `output` array items (Responses API)
+  - Reasoning items in responses
+  - `output_parsed` for structured outputs

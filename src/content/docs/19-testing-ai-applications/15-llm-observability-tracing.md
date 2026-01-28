@@ -1,0 +1,42 @@
+---
+title: "LLM Observability & Tracing"
+---
+
+# LLM Observability & Tracing
+
+- Tracing Fundamentals
+  - OpenTelemetry-like tracing for LLMs
+  - Spans for each component
+  - Trace hierarchies
+  - Automatic trace collection
+- Span Types
+  - type="agent": Top-level agent orchestration
+  - type="llm": LLM reasoning calls
+  - type="tool": Tool/function executions
+  - type="retrieval": RAG retrieval operations
+  - Custom spans for application logic
+- Implementing Tracing (DeepEval)
+  - @observe decorator usage
+  - Type annotations for components
+  - Nested function tracing
+  - Automatic trace tree construction
+- Trace Visualization
+  - Trace tree rendering
+  - Span timing analysis
+  - Component flow visualization
+  - Failure point identification
+- Debugging with Traces
+  - Pinpointing failure components
+  - Reasoning step inspection
+  - Tool call argument review
+  - Context flow analysis
+- Production Trace Export
+  - Confident AI integration
+  - Async trace export
+  - No latency overhead
+  - OpenTelemetry compatibility
+- Trace-Based Metrics
+  - Metrics that require full traces
+  - TaskCompletionMetric (trace-only)
+  - StepEfficiencyMetric (trace-only)
+  - Custom trace analysis

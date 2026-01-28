@@ -1,0 +1,52 @@
+---
+title: "Cost Management"
+---
+
+# Cost Management
+
+- Pricing models (per token, per request)
+  - Input token pricing
+  - Output token pricing
+  - Why output tokens cost more
+  - Per-request pricing models
+  - Batch discount pricing
+- Token pricing categories (2024-2025)
+  - Cached tokens pricing (up to 90% discount)
+  - Reasoning tokens pricing
+  - Audio token pricing
+  - Image token pricing
+  - Predicted output tokens
+  - Service tier pricing differences
+- Cost estimation before requests
+  - Token counting before sending
+  - Estimating response length
+  - Cost calculators
+  - Budget checks before API calls
+- Usage tracking and alerts
+  - Provider usage dashboards
+  - Custom usage tracking
+  - Email alerts on thresholds
+  - Weekly/monthly reports
+- Budget limits implementation
+  - Hard spending limits
+  - Soft warning limits
+  - Per-user budgets
+  - Project-level budgets
+- Optimizing prompts for cost
+  - Shorter system prompts
+  - Efficient few-shot examples
+  - Prompt compression techniques
+  - Caching repeated prompts
+  - Model selection for cost
+- Prompt caching cost optimization
+  - Automatic caching (1024+ tokens)
+  - `prompt_cache_key` for routing
+  - `prompt_cache_retention` options
+  - Cache-friendly prompt structure
+  - Static prefix, dynamic suffix pattern
+  - Up to 80% latency reduction
+  - Up to 90% input cost reduction
+- Predicted outputs cost savings
+  - When to use predicted outputs
+  - Code regeneration use cases
+  - Tracking accepted vs rejected predictions

@@ -1,0 +1,70 @@
+---
+title: "CI/CD Integration"
+---
+
+# CI/CD Integration
+
+- Automated testing pipelines
+  - Pipeline configuration
+  - Test stages
+  - Dependencies
+  - Artifact handling
+- Test environment setup
+  - Environment configuration
+  - Secret management
+  - Service mocking
+  - Isolation
+- Cost management in CI
+  - Budget limits
+  - Test selection
+  - Caching strategies
+  - Cost monitoring
+- Parallel test execution
+  - Parallelization strategies
+  - Resource allocation
+  - Result aggregation
+  - Speed optimization
+- Test result reporting
+  - Report generation
+  - Metric dashboards
+  - Trend analysis
+  - Failure analysis
+- Blocking deployments on failures
+  - Gate configuration
+  - Failure thresholds
+  - Override procedures
+  - Notification
+- Promptfoo CI/CD Integration (2025-2026)
+  - promptfoo.yaml configuration
+  - GitHub Actions integration
+  - Red team in CI pipelines
+  - Guardrail testing automation
+  - Continuous vulnerability monitoring
+  - Model security validation
+- DeepEval CI/CD Integration
+  - deepeval test run command
+  - pytest integration for LLM tests
+  - Metric threshold gates
+  - Confident AI platform integration
+  - Test result caching and optimization
+- Compliance Testing in CI
+  - SOC2 compliance checks
+  - HIPAA compliance validation
+  - GDPR data handling tests
+  - NIST AI RMF alignment
+  - EU AI Act requirements
+- Evaluation Dataset CI
+  - Dataset versioning in CI
+  - Golden dataset management
+  - Automated dataset updates
+  - Reproducible test runs
+- Prompt Regression Detection
+  - Every prompt change requires evaluation
+  - Automatic regression alerts
+  - Before/after comparison
+  - Quality gate configuration
+- Multi-Environment Testing
+  - Development environment evals
+  - Staging environment validation
+  - Production canary testing
+  - Environment parity checks

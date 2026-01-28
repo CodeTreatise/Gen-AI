@@ -1,0 +1,49 @@
+---
+title: "OpenAI Responses API"
+---
+
+# OpenAI Responses API
+
+- Responses API overview
+  - Evolution from Chat Completions
+  - Why Responses API is recommended for new projects
+  - 3% improvement in reasoning benchmarks
+  - 40-80% better cache utilization
+- Request structure differences
+  - `input` array (replaces `messages`)
+  - String input shorthand
+  - `instructions` parameter (replaces system message)
+  - Simpler function definition format
+- Response structure differences
+  - `output` array with typed Items
+  - Item types: message, function_call, reasoning
+  - `output_text` helper property
+  - No `choices` array
+- Built-in conversation state
+  - `previous_response_id` for chaining
+  - Conversations API integration
+  - Automatic context preservation
+  - Stateful vs stateless modes
+- Agentic features
+  - Multiple tool calls per request
+  - Built-in tool execution loop
+  - Native MCP server support
+  - Connectors for third-party services
+- Data storage and compliance
+  - `store` parameter for persistence
+  - Responses stored by default
+  - ZDR (Zero Data Retention) compatibility
+  - Encrypted reasoning items
+- Store parameter implications (2025)
+  - `store: true` — Responses saved for distillation/evals
+  - `store: false` — Ephemeral, not retained
+  - Stored responses available in dashboard
+  - Fine-tuning data collection
+  - Evaluation dataset building
+  - Data retention period policies
+  - GDPR and compliance considerations
+- Migration from Chat Completions
+  - Endpoint changes
+  - Message format updates
+  - Function definition changes
+  - Structured output changes (`text.format`)

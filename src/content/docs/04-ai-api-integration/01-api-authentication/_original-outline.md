@@ -1,0 +1,48 @@
+---
+title: "API Authentication"
+---
+
+# API Authentication
+
+- API key generation and management
+  - Creating API keys in provider dashboards
+  - Key naming and organization
+  - Multiple keys for different environments
+  - Key permissions and scopes
+  - Revoking compromised keys
+  - Project-scoped API keys (OpenAI projects)
+  - Service account authentication (Google Cloud)
+- Authentication methods (Bearer tokens, API keys)
+  - Bearer token format
+  - API key in header vs query
+  - OAuth for user-delegated access
+  - Provider-specific auth methods
+  - JWT-based API access
+  - Ephemeral API keys for client-side (Realtime API)
+- Environment variables for secrets
+  - Why environment variables
+  - .env files for local development
+  - dotenv library usage
+  - Environment-specific configurations
+  - Never commit secrets to git
+- Secure key storage practices
+  - Secret management services (Vault, AWS Secrets Manager)
+  - Key encryption at rest
+  - Access control for keys
+  - Audit logging for key usage
+  - Cross-organization API key sharing
+- Key rotation strategies
+  - Why rotate keys
+  - Rotation schedules
+  - Zero-downtime rotation
+  - Automated rotation tools
+- Organization and project-level access
+  - Organization accounts
+  - Team member access levels
+  - Project-based billing
+  - Usage attribution
+- Usage tier system
+  - Tier 1-5 limits and capabilities
+  - Automatic tier promotion
+  - Tier-based rate limits
+  - Enterprise tier benefits

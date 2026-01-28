@@ -1,0 +1,99 @@
+---
+title: "WebLLM & Browser-Based LLMs"
+---
+
+# WebLLM & Browser-Based LLMs
+
+- What is WebLLM?
+  - WebLLM project overview
+  - MLC-LLM foundation
+  - Browser-based inference
+  - Community support
+  - OpenAI API compatible (NEW 2025)
+- WebLLM 2025 Features (NEW 2025)
+  - Full OpenAI Chat Completions API compatibility
+  - Function calling / tool use in browser
+  - JSON-mode structured output generation
+  - Streaming response API (SSE-style)
+  - Web Worker integration (non-blocking UI)
+  - Service Worker lifecycle management
+  - Chrome Extension support
+  - Speculative decoding for faster generation
+- Running full LLMs in browser
+  - Supported models (2025 updated):
+    - Llama 3.3, Llama 3.2, Llama 3.1 (Meta)
+    - Phi-4, Phi-3.5, Phi-3 (Microsoft) (NEW 2025)
+    - Gemma 2, Gemma 3n (Google) (NEW 2025)
+    - Qwen2.5, Qwen3 (Alibaba) (NEW 2025)
+    - Mistral 7B, Mistral Nemo (Mistral AI)
+    - SmolLM3 (Hugging Face) (NEW 2025)
+    - DeepSeek-Coder (coding) (NEW 2025)
+  - Model variants (base, instruct, chat)
+  - Size options (1B to 13B parameters)
+  - Quantization levels (q4f16, q4f32, q0f16)
+- WebGPU requirements
+  - Browser support (Chrome 113+, Edge 113+, Firefox Nightly, Safari 18+)
+  - GPU requirements (discrete GPU recommended, integrated GPU limited)
+  - Memory requirements (8GB+ RAM, 4GB+ VRAM for larger models)
+  - Fallback options (server-side fallback, smaller models)
+  - Mobile support (iOS Safari 18+, Android Chrome 113+)
+- OpenAI API Compatibility (NEW 2025)
+  - chat.completions.create() interface
+  - Messages array format
+  - System/user/assistant roles
+  - Temperature, top_p, max_tokens
+  - Drop-in replacement for OpenAI SDK
+- Function Calling in Browser (NEW 2025)
+  - Tool definitions (JSON schema)
+  - Tool choice (auto, required, none)
+  - Tool response handling
+  - Multi-tool conversations
+  - Local function execution
+- JSON Mode & Structured Output (NEW 2025)
+  - response_format: { type: 'json_object' }
+  - Schema-constrained generation
+  - Guaranteed valid JSON
+  - Form data extraction
+  - Structured data parsing
+- Model download and caching
+  - Initial download (background)
+  - IndexedDB caching (persistent)
+  - Cache management
+  - Download progress callbacks
+  - Partial download resume (NEW 2025)
+- Web Worker Integration (NEW 2025)
+  - Dedicated worker for inference
+  - Non-blocking main thread
+  - Message-based communication
+  - Shared model instances
+  - Worker pool patterns
+- Chat interfaces with local LLMs
+  - Chat completion API
+  - Message formatting
+  - Response streaming (NEW 2025)
+  - Stop sequences
+  - Conversation history management
+- Privacy benefits of browser LLMs
+  - Data locality
+  - No server transmission
+  - Offline capability
+  - Sensitive use cases
+  - GDPR/HIPAA compliance friendly
+- Performance limitations
+  - Generation speed (10-50 tokens/sec typical)
+  - Context length (4K-32K depending on model)
+  - Memory constraints
+  - Device dependencies
+  - First-token latency
+- Performance Optimization (NEW 2025)
+  - Speculative decoding
+  - KV-cache optimization
+  - Continuous batching
+  - Model warmup strategies
+- Use cases for browser LLMs
+  - Privacy-critical apps
+  - Offline applications
+  - Development/testing
+  - Cost-sensitive apps
+  - Chrome Extensions with AI (NEW 2025)
+  - PWAs with embedded AI (NEW 2025)

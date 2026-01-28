@@ -1,0 +1,41 @@
+---
+title: "OpenAI Realtime API (NEW 2025)"
+---
+
+# OpenAI Realtime API (NEW 2025)
+
+- Realtime API overview
+  - Native speech-to-speech models (gpt-realtime)
+  - Sub-100ms latency
+  - Multimodal input (audio, images, text)
+  - Audio and text output
+  - GA release (moved from beta)
+- Connection methods
+  - WebRTC for browser/client applications
+  - WebSocket for server-side applications
+  - SIP for VoIP telephony integration
+  - Ephemeral tokens for client authentication
+- Voice agents with Agents SDK
+  - RealtimeAgent class
+  - RealtimeSession management
+  - Automatic microphone/speaker connection
+  - Voice agent quickstart patterns
+- Session management
+  - transcription_session.update configuration
+  - input_audio_format (pcm16)
+  - Turn detection (server_vad)
+  - Noise reduction (near_field, far_field)
+- Audio streaming
+  - input_audio_buffer.append for sending
+  - input_audio_buffer.committed for speech detection
+  - Real-time transcription events
+  - Speech start/stop detection
+- Server-side controls
+  - Webhooks for tool calls
+  - Guardrails implementation
+  - Cost monitoring and optimization
+  - Session lifecycle management
+- Voice options for Realtime
+  - Available realtime voices
+  - Custom voice integration
+  - Voice switching mid-session

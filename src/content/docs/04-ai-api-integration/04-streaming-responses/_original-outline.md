@@ -1,0 +1,60 @@
+---
+title: "Streaming Responses"
+---
+
+# Streaming Responses
+
+- Why streaming matters for UX
+  - Perceived responsiveness
+  - Immediate feedback
+  - User engagement during generation
+  - Progress indication
+- Server-Sent Events (SSE) protocol
+  - Event stream format
+  - data: prefix lines
+  - Event types
+  - Connection keep-alive
+  - Automatic reconnection
+- ReadableStream API
+  - getReader() method
+  - Reading chunks
+  - TextDecoder for text
+  - Async iteration patterns
+- Parsing streamed chunks
+  - data: [DONE] termination
+  - JSON parsing each line
+  - Buffer for incomplete lines
+  - Handling split UTF-8 characters
+- Delta content handling
+  - content delta vs full content
+  - Accumulating deltas
+  - Display as received
+  - Final message assembly
+- Stream termination and cleanup
+  - Detecting stream end
+  - Closing connections
+  - Releasing resources
+  - Finalizing UI state
+- Handling stream interruptions
+  - Network error recovery
+  - User cancellation
+  - AbortController usage
+  - Partial response handling
+- Semantic streaming events (2024-2025)
+  - ResponseCreatedEvent, ResponseCompletedEvent
+  - ResponseOutputTextDelta for content
+  - ResponseFunctionCallArgumentsDelta for tools
+  - ResponseOutputItemAdded, ResponseOutputItemDone
+  - Error events in streams
+  - `stream_options` parameter
+- Streaming function calls
+  - response.function_call_arguments.delta
+  - Accumulating argument chunks
+  - Detecting function call completion
+  - Multiple parallel function calls
+- Advanced streaming patterns
+  - Streaming structured outputs
+  - Streaming with reasoning tokens
+  - WebSocket for Realtime API
+  - WebRTC for browser voice
+  - SIP for telephony connections

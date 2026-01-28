@@ -1,0 +1,90 @@
+---
+title: "Small Language Models for Browser (NEW 2025)"
+---
+
+# Small Language Models for Browser (NEW 2025)
+
+- What are SLMs?
+  - Sub-4B parameter models
+  - Optimized for edge/browser deployment
+  - Mobile-first design principles
+  - Balance of quality and efficiency
+  - Designed for resource-constrained environments
+- SLM Advantages in Browser (NEW 2025)
+  - Faster download (1-4GB vs 10-20GB)
+  - Lower memory footprint (4-8GB RAM sufficient)
+  - Faster inference (50-100+ tokens/sec)
+  - Better mobile compatibility
+  - Reduced power consumption
+  - Viable on integrated GPUs
+- SmolLM3 (NEW 2025)
+  - 3B parameters, 11T tokens training
+  - Hugging Face optimized model
+  - Dual-mode reasoning:
+    - /think mode: Step-by-step reasoning
+    - /no_think mode: Direct answers
+  - 128k context window (NoPE + YaRN architecture)
+  - Multilingual support (6 languages)
+  - Tool calling / function calling support
+  - Competitive with Qwen3-4B, Gemma-3-4B
+  - Transformers.js compatible
+- SmolVLM (NEW 2025)
+  - Vision-language small model
+  - 1.7B and 2.2B variants
+  - Image + text understanding
+  - Document analysis
+  - Visual question answering
+  - Browser-optimized inference
+- Phi-4 Family (NEW 2025)
+  - Microsoft's small reasoning models
+  - Phi-4 Mini (3.8B) - reasoning optimized
+  - Phi-4 (14B) - for capable devices
+  - Strong math and coding
+  - Low memory footprint
+  - WebLLM compatible
+- Gemma 3n (NEW 2025-2026)
+  - Google's edge-optimized models
+  - E2B (2B equivalent) and E4B (4B equivalent)
+  - Multimodal: image + audio + text
+  - LiteRT format (.litertlm) for web
+  - MediaPipe LLM Inference API integration
+  - LoRA fine-tuning support
+  - Optimized for mobile and browser
+- Qwen3 Compact Models (NEW 2025)
+  - Alibaba's efficient models
+  - Qwen3-0.6B, Qwen3-1.7B, Qwen3-4B
+  - Strong reasoning capabilities
+  - Multilingual (100+ languages)
+  - WebLLM and Transformers.js support
+  - Thinking mode support
+- DeepSeek-Coder Small (NEW 2025)
+  - Code-specialized small models
+  - 1.3B and 6.7B variants
+  - Browser code assistance
+  - IDE integration potential
+  - Transformers.js compatible
+- LFM2 - Liquid Foundation Models (NEW 2025)
+  - Edge-optimized hybrid models from Liquid AI
+  - 350M, 700M, 1.2B parameter variants
+  - Designed for on-device deployment
+  - Excellent quality/speed/memory balance
+  - WebGPU acceleration support
+- Voxtral Mini (NEW 2025)
+  - Audio + text understanding model
+  - Speech transcription and translation
+  - 3B parameters (Ministral enhanced)
+  - Audio input capabilities
+  - Transformers.js compatible
+- Browser Deployment Strategies
+  - WebGPU required for best performance
+  - Quantization levels (int4, int8, fp16)
+  - Progressive model loading
+  - Web Worker for inference
+  - Memory optimization techniques
+  - Model warmup on idle
+- Choosing the Right SLM
+  - General chat: SmolLM3, Gemma 3n
+  - Reasoning: Phi-4 Mini, Qwen3-4B
+  - Coding: DeepSeek-Coder
+  - Vision: SmolVLM, Gemma 3n
+  - Multilingual: Qwen3, SmolLM3

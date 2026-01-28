@@ -1,0 +1,47 @@
+---
+title: "Response Handling"
+---
+
+# Response Handling
+
+- Response structure anatomy
+  - Top-level fields (id, object, created, model)
+  - choices array structure
+  - message vs delta objects
+  - usage object details
+  - `output` array (Responses API)
+  - Item types (message, function_call, reasoning)
+- Token usage tracking
+  - prompt_tokens count
+  - completion_tokens count
+  - total_tokens calculation
+  - Cost calculation from usage
+  - Usage logging for billing
+- Token usage details (2024-2025)
+  - `prompt_tokens_details.cached_tokens`
+  - `prompt_tokens_details.audio_tokens`
+  - `completion_tokens_details.reasoning_tokens`
+  - `completion_tokens_details.audio_tokens`
+  - `accepted_prediction_tokens` and `rejected_prediction_tokens`
+- Finish reasons (stop, length, content_filter)
+  - stop: Natural completion
+  - length: Max tokens hit
+  - content_filter: Policy violation
+  - tool_calls: Function calling
+  - Handling each finish reason
+- Handling incomplete responses
+  - Detecting truncation
+  - Continuation strategies
+  - User notification
+  - Automatic retry options
+- Content extraction patterns
+  - Safe navigation (optional chaining)
+  - Default values for missing content
+  - Type validation
+  - Content normalization
+- Response metadata (2024-2025)
+  - `annotations` field in messages
+  - `refusal` field for policy responses
+  - `service_tier` in response
+  - `system_fingerprint` (deprecated)
+  - `output_parsed` for structured data

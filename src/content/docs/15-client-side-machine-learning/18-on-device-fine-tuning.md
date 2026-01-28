@@ -1,0 +1,54 @@
+---
+title: "On-Device Fine-Tuning (NEW 2025-2026)"
+---
+
+# On-Device Fine-Tuning (NEW 2025-2026)
+
+- What is On-Device Fine-Tuning?
+  - Adapting models in the browser
+  - User-specific personalization
+  - Privacy-preserving customization
+  - No data leaves the device
+- LoRA in Browser (NEW 2025)
+  - Low-Rank Adaptation technique
+  - Small trainable adapters
+  - MediaPipe LoRA support
+  - Dynamic LoRA loading/swapping
+  - Multiple LoRA ranks (4, 8, 16)
+  - Attention layer customization
+- LoRA Implementation (NEW 2025)
+  - loadLoraModel() API (MediaPipe)
+  - PEFT-trained adapter compatibility
+  - Runtime LoRA model swapping
+  - Task-specific adapters
+  - User preference adapters
+- Parameter-Efficient Tuning Concepts
+  - Freeze base model weights
+  - Train only adapter layers
+  - Minimal memory overhead
+  - Fast adaptation (minutes vs hours)
+  - Preserve base model capabilities
+- Browser Constraints for Fine-Tuning
+  - Memory limitations (forward + backward pass)
+  - GPU compute availability
+  - Training data handling
+  - Gradient computation in WebGPU
+  - Batch size limitations
+- Privacy-Preserving Personalization
+  - All data stays on device
+  - Personal model variants
+  - User writing style adaptation
+  - Domain-specific tuning
+  - No cloud fine-tuning needed
+- Use Cases for On-Device Tuning
+  - Personalized AI assistants
+  - Domain vocabulary adaptation
+  - User preference learning
+  - Accessibility customization
+  - Professional terminology adaptation
+- Current Limitations (2025)
+  - Limited to LoRA adapters
+  - Requires capable GPU
+  - Training slower than inference
+  - Limited model support (Gemma, Phi)
+  - Still emerging technology

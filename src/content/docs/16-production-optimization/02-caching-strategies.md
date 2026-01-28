@@ -1,0 +1,54 @@
+---
+title: "Caching Strategies"
+---
+
+# Caching Strategies
+
+- Response caching patterns
+  - Exact match caching
+  - Cache key design
+  - TTL strategies
+  - Cache warming
+- Semantic caching concepts (NEW 2025)
+  - Embedding-based matching
+  - Similarity thresholds (0.85-0.95 typical)
+  - Approximate caching with vector similarity
+  - AI Gateway semantic cache (Portkey, Helicone)
+  - Cache population strategies
+- Cache invalidation strategies
+  - Time-based invalidation
+  - Event-based invalidation
+  - Manual invalidation
+  - Versioned caches
+  - Model version-aware invalidation (NEW 2025)
+- Embedding caching
+  - Text-to-embedding cache
+  - Cache storage options
+  - Batch caching
+  - Cache size management
+  - Integrated embedding caching (Pinecone) (NEW 2025)
+- Anthropic Prompt Caching (NEW 2024-2025)
+  - cache_control breakpoints in messages
+  - System prompt caching (up to 90% cost reduction)
+  - 5-minute TTL (extended with activity)
+  - cache_creation_input_tokens tracking
+  - cache_read_input_tokens in response
+  - Minimum 1024 tokens for caching
+  - Tools and images cacheable
+- OpenAI Automatic Caching (NEW 2024-2025)
+  - Automatic prefix caching
+  - 50% discount on cached input tokens
+  - cached_tokens in usage response
+  - Works with system prompts
+  - No explicit cache markers needed
+  - Prompt structure optimization for cache hits
+- Google Vertex AI Context Caching (NEW 2025)
+  - Explicit context cache creation
+  - Cache IDs for reuse
+  - Long document caching
+- Cache storage options
+  - Redis caching (sub-ms latency)
+  - In-memory caching (LRU/LFU)
+  - Database caching
+  - CDN caching
+  - Upstash Redis (serverless) (NEW 2025)

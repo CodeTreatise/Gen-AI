@@ -1,0 +1,43 @@
+---
+title: "Agent Observability Platforms"
+---
+
+# Agent Observability Platforms
+
+- LangSmith observability
+  - Trace visualization
+  - Run tree exploration
+  - Token and cost tracking
+  - Evaluation datasets
+  - Prompt hub and versioning
+- OpenAI Agents tracing
+  - Built-in dashboard tracing
+  - Custom trace processors
+  - Span annotations
+  - External platform export
+- Langfuse open-source
+  - Self-hosted option
+  - Trace and span tracking
+  - Cost analytics
+  - Prompt management
+  - Evaluation framework
+- Helicone integration
+  - Request logging
+  - Cost monitoring
+  - Rate limit tracking
+  - User analytics
+- Custom observability setup
+  - OpenTelemetry integration
+  - Custom trace exporters
+  - Metric collection patterns
+  - Dashboard creation
+- Evaluation frameworks
+  - LangSmith evaluators
+  - Custom evaluation functions
+  - Benchmark datasets
+  - Regression testing
+- Production monitoring
+  - Success/failure rates
+  - Latency percentiles
+  - Error categorization
+  - Alert configuration

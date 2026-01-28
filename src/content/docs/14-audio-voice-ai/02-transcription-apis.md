@@ -1,0 +1,51 @@
+---
+title: "Transcription APIs"
+---
+
+# Transcription APIs
+
+- Audio file transcription
+  - File upload process
+  - Async transcription
+  - Result retrieval
+  - Long audio handling
+- Supported formats (mp3, wav, webm)
+  - Format compatibility
+  - Quality requirements
+  - Bit rate considerations
+  - Sample rate requirements
+- File size limits
+  - Provider limits (25MB for OpenAI)
+  - Chunking strategies
+  - File compression
+  - Duration limits
+- API request structure
+  - Endpoint configuration
+  - Required parameters
+  - Optional settings
+  - Header requirements
+- Response parsing
+  - Text extraction
+  - Confidence scores
+  - Segment handling
+  - Error responses
+- Timestamp extraction
+  - Word-level timestamps
+  - Segment timestamps
+  - VTT/SRT generation
+  - Subtitle creation
+- Streaming transcription (NEW 2025)
+  - stream=True parameter
+  - transcript.text.delta events
+  - transcript.text.done completion
+  - Real-time partial results
+- Speaker diarization (NEW 2025)
+  - gpt-4o-transcribe-diarize model
+  - diarized_json response format
+  - Speaker labels per segment
+  - known_speaker_references for matching
+  - chunking_strategy for long audio
+- Logprobs for confidence (NEW 2025)
+  - include=['logprobs'] parameter
+  - Token-level confidence scores
+  - Quality assessment

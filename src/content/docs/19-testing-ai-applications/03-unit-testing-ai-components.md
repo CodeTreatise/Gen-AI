@@ -1,0 +1,61 @@
+---
+title: "Unit Testing AI Components"
+---
+
+# Unit Testing AI Components
+
+- Testing prompt construction
+  - Template testing
+  - Variable substitution
+  - Edge cases
+  - Format validation
+- Testing input preprocessing
+  - Input sanitization
+  - Format conversion
+  - Validation logic
+  - Edge cases
+- Testing output parsing
+  - JSON parsing
+  - Format extraction
+  - Error handling
+  - Malformed output handling
+- Mocking AI API responses
+  - Mock response design
+  - Realistic mocks
+  - Edge case mocks
+  - Error mocks
+- Testing error handling paths
+  - Error scenarios
+  - Retry behavior
+  - Fallback responses
+  - User messages
+- Testing retry logic
+  - Retry triggers
+  - Backoff behavior
+  - Maximum retries
+  - Success after retry
+- Tool Definition Testing (2025-2026)
+  - Tool schema validation
+    - JSON Schema compliance
+    - Required vs optional parameters
+    - Type constraints
+    - Default value handling
+  - Tool description clarity testing
+    - LLM understanding verification
+    - Ambiguity detection
+    - Description coverage
+  - Tool naming conventions
+    - Semantic naming tests
+    - Collision detection
+    - Discoverability
+  - Tool input/output contracts
+    - Input transformation
+    - Output format consistency
+    - Error response format
+- Structured Output Testing
+  - JSON schema validation
+  - Zod/Pydantic model compliance
+  - Nested object testing
+  - Array handling
+  - Optional field behavior
+  - Refusal response handling
