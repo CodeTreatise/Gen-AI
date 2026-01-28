@@ -19,7 +19,7 @@ export default defineConfig({
         replacesTitle: false,
       },
       social: [
-        { icon: 'github', label: 'GitHub', href: 'https://github.com/yourusername/ai-course-site' },
+        { icon: 'github', label: 'GitHub', href: 'https://github.com/CodeTreatise/Gen-AI' },
       ],
       customCss: ['./src/styles/custom.css'],
       head: [

@@ -46,4 +46,4 @@ Deploy, monitor, secure, and optimize AI applications at scale.
 3. **Build projects** to reinforce your learning
 4. **Practice** with the code examples in each lesson
 
-Ready to start? Head to [Unit 01: Web Development Fundamentals](/ai-course-site/01-web-development-fundamentals/00-overview/).
+Ready to start? Head to [Unit 01: Web Development Fundamentals](/Gen-AI/01-web-development-fundamentals/00-overview/).
