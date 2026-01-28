@@ -335,23 +335,18 @@ nav[aria-label="Main"] a:hover {
   color: var(--sl-color-text);
   transition: transform 0.3s ease;
 }
-
 /* 
  * COLLAPSED STATE
- * Override root-level CSS variables that Starlight uses for layout calculations
+ * Override layout when left sidebar is collapsed
+ * Key: Keep right sidebar fixed, only expand main content
  */
 @media (min-width: 50rem) {
-  /* When collapsed: override the CSS variables at root level */
-  html.sidebar-collapsed[data-has-sidebar] {
-    --sl-content-inline-start: 0px !important;
-  }
-  
   /* Smooth transition for sidebar panel */
   .sidebar-pane {
     transition: transform 0.3s ease, visibility 0.3s ease;
   }
 
-  /* Hide sidebar when collapsed */
+  /* Hide left sidebar when collapsed */
   html.sidebar-collapsed .sidebar-pane {
     transform: translateX(-100%);
     visibility: hidden;
@@ -367,13 +362,45 @@ nav[aria-label="Main"] a:hover {
     transform: rotate(180deg);
   }
 
-  /* Adjust main-frame padding */
+  /* Adjust main-frame padding - remove left sidebar space */
   html.sidebar-collapsed .main-frame {
     padding-inline-start: 0 !important;
   }
 
-  /* Fix header width calculation when sidebar is collapsed */
+  /* Fix header - remove left sidebar offset */
   html.sidebar-collapsed .header {
     --sl-content-inline-start: 0px;
+  }
+}
+
+/* Desktop-specific fixes (when right sidebar is visible) */
+@media (min-width: 72rem) {
+  /* 
+   * Keep right sidebar in fixed position on the right edge
+   * Don't let it move when left sidebar collapses
+   */
+  html.sidebar-collapsed .right-sidebar-container {
+    /* Keep the same width as before - use the original sidebar width value */
+    width: var(--sl-sidebar-width) !important;
+    position: fixed !important;
+    right: 0 !important;
+    top: 0 !important;
+    height: 100vh !important;
+  }
+
+  html.sidebar-collapsed .right-sidebar {
+    width: 100% !important;
+    position: relative !important;
+  }
+
+  /* Main content should fill available space but leave room for right sidebar */
+  html.sidebar-collapsed[data-has-toc] .main-pane {
+    width: calc(100% - var(--sl-sidebar-width)) !important;
+    margin-inline-end: 0 !important;
+  }
+
+  /* When no TOC, content can use full width */
+  html.sidebar-collapsed:not([data-has-toc]) .main-pane {
+    width: 100% !important;
   }
 }
