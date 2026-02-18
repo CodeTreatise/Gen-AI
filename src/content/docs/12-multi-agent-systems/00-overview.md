@@ -47,8 +47,8 @@ By the end of this unit, you will be able to:
 ## Sub-topics
 
 ### Core Concepts & LangGraph
-1. [Multi-Agent Concepts](01-multi-agent-concepts.md)
-2. [Agent Communication](02-agent-communication.md)
+1. [Multi-Agent Concepts](01-multi-agent-concepts/00-multi-agent-concepts.md)
+2. [Agent Communication](02-agent-communication/00-agent-communication.md)
 3. [LangGraph Deep Dive](03-langgraph-deep-dive.md)
 
 ### AutoGen & Orchestration
